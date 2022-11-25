@@ -1,6 +1,6 @@
 ### TODO
 
-* make logo into swap image
+* make logo into circle image
 
 Landed by HTML5 UP
 html5up.net | @ajlkn
