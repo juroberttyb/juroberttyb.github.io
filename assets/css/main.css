@@ -3373,6 +3373,10 @@ input, select, textarea {
 		padding-top: 3.5em;
 	}
 
+	img {
+		border-radius: 50%;
+	}
+
 	#header {
 		background: rgba(39, 40, 51, 0.965);
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
@@ -3388,17 +3392,17 @@ input, select, textarea {
 
 		#header h1 {
 			height: inherit;
-			left: 1.25em;
+			left: 1.5em;
 			line-height: inherit;
 			margin: 0;
 			position: absolute;
-			top: 0;
+			top: 1.25em;
 		}
 
 		#header nav {
 			position: absolute;
-			right: 1em;
-			top: 0;
+			right: 2em;
+			top: 1em;
 		}
 
 			#header nav ul {
