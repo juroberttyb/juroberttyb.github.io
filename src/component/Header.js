@@ -2,7 +2,7 @@ const Header = () => {
     return (
         <header>
             <h1>Task Tracker</h1>
-            <button>Add</button>
+            <button style={{backgroundColor: 'blue'}}>Add</button>
         </header>
     )
 }

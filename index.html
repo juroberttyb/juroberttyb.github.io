@@ -45,7 +45,8 @@
 									</li>
 								</ul>
 							</li> -->
-							<li><a href="#" class="button primary">Connect Wallet</a></li>
+							<li id="root"></li>
+							<!-- <li><button class="button primary" onclick=on_click()>Connect Wallet</button></li> -->
 						</ul>
 					</nav>
 				</header>
@@ -218,8 +219,9 @@
 
 		<!-- Scripts -->
 			<script>
-				function myFunction() {
-					document.getElementById("swap button").innerHTML = "Swapped";
+				function on_click() {
+					console.log("clicked msg")
+					// document.getElementById("swap button").innerHTML = "Swapped";
 				}
 			</script>
 			<script src="assets/js/jquery.min.js"></script>
