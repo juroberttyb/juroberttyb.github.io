@@ -3,10 +3,18 @@ import Header from './component/Header'
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-    </div>
+    <button className="button primary" onClick={onClick}>
+      Connect Wallet
+    </button>
+    // <div className="App">
+    //   <Header />
+    // </div>
   );
+}
+
+const onClick = () => {
+  console.log("clicked msg")
+  // document.getElementById("swap button").innerHTML = "Swapped";
 }
 
 // class App extends React.Component {
