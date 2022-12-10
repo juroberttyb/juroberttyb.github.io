@@ -1,6 +1,7 @@
 // import React from 'react'
 // import Header from './component/Header'
 
+// "homepage": ".", assets will be served relative to index.html
 function App() {
   // can do some js code here
   // const test = 1;
