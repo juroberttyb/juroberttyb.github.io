@@ -2,10 +2,13 @@
 import Header from './component/Header'
 
 function App() {
+  // can do some js code here
+  const test = 1;
+
   return (
-    <button className="button primary" onClick={onClick}>
+    <a className="button primary" id="connect wallet" onClick={onClick}>
       Connect Wallet
-    </button>
+    </a>
     // <div className="App">
     //   <Header />
     // </div>
@@ -14,7 +17,7 @@ function App() {
 
 const onClick = () => {
   console.log("clicked msg")
-  // document.getElementById("swap button").innerHTML = "Swapped";
+  document.getElementById("connect wallet").innerHTML = "Connected";
 }
 
 // class App extends React.Component {

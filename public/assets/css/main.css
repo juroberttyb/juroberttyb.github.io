@@ -3409,7 +3409,7 @@ input, select, textarea {
 				margin: 0;
 			}
 
-				#header nav ul li {
+				#header nav ul li  {
 					display: inline-block;
 					margin-left: 1em;
 				}
