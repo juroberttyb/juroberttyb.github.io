@@ -1,14 +1,14 @@
 // import React from 'react'
-import Header from './component/Header'
+// import Header from './component/Header'
 
 function App() {
   // can do some js code here
-  const test = 1;
+  // const test = 1;
 
   return (
-    <a className="button primary" id="connect wallet" onClick={onClick}>
+    <button className="button primary" id="connect wallet" onClick={onClick}>
       Connect Wallet
-    </a>
+    </button>
     // <div className="App">
     //   <Header />
     // </div>
