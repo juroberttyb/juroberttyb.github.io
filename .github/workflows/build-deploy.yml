@@ -32,6 +32,9 @@ jobs:
   deploy: 
     needs: [test, build]
     runs-on: ubuntu-latest
+    with:
+        host: github.com
+        private-key: ${{ secrets.SSH_KEY_GITHUB }}
     steps:
       - name: pulling git repo
         uses: actions/checkout@v2
@@ -44,7 +47,7 @@ jobs:
           echo ${{secrets.SSH_KEY_GITHUB}} > ~/.ssh/id_rsa
           echo $SSH_PUB_KEY_GITHUB > ~/.ssh/id_rsa.pub
           eval `ssh-agent -s`
-          ssh-add - <<< '${{ secrets.PRIVATE_SSH_KEY }}'
+          ssh-add - <<< '${{ secrets.SSH_KEY_GITHUB }}'
           npm install
           npm run deploy
           echo "deploy"
