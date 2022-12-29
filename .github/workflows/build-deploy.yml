@@ -10,6 +10,7 @@ on:
 
 env: 
   SSH_PUB_KEY_GITHUB: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCtG9ySqkE0wZp5ra/EMS846+MA3EP7MitjHR4kyR+QPvnzTQK5/vkuBCqTMIn84dAwYKwAclbh9DjHOTREupvKOq6qMtktXE1BYJwOe0zHvPujJiHJ5kPjzFCkM4jqUNvB6dAZdAv8XXpnr4Hlw1Q4V9IDC9BV/cqABUhfXh/JSFPq0EiTHWBxORY4dRu48qRe0RVHz4cu2eg6YZIdVSCW8FKRAJMq+X1Jqxdg7J8Qr6lK708EER6B+RNrmQi7pHBg4lbmE5YHH+ezjh+C5TwZ/xU90CN0lXjZMuPz1UvZ1RmwEjVEFJQcfjf5XTW85ZUPu46eGOY7S0oTIGs8/f3FX0xydMiLtyoiIJLB8+4AJ2PtS5X0GpBxoRGJ6qA1O1LyehgrauOqzsCtR/Ak4emzDlNaWCQLlKO2spZGCFzTu+H2YqioUGSPT7KGZlNKT12/91Z03upOYhCeqMmtT8yYCrH3KtY5zrO8Z0CdHCC7KVtPkadI5kwMJB2MD3gg8hc= robert@robert-Aspire-A515-56G"
+  github.actor: juroberttyb
 
 jobs:
   test: 
@@ -35,17 +36,20 @@ jobs:
     steps:
       - name: pulling git repo
         uses: actions/checkout@v2
-      - name: deploy
+      - name: config setting
       - run: |
           git remote add origin git@github.com:juroberttyb/page.git
           git config --global credential.helper wincred
           git config --global user.email juroberttyb@gmail.com
           git config --global user.name 'juroberttyb'
+      - name: ssh key setting
       - run: |
           mkdir ~/.ssh
           echo ${{secrets.SSH_KEY_GITHUB}} > ~/.ssh/id_rsa
           echo $SSH_PUB_KEY_GITHUB > ~/.ssh/id_rsa.pub
+      - name: install enviroment
       - run: npm install
+      - name: deploy
       - run: npm run deploy
 
 
