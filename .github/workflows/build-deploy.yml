@@ -42,15 +42,15 @@ jobs:
           git config --global credential.helper wincred
           git config --global user.email juroberttyb@gmail.com
           git config --global user.name 'juroberttyb'
-      - name: ssh key setting
-        run: |
-          mkdir ~/.ssh
-          echo ${{secrets.SSH_KEY_GITHUB}} > ~/.ssh/id_rsa
-          echo $SSH_PUB_KEY_GITHUB > ~/.ssh/id_rsa.pub
       - name: install enviroment
         run: npm install
-      - name: deploy
-        run: npm run deploy
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+      # - name: deploy
+      #   run: npm run deploy
 
 
 
