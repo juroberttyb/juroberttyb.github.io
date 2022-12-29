@@ -37,6 +37,8 @@ jobs:
         uses: actions/checkout@v2
       - name: deploy
         run: |
+          npm install
+          npm run deploy
           echo "deploy"
 
 
