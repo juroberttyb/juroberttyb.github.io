@@ -38,6 +38,7 @@ jobs:
       - name: deploy
         run: |
           git config --global user.email juroberttyb@gmail.com
+          git config --global user.name 'juroberttyb'
           mkdir ~/.ssh
           echo ${{secrets.SSH_KEY_GITHUB}} > ~/.ssh/id_rsa
           echo $SSH_PUB_KEY_GITHUB > ~/.ssh/id_rsa.pub
