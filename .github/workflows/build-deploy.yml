@@ -1,0 +1,44 @@
+name: Build and Deploy
+
+on: 
+  push:
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - "main"
+
+env: 
+  github-ssh-key: ${{secrets.GITHUB_SSH_KEY}}
+
+jobs:
+  test: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: pulling git repo
+        uses: actions/checkout@v2
+      - name: test
+        run: |
+          echo "test"
+  build: 
+    needs: [test]
+    runs-on: ubuntu-latest
+    steps:
+      - name: pulling git repo
+        uses: actions/checkout@v2
+      - name: exmaple build image
+        run: |
+          echo "build"
+  deploy: 
+    needs: [test, build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: pulling git repo
+        uses: actions/checkout@v2
+      - name: deploy
+        run: |
+          echo "deploy"
+
+
+
+
