@@ -43,7 +43,11 @@ jobs:
           git config --global user.name 'juroberttyb'
       - name: install enviroment
         run: npm install
-      - name: Deploy
+      - name: predeploy
+        run: |
+          npm run build
+          cp CNAME build
+      - name: deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
