@@ -8,8 +8,8 @@ on:
     branches:
       - "main"
 
-env: 
-  ssh-key-github: ${{secrets.SSH_KEY_GITHUB}}
+# env: 
+#   ssh-key-github: ${{secrets.SSH_KEY_GITHUB}}
 
 jobs:
   test: 
@@ -38,6 +38,7 @@ jobs:
       - name: deploy
         run: |
           git config --global user.email juroberttyb@gmail.com
+          mkdir ~/.ssh
           echo ${{secrets.SSH_KEY_GITHUB}} > ~/.ssh/id_rsa
           npm install
           npm run deploy
