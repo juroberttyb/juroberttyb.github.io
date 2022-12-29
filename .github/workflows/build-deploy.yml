@@ -37,6 +37,7 @@ jobs:
         uses: actions/checkout@v2
       - name: deploy
         run: |
+          git config --global credential.helper wincred
           git config --global user.email juroberttyb@gmail.com
           git config --global user.name 'juroberttyb'
           mkdir ~/.ssh
