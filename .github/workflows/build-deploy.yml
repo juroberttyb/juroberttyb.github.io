@@ -32,9 +32,6 @@ jobs:
   deploy: 
     needs: [test, build]
     runs-on: ubuntu-latest
-    with:
-        host: github.com
-        private-key: ${{ secrets.SSH_KEY_GITHUB }}
     steps:
       - name: pulling git repo
         uses: actions/checkout@v2
