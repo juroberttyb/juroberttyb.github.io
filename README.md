@@ -1,5 +1,3 @@
-### run local server
+### run local
+* npm install
 * npm start
-
-### deploy to github gh-pages branch
-* npm run deploy
