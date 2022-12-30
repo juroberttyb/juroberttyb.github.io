@@ -1,11 +1,12 @@
 # [Robert's personal website](https://robertchu.xyz)
 
-### TODO
 
+### TODO
 * linting CICD
 * integration test
 
-### run local
+---
+### Run Local
 ```
 npm install
 npm start
