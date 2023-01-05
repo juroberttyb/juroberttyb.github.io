@@ -7,12 +7,13 @@ function App() {
   // const test = 1;
 
   return (
-    <button className="button primary" id="connect wallet" onClick={onClick}>
-      Connect Wallet
-    </button>
-    // <div className="App">
-    //   <Header />
-    // </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="publication.html">Publication</a></li>
+      <li><a href="quotes.html">Quotes</a></li>
+      <li><button className="button primary" id="connect wallet" onClick={onClick}>Connect Wallet</button></li>
+    </ul>
   );
 }
 
