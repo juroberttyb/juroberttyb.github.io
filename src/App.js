@@ -4,6 +4,11 @@ import { useState } from 'react'
 import Header from './component/Header'
 import Footer from './component/Footer'
 
+import meImg from './image/me.jpg'
+import pianoImg from './image/piano.jpg'
+import labImg from './image/lab.jpg'
+import msImg from './image/mlab.jpg'
+
 function App() {
   const [connected, setConnected] = useState("Connect Wallet")
 
@@ -28,7 +33,7 @@ function App() {
                       </p>
                     </center>
                   </header>
-                  <span class="image"><img src="images/me.jpg" alt="" /></span>
+                  <span class="image"><img src={meImg} alt="" /></span>
                 </div>
               </section>
             }
@@ -50,7 +55,7 @@ function App() {
                     </p>
                   </center>
                   </header>
-                  <span class="image"><img src="images/piano.jpg" alt="" /></span>
+                  <span class="image"><img src={pianoImg} alt="" /></span>
                 </div>
               </section>
             }
@@ -70,7 +75,7 @@ function App() {
                       </p>
                     </center>
                   </header>
-                  <span class="image"><img src="images/lab.jpg" alt="" /></span>
+                  <span class="image"><img src={labImg} alt="" /></span>
                 </div>
               </section>
             }
@@ -90,7 +95,7 @@ function App() {
                       </p>
                     </center>
                   </header>
-                  <span class="image"><img src="images/mlab.jpg" alt="" /></span>
+                  <span class="image"><img src={msImg} alt="" /></span>
                 </div>
               </section>
             }
