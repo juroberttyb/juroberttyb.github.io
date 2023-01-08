@@ -5,7 +5,10 @@ import Header from './component/Header'
 import Footer from './component/Footer'
 import Body from './component/Body'
 
-import {homePage, aboutPage, publicationPage, quotePage} from './data/Page'
+import home from './pages/home/Page'
+import about from './pages/about/Page'
+import publication from './pages/publication/Page'
+import quote from './pages/quote/Page'
 
 function App() {
   const [connected, setConnected] = useState("Connect Wallet")
@@ -15,10 +18,10 @@ function App() {
         <Header connected={connected} setConnected={setConnected} />
 
         <Routes>
-          <Route path='/' element={<Body {...homePage} />} />
-          <Route path='/about' element={<Body {...aboutPage} />} />
-          <Route path='/publication' element={<Body {...publicationPage} />} />
-          <Route path='/quote' element={<Body {...quotePage} />} />
+          <Route path='/' element={<Body {...home} />} />
+          <Route path='/about' element={<Body {...about} />} />
+          <Route path='/publication' element={<Body {...publication} />} />
+          <Route path='/quote' element={<Body {...quote} />} />
         </Routes>
 
         <Footer />
