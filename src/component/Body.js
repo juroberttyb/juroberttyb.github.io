@@ -3,7 +3,7 @@ import React from 'react'
 const Body = ({header, content, img, pageName}) => {
   return (
     <div className={pageName+" page"}>
-        <p>
+        <p className={pageName+" content"}>
           <h1>{header}</h1>
           {content}
         </p>

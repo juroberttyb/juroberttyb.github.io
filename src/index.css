@@ -43,6 +43,10 @@ li {
   /* display: flex; */
 }
 
+.content {
+  margin-bottom: 2%;
+}
+
 .image {
   /* object-fit: cover; */
   max-width: 30%;
