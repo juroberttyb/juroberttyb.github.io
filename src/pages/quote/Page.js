@@ -4,8 +4,9 @@ const quote = {
     pageName: "quote",
     content: (
         <>
-            化繁為簡為智慧，而人所不能不去追尋的，謂之夢想。<br/><br/>
-            --- Me ---<br/>
+            化繁為簡為智慧，<br/>而人所不能不去追尋的，<br/>謂之夢想。<br/>
+            <br/>
+            --- Me ---
         </>
     ),
     header: (

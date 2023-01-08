@@ -4,7 +4,7 @@ const Body = ({header, content, img, pageName}) => {
   return (
     <div className={pageName+" page"}>
         <p>
-          <h2>{header}</h2>
+          <h1>{header}</h1>
           {content}
         </p>
         <img className={pageName + " image"} src={img} alt="" />
