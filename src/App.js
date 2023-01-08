@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { useState } from 'react'
 import Header from './component/Header'
 import Footer from './component/Footer'
+import Content from './component/Body'
 
 import meImg from './image/me.jpg'
 import pianoImg from './image/piano.jpg'
@@ -12,32 +13,29 @@ import msImg from './image/mlab.jpg'
 function App() {
   const [connected, setConnected] = useState("Connect Wallet")
 
+  const homePage = {
+    content: (
+      <>
+        Welcome, this is my personal website. <br/>
+        Me and my friends are always either be doing <br/>
+        or on the way to be doing something interesting. <br/>
+        Currently we are trying to build a trade bot on Ethereum. <br/>
+      </>
+    ),
+    header: (
+      <>
+        Hi, I'm Robert
+      </>
+    ),
+    img: meImg
+  }
+
   return (
     <Router>
         <Header connected={connected} setConnected={setConnected} />
 
         <Routes>
-          <Route 
-            path='/' 
-            element={
-              <section id="banner">
-                <div class="content">
-                  <header>
-                    <center>
-                      <h2>Hi, I'm Robert</h2>
-                      <p>
-                        Welcome, this is my personal website. <br/>
-                        Me and my friends are always either be doing <br/>
-                        or on the way to be doing something interesting. <br/>
-                        Currently we are trying to build a trade bot on Ethereum. <br/>
-                      </p>
-                    </center>
-                  </header>
-                  <span class="image"><img src={meImg} alt="" /></span>
-                </div>
-              </section>
-            }
-          />
+          <Route path='/' element={<Content {...homePage} />} />
 
           <Route 
             path='/about' 
