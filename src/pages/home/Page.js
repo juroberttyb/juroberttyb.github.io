@@ -1,6 +1,7 @@
-import meImg from '../../image/me.jpg'
+import meImg from '../../assets/images/me.jpg'
 
 const home = {
+    pageName: "home",
     content: (
         <>
             Welcome, this is my personal website. <br/>

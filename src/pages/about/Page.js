@@ -1,6 +1,7 @@
-import pianoImg from '../../image/piano.jpg'
+import pianoImg from '../../assets/images/piano.jpg'
 
 const about = {
+    pageName: "about",
     content: (
         <>
             During my free time, I enjoy taking a walk, <br/>
