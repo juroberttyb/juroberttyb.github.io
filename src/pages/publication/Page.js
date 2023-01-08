@@ -4,8 +4,10 @@ const publication = {
     pageName: "publication",
     content: (
         <>
-            <a href="https://practical-dl.github.io/2022/index" color="blue">Low-rank Tensor Decomposition for Compression of<br/>Convolutional Neural Networks Using Funnel Regularization</a><br/>
-            Accepted at AAAI-2022 Workshop, cited by 3 papers.<br/>
+            <a href="https://practical-dl.github.io/2022/index">Low-rank Tensor Decomposition for Compression of Convolutional Neural Networks Using Funnel Regularization</a>
+            <br/>
+            <br/>
+            Accepted at AAAI-2022 Workshop, CITED BY 3<br/>
         </>
     ),
     header: (
