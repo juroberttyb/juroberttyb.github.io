@@ -1,7 +1,7 @@
 import labImg from '../../assets/images/lab.jpg'
 
 const publication = {
-    pageName: "publication",
+    pageName: "paper",
     content: (
         <>
             <a href="https://practical-dl.github.io/2022/index">Low-rank Tensor Decomposition for Compression of Convolutional Neural Networks Using Funnel Regularization</a>
@@ -12,7 +12,7 @@ const publication = {
     ),
     header: (
         <>
-            Publication
+            Paper
         </>
     ),
     img: labImg

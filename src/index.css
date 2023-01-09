@@ -70,7 +70,15 @@ ul{
 
 .header {
   margin: 2%;
-  /* display: inline-block; */
+}
+
+.header ul li {
+  display: inline-block;
+  margin: 1.5%;
+  font-weight: bolder;
+  min-width:3%;
+  /* border:1px solid red; */
+  /* font-size: 0; */
 }
 
 .center {
@@ -81,36 +89,29 @@ ul {
 }
 
 ul li {
-  display: inline;
+  display: inline-block;
   margin: 1.5%;
-  /* min-width: 5%; */
   font-weight: bolder;
+  min-width:3%;
+  /* border:1px solid red; */
 }
 
 .page {
-  /* margin: auto; */
-  /* width: 50%; */
-
   margin: 2%;
   text-align: center;
-  /* display: flex; */
 }
 
 .content {
-  /* font-size: 150%; */
-  /* margin: 2%; */
   display: inline-block; 
   text-align: left;
   max-width: 66.7%;
 }
 
 .image {
-  /* object-fit: cover; */
   max-width: 20%;
   max-height: 20%;
   width: auto;
   height: auto;
-  /* padding: 1%; */
   border-radius: 10%;
 }
 
@@ -132,8 +133,4 @@ ul li {
 
 .footer {
   margin: 2%;
-  /* position: absolute; */
-  /* bottom: 0; */
-  /* margin-bottom: 1%; */
-  /* width: 100%; */
 }

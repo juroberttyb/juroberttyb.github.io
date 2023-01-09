@@ -7,7 +7,7 @@ import Body from './component/Body'
 
 import home from './pages/home/Page'
 import about from './pages/about/Page'
-import publication from './pages/publication/Page'
+import paper from './pages/paper/Page'
 import quote from './pages/quote/Page'
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Body {...home} />} />
           <Route path='/about' element={<Body {...about} />} />
-          <Route path='/publication' element={<Body {...publication} />} />
+          <Route path='/paper' element={<Body {...paper} />} />
           <Route path='/quote' element={<Body {...quote} />} />
         </Routes>
 
