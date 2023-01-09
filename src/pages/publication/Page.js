@@ -7,7 +7,7 @@ const publication = {
             <a href="https://practical-dl.github.io/2022/index">Low-rank Tensor Decomposition for Compression of Convolutional Neural Networks Using Funnel Regularization</a>
             <br/>
             <br/>
-            Accepted at AAAI-2022 Workshop, CITED BY 3<br/>
+            Accepted at AAAI-2022 Workshop, CITED BY 3
         </>
     ),
     header: (
