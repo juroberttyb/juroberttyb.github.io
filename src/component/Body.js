@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Body = ({header, content, img, pageName}) => {
+const Body = ({header, content, img, pageName, imgUrl}) => {
   return (
     <div className={pageName+" page"}>
       <h1>{header}</h1>
@@ -8,7 +8,7 @@ const Body = ({header, content, img, pageName}) => {
         {content}
       </p>
       <p>
-        <img className="image" src={img} alt="" />
+        <a href={imgUrl}><img className="image" src={img} alt="" /></a>
       </p>
     </div>
   )
