@@ -4,9 +4,9 @@ const quote = {
     pageName: "quote",
     content: (
         <>
-            化繁為簡為智慧，<br/>而人所不能不去追尋的，<br/>謂之夢想。<br/>
-            <br/>
-            --- Me ---
+            If you went back and fixed all the mistakes you've made, you erase yourself - Louis CK<br/><br/>
+            You got to tell each other the truth and negotiate - Jordan Peterson<br/><br/>
+            化繁為簡為智慧，而人所不能不去追尋的，謂之夢想 - Me
         </>
     ),
     header: (
