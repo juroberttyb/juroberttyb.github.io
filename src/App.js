@@ -1,5 +1,5 @@
 // import React from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import { useState } from 'react'
 import Header from './component/Header'
 import Footer from './component/Footer'
@@ -14,18 +14,22 @@ function App() {
   const [connected, setConnected] = useState("Connect Wallet")
 
   return (
-    <Router>
-        <Header connected={connected} setConnected={setConnected} />
+    <>
+      <Routes location="/*">
+        <Route path='/*' element={<Header connected={connected} setConnected={setConnected} />} />
+      </Routes>
 
-        <Routes>
-          <Route path='/' element={<Body {...home} />} />
-          <Route path='/about' element={<Body {...about} />} />
-          <Route path='/paper' element={<Body {...paper} />} />
-          <Route path='/quote' element={<Body {...quote} />} />
-        </Routes>
+      <Routes>
+        <Route path='/' element={<Body {...home} />} />
+        <Route path='/about' element={<Body {...about} />} />
+        <Route path='/paper' element={<Body {...paper} />} />
+        <Route path='/quote' element={<Body {...quote} />} />
+      </Routes>
 
-        <Footer />
-    </Router>
+      <Routes location="/*">
+        <Route path='/*' element={<Footer />} />
+      </Routes>
+    </>
   );
 }
 
