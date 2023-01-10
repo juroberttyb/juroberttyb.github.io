@@ -6,6 +6,12 @@
 * redux/flux
 * react test
 * next.js
+* add to page
+  * nft web game
+  * defi
+  * lottery
+  * blockchain info
+  * more…?
 
 ---
 ### Run Local
