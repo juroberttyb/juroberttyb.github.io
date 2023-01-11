@@ -102,20 +102,33 @@ ul li {
 }
 
 .content {
+  font-size: 125%;
+  line-height: 200%;
   display: inline-block; 
   text-align: left;
-  max-width: 66.7%;
+  max-width: 60%;
+}
+
+.content img {
+  aspect-ratio: 1.33;
+
+  min-width: 67%;
+  max-width: 67%;
+
+  border-radius: 10%;
+  margin: 2%;
 }
 
 .image {
-  max-width: 20%;
-  max-height: 20%;
+  min-width: 33%;
+  max-width: 33%;
+  /* max-height: 20%; */
   width: auto;
   height: auto;
   border-radius: 10%;
 }
 
-.image:hover{
+img:hover{
   opacity: 0.67; /* it's in pourcentage */
 }
 
@@ -131,7 +144,7 @@ ul li {
 
 }
 
-.quote {
+.blockchain {
 
 }
 

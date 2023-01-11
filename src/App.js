@@ -8,7 +8,7 @@ import Body from './component/Body'
 import home from './pages/home/Page'
 import about from './pages/about/Page'
 import paper from './pages/paper/Page'
-import quote from './pages/quote/Page'
+import blockchain from './pages/blockchain/Page'
 
 function App() {
   const [connected, setConnected] = useState("Connect Wallet")
@@ -22,8 +22,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Body {...home} />} />
         <Route path='/about' element={<Body {...about} />} />
+        <Route path='/blockchain' element={<Body {...blockchain} />} />
         <Route path='/paper' element={<Body {...paper} />} />
-        <Route path='/quote' element={<Body {...quote} />} />
       </Routes>
 
       <Routes location="/*">

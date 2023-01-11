@@ -8,9 +8,15 @@ const Body = ({header, content, img, pageName, imgUrl}) => {
       <p className="content">
         {content}
       </p>
-      <p>
-        <a href={imgUrl}><img className="image" src={img} alt="" /></a>
-      </p>
+      {
+        img !== undefined
+        ? 
+        <p>
+          <a href={imgUrl}><img className="image" src={img} alt="" /></a>
+        </p>
+        :
+        undefined 
+      }
       <Outlet context={{}} />
     </div>
   )
