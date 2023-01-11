@@ -19,7 +19,8 @@ const about = {
             <center><img src={playImg} alt="" /></center>
             <b>Click on image below to see some piano musics I made!</b>
             <center><a href="https://www.youtube.com/channel/UCmEH_lLXrnW_L3n6x_4l1Pg"><img src={pianoImg} alt="" /></a></center>
-            Besides those hobbies, I also love to watch stand-up comedy, my favorite comedians include Louis CK, Dave Chappelle, George Carlin and Jim Jefferies.
+            Besides those hobbies, I also love to watch stand-up comedy, my favorite comedians include 
+            Louis CK, Dave Chappelle, George Carlin, Jim Jefferies and Jimmy O Yang.
             <center><img src={standupImg} alt="" /></center>
             This is a photo of me and my friends.
             <center><img src={msImg} alt="" /></center>
