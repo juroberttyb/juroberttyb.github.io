@@ -112,8 +112,9 @@ ul li {
 .content img {
   aspect-ratio: 1.33;
 
-  min-width: 67%;
-  max-width: 67%;
+  min-width: 55%;
+  max-width: 55%;
+  aspect-ratio: 1;
 
   border-radius: 10%;
   margin: 2%;
@@ -122,6 +123,7 @@ ul li {
 .image {
   min-width: 33%;
   max-width: 33%;
+  
   /* max-height: 20%; */
   width: auto;
   height: auto;
