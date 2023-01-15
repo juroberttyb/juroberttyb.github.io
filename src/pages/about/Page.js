@@ -9,7 +9,7 @@ const about = {
     pageName: "about",
     content: (
         <>
-            During my free time, I enjoy taking a walk, playing piano jazz and watching standup comedy.
+            In my free time, I enjoy taking a walk, playing piano jazz and watching standup comedy.
             Also, I made some ecospheres from time to time, although useless, they look nice anyway.
             <center><img src={eco1Img} alt="" /></center>
             Here is another one, I did not make these, these are sea ecospheres.
