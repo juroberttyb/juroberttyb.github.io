@@ -9,7 +9,7 @@ const blockchain = {
             it would make our world a better place in the long run. <br/><br/>
 
             Despite many bad news and rug pulls in 2022,
-            I see many passionate developers and ethereum node operator communities still working on a better future.
+            I see many passionate developers and ethereum node operator communities still working toward a better future.
             Influenced by them and their vision, not just there trying to make quick money,
             the goal that anyone anyplace anytime can access their funds and a world virtual machine,
             drives me to get involved in the community and try to do my part to help. <br/><br/>
