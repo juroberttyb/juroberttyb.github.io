@@ -23,11 +23,11 @@ const about = {
             Louis CK, Dave Chappelle, George Carlin, Jim Jefferies, and Jimmy O. Yang
             <center><img src={standupImg} alt="" /></center>
             This is a photo of me and my friends.
-            <center><img src={msImg} alt="" /></center>
-            Below are some principles I try my best to live by.<br/><br/>
+            <center><img className='bimg' src={msImg} alt="" /></center>
+            {/* Below are some principles I try my best to live by.<br/><br/>
             <center>If you went back and fixed all the mistakes you've made, you erase yourself - Louis CK</center><br/>
             <center>You got to tell each other the truth and negotiate - Jordan Peterson</center><br/>
-            <center>化繁為簡為智慧，而人所不能不去追尋的，謂之夢想 - Me</center>
+            <center>化繁為簡為智慧，而人所不能不去追尋的，謂之夢想 - Me</center> */}
         </>
     ),
     header: (
