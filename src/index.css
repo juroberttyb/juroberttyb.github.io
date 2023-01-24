@@ -1,0 +1,155 @@
+* {
+  /* box-sizing: border-box; */
+  /* margin: 10px; */
+  
+  font-family: "Lucida Console", "Courier New", monospace;
+  /* font-size: 100%; */
+  
+  padding: 0;
+  background-color: rgb(45, 45, 45);
+  color: rgb(255, 255, 255);
+}
+
+.root {
+}
+
+ul{
+  
+}
+
+.button.connect {
+  appearance: none;
+  background-color: #a2a42e;
+  border: 1px solid rgba(255, 248, 45, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button.connect:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button.connect:hover {
+  background-color: #909227;
+}
+
+.button.connect:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+/* .button.connect:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+} */
+
+/* .button.connect:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+} */
+
+.header {
+  margin: 2%;
+}
+
+.header ul li {
+  display: inline-block;
+  margin: 1.5%;
+  font-weight: bolder;
+  min-width:3%;
+  /* border:1px solid red; */
+  /* font-size: 0; */
+}
+
+.center {
+  text-align: center;
+}
+
+ul {
+}
+
+ul li {
+  display: inline-block;
+  margin: 1.5%;
+  font-weight: bolder;
+  min-width:3%;
+  /* border:1px solid red; */
+}
+
+.page {
+  margin: 2%;
+  text-align: center;
+}
+
+.content {
+  font-size: 125%;
+  line-height: 200%;
+  display: inline-block; 
+  text-align: left;
+  max-width: 60%;
+}
+
+.content img {
+  aspect-ratio: 1.33;
+
+  min-width: 55%;
+  max-width: 55%;
+  aspect-ratio: 1;
+
+  border-radius: 10%;
+  margin: 2%;
+}
+
+.image {
+  min-width: 33%;
+  max-width: 33%;
+  
+  /* max-height: 20%; */
+  width: auto;
+  height: auto;
+  border-radius: 10%;
+}
+
+img:hover{
+  opacity: 0.67; /* it's in pourcentage */
+}
+
+.home {
+
+}
+
+.about {
+
+}
+
+.publication {
+
+}
+
+.blockchain {
+
+}
+
+.footer {
+  margin: 2%;
+}
