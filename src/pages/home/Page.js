@@ -4,8 +4,8 @@ const home = {
     pageName: "home",
     content: (
         <>
-            Me and my friends are always doing or on the way to be doing something interesting.<br/>
-            Currently we are trying to build a trading bot on Ethereum.
+            Me and my friends are always doing or on the way to doing something interesting.<br/>
+            Currently, we are trying to build a trading bot on Ethereum.
         </>
     ),
     header: (
