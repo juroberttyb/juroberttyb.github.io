@@ -117,7 +117,12 @@ ul li {
   aspect-ratio: 1;
 
   border-radius: 10%;
-  margin: 2%;
+  margin: 3%;
+}
+
+.content .bimg {
+  margin-bottom: 0%;
+  margin-top: 3%;
 }
 
 .image {
@@ -146,7 +151,7 @@ img:hover{
 
 }
 
-.blockchain {
+.work {
 
 }
 
