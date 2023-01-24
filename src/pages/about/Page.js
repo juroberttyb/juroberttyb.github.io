@@ -3,7 +3,7 @@ import eco1Img from '../../assets/images/eco1.jpg'
 import eco2Img from '../../assets/images/eco2.jpg'
 import playImg from '../../assets/images/play.png'
 import standupImg from '../../assets/images/standup.jpg'
-import msImg from '../../assets/images/mlab.jpg'
+// import msImg from '../../assets/images/mlab.jpg'
 
 const about = {
     pageName: "about",
@@ -21,9 +21,9 @@ const about = {
             <center><a href="https://www.youtube.com/channel/UCmEH_lLXrnW_L3n6x_4l1Pg"><img src={pianoImg} alt="" /></a></center>
             Besides those hobbies, I also love to watch stand-up comedy. My favorite comedians include
             Louis CK, Dave Chappelle, George Carlin, Jim Jefferies, and Jimmy O. Yang
-            <center><img src={standupImg} alt="" /></center>
-            This is a photo of me and my friends.
-            <center><img className='bimg' src={msImg} alt="" /></center>
+            <center><img className='bimg' src={standupImg} alt="" /></center>
+            {/* This is a photo of me and my friends.
+            <center><img className='bimg' src={msImg} alt="" /></center> */}
             {/* Below are some principles I try my best to live by.<br/><br/>
             <center>If you went back and fixed all the mistakes you've made, you erase yourself - Louis CK</center><br/>
             <center>You got to tell each other the truth and negotiate - Jordan Peterson</center><br/>
