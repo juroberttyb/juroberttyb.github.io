@@ -33,7 +33,7 @@ const work = {
     ),
     header: (
         <>
-            Work
+            Work Life
         </>
     ),
     // img: ethImg,
