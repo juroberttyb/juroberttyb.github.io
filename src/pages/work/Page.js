@@ -10,12 +10,12 @@ const work = {
     pageName: "work",
     content: (
         <>
-            In 2019, I joined a parallel computing lab at National Tsing Hua University.
+            {/* In 2019, I joined a parallel computing lab at National Tsing Hua University.
             <center><img src={nthu} alt="" /></center>
             In my two years at the parallel computing lab, I worked as a software engineer intern at RogersAI.
             <center><img src={rogers} alt="" /></center>
             After I finished my paper at the parallel computing lab, I joined Gallopwave to work on automating car driving.
-            <center><img src={gallop} alt="" /></center>
+            <center><img src={gallop} alt="" /></center> */}
             In 2021, I joined Nabawan, and now we are developing some of the top-ranking apps in Taiwan.
             <center><img className='bimg' src={nabawan} alt="" /></center>
 
