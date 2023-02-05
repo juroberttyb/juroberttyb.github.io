@@ -7,8 +7,8 @@ import Body from './component/Body'
 
 import home from './pages/home/Page'
 import about from './pages/about/Page'
-import paper from './pages/paper/Page'
-import work from './pages/work/Page'
+import piano from './pages/piano/Page'
+import comedy from './pages/comedy/Page'
 
 function App() {
   const [connected, setConnected] = useState("Connect Wallet")
@@ -22,8 +22,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Body {...home} />} />
         <Route path='/about' element={<Body {...about} />} />
-        <Route path='/work' element={<Body {...work} />} />
-        <Route path='/paper' element={<Body {...paper} />} />
+        <Route path='/piano' element={<Body {...piano} />} />
+        <Route path='/comedy' element={<Body {...comedy} />} />
       </Routes>
 
       <Routes location="/*">
