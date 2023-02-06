@@ -4,8 +4,8 @@ const home = {
     pageName: "home",
     content: (
         <>
-            Me and my friends are always doing or on the way to doing something interesting.<br/>
-            Currently, we are building a trading bot on Ethereum.
+            Currently, me and my friends are building a trading bot on Ethereum.<br/>
+            You can get a cute pug NFT on Goerli testnet by connecting metamask wallet!
         </>
     ),
     header: (
