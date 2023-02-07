@@ -4,8 +4,7 @@ const home = {
     pageName: "home",
     content: (
         <>
-            Currently, me and my friends are building a trading bot on Ethereum.<br/>
-            You can get a cute pug NFT on Goerli testnet by connecting metamask wallet!
+            已經開始的旅程，沒有回頭的理由。而所有走過的路，都確是我的足跡。
         </>
     ),
     header: (

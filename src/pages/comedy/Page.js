@@ -10,7 +10,7 @@ const comedy = {
     ),
     header: (
         <>
-            Comedy
+            Stand-up comedy
         </>
     ),
     img: standupImg,

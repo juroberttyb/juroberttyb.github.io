@@ -13,7 +13,7 @@ const piano = {
     ),
     header: (
         <>
-            Piano
+            Me and piano
         </>
     ),
     img: playImg,
