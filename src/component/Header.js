@@ -12,7 +12,7 @@ const Header = ({buttonValue, setButtonValue}) => {
 
     return (
         <header className="header">
-            <ul className="center">
+            <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li><Button value={buttonValue} setValue={setButtonValue} /></li>

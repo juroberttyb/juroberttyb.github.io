@@ -7,7 +7,7 @@ import { useState } from 'react'
 import Header from './component/Header'
 import Footer from './component/Footer'
 import Body from './component/Body'
-import Resume from './component/Resume'
+import Resume from './component/Resume/Resume'
 
 import home from './pages/home/Page'
 import about from './pages/about/Page'
@@ -17,7 +17,6 @@ import comedy from './pages/comedy/Page'
 function App() {
   const [showResume, setShowResume] = useState("Show Resume")
   
-  // Routes location="/*"
   return (
     <>
       {
