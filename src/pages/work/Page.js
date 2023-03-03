@@ -1,9 +1,3 @@
-// import ethImg from '../../assets/images/eth.png'
-
-// import ntoulab from '../../assets/images/ntoulab.jpg'
-// import nthu from '../../assets/images/nthu.jpg'
-// import rogers from '../../assets/images/rogers.jpg'
-// import gallop from '../../assets/images/gallop.png'
 import nabawan from '../../assets/images/nabawan.jpg'
 
 const work = {
