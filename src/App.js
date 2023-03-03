@@ -15,6 +15,14 @@ function App() {
 
   return (
     <>
+      {/* <html>
+        <body>
+          <div>
+            hi
+          </div>
+        </body>
+      </html> */}
+
       <Routes location="/*">
         <Route path='/*' element={<Header connected={connected} setConnected={setConnected} />} />
       </Routes>
