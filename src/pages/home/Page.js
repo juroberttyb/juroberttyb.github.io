@@ -1,4 +1,4 @@
-import meImg from '../../assets/images/me.jpg'
+import pianoImg from '../../assets/images/piano.jpg'
 
 const home = {
     pageName: "home",
@@ -12,7 +12,7 @@ const home = {
             Hi, I'm Robert
         </>
     ),
-    img: meImg
+    img: pianoImg
 }
 
 export default home

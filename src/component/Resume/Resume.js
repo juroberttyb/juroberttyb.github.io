@@ -1,25 +1,34 @@
 import React from 'react'
 
 import './Resume.css';
+import cap from '../../assets/images/cap.jpg'
+import phone from '../../assets/images/phone.jpg'
+import mail from '../../assets/images/mail.jpg'
+import linkedin from '../../assets/images/linkedin.jpg'
+import github from '../../assets/images/github.jpg'
+import web from '../../assets/images/web.jpg'
 
 const Resume = () => {
-  document.body.style = 'background: red;';
-
   return (
     <>
       <div id='resume_header' class='block'>
           <div id='basic_info'>
             <div id='name'>Robert Chu</div>
-            <p>M.S., Computer Science, <a href='https://nthu-en.site.nthu.edu.tw/'>National Tsing Hua University</a>, 2021</p>
-            <p>B.S., Computer Science and Engineering, <a href='https://english.ntou.edu.tw/?Lang=en'>National Taiwan Ocean University</a>, 2019</p>
+            <div id='education'>
+              <img id="cap" src={cap} alt="" />
+              <div>
+                <p>M.S., Computer Science, <a href='https://nthu-en.site.nthu.edu.tw/'>National Tsing Hua University</a>, 2021</p>
+                <p>B.S., Computer Science and Engineering, <a href='https://english.ntou.edu.tw/?Lang=en'>National Taiwan Ocean University</a>, 2019</p>
+              </div>
+            </div>
           </div>
           <div id='contact'>
             <ul>
-              <li>(+886)972435608</li>
-              <li>juroberttyb@gmail.com</li>
-              <li><a href='https://www.linkedin.com/in/robert-chu-5b66081a9/'>Robert Chu</a></li>
-              <li><a href='https://github.com/juroberttyb'>juroberttyb</a></li>
-              <li><a href='https://robertchu.xyz'>website</a></li>
+              <li><img class="prefix_img" src={phone} alt="" />(+886)972435608</li>
+              <li><img class="prefix_img" src={mail} alt="" />juroberttyb@gmail.com</li>
+              <li><img class="prefix_img" src={linkedin} alt="" /><a href='https://www.linkedin.com/in/robert-chu-5b66081a9/'>Robert Chu</a></li>
+              <li><img class="prefix_img" src={github} alt="" /><a href='https://github.com/juroberttyb'>juroberttyb</a></li>
+              <li><img class="prefix_img" src={web} alt="" /><a href='https://robertchu.xyz'>website</a></li>
             </ul>
           </div>
       </div>
@@ -116,8 +125,8 @@ const Resume = () => {
         <div class='highlight'>Publication</div>
         <hr></hr>
         <div class='inner_block'>
-          <div class='highlight'><a href='https://arxiv.org/pdf/2112.03690.pdf'>Low-rank tensor decomposition for compression</a></div>
-          <p>The paper is published at AAAI‑22 workshop, cited by 5.</p>
+          <div class='highlight'><a href='https://arxiv.org/pdf/2112.03690.pdf'>Tensor decomposition for compression</a></div>
+          <p>The paper is published at <a href='https://practical-dl.github.io/2022/index'>AAAI‑22 workshop</a>, cited by 5.</p>
         </div>
       </div>
 
