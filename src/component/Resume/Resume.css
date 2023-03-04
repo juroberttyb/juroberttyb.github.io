@@ -27,13 +27,18 @@
 }
 
 #cap {
+    min-width: 3%;
+    min-height: 3%;
     max-width: 3%;
     max-height: 3%;
     margin-right: 1%;
 }
 
 .prefix_img {
+    margin: 0;
     margin-right: 1%;
+    min-width: 3%;
+    min-height: 3%;
     max-width: 3%;
     max-height: 3%;
 }
