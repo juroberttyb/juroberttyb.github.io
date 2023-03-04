@@ -4,24 +4,40 @@
   padding: 0;
   margin: 0;
   background-color: #fff;
-  color: #333;
+  /* color: #333; */
+}
+
+a {
+  text-decoration: none;
+  /* font-size: 1.1rem; */
+  /* color: lightblue; */
+}
+
+a:visited { 
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover { 
+  text-decoration: none; 
+  color: lightblue;
 }
 
 .button.connect {
   appearance: none;
-  background-color: #c3a554;
+  background-color: lightblue;
   border: 1px solid rgba(255, 248, 45, 0.15);
   border-radius: 6px;
   box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
   box-sizing: border-box;
-  color: #333;
+  color: white;
   cursor: pointer;
   display: inline-block;
   font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 20px;
-  padding: 6px 16px;
+  padding: 10px 20px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -38,7 +54,7 @@
 }
 
 .button.connect:hover {
-  background-color: #909227;
+  background-color: blue;
 }
 
 .button.connect:focus {
@@ -54,6 +70,7 @@
   display: inline-block;
   margin: 1.25%;
   font-weight: bolder;
+  font-size: 1.15rem;
 }
 
 .page {
