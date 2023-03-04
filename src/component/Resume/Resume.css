@@ -32,6 +32,7 @@
 }
 
 .block ul {
+    margin-top: 0.5%;
     margin-left: 2.5%;
     font-size: 0.7rem;
 }
@@ -60,6 +61,9 @@
 .highlight {
     display: inline-block;
     font-size: 1.15rem;
+}
+
+.bold {
     font-weight: bold;
 }
 
