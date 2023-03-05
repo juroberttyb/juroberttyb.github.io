@@ -1,5 +1,5 @@
 #name {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -78,18 +78,22 @@
 .duration {
     margin-top: 3%;
     font-size: 0.7rem;
+    text-align: end;
 }
 
 .location {
     margin-top: 2.5%;
     font-size: 0.7rem;
-    float: right;
+    text-align: end;
 }
-
 
 .highlight {
     display: inline-block;
     font-size: 1.15rem;
+}
+
+.highlight_inner {
+    margin-top: 0.1%;
 }
 
 .bold {
