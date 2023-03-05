@@ -26,9 +26,9 @@ const Resume = () => {
             <ul>
               <li><img class="prefix_img" src={phone} alt="" />(+886)972435608</li>
               <li><img class="prefix_img" src={mail} alt="" />juroberttyb@gmail.com</li>
-              <li><img class="prefix_img" src={linkedin} alt="" /><a href='https://www.linkedin.com/in/robert-chu-5b66081a9/'>Robert Chu</a></li>
-              <li><img class="prefix_img" src={github} alt="" /><a href='https://github.com/juroberttyb'>juroberttyb</a></li>
-              <li><img class="prefix_img" src={web} alt="" /><a href='https://robertchu.xyz'>website</a></li>
+              <li><a href='https://www.linkedin.com/in/robert-chu-5b66081a9/'><img class="prefix_img" src={linkedin} alt="" />Linkedin</a></li>
+              <li><a href='https://github.com/juroberttyb'><img class="prefix_img" src={github} alt="" />Github</a></li>
+              <li><a href='https://robertchu.xyz'><img class="prefix_img" src={web} alt="" />Website</a></li>
             </ul>
           </div>
       </div>
@@ -53,7 +53,7 @@ const Resume = () => {
               <p>Go/Python/Gin/SQL/Docker/Compose/Kubernetes/Helm/GCP/Redis/PubSub/CICD/Git</p>
             </div>
             <div>
-              <div class='duration'>May 2022 ‑ Present</div>
+              <div class='duration'>May 2022 - Present</div>
               <div class='location'>Taipei, Taiwan</div>
             </div>
           </div>
