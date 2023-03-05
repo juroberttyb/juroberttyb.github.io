@@ -1,17 +1,17 @@
 import React from 'react'
 
-const Button = ({connected, setConnected}) => {
+const Button = ({value, setValue}) => {
     const onClick = () => {
-        setConnected(
+        setValue(
             () => {
-                return "Connected"
+                return "Showing Resume"
             }
         )
     }
 
   return (
     <button className="button connect" onClick={onClick}>
-        {connected}
+        {value}
     </button>
   )
 }

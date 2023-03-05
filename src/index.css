@@ -1,37 +1,43 @@
 * {
-  /* box-sizing: border-box; */
-  /* margin: 10px; */
-  
   font-family: "Lucida Console", "Courier New", monospace;
-  /* font-size: 100%; */
   
   padding: 0;
-  background-color: rgb(45, 45, 45);
-  color: rgb(255, 255, 255);
+  margin: 0;
+  background-color: lightgray;
+  /* color: #ffffff; */
 }
 
-.root {
+a {
+  text-decoration: none;
+  /* font-size: 1.1rem; */
+  color: blue;
 }
 
-ul{
-  
+a:visited { 
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover { 
+  text-decoration: none; 
+  color: lightblue;
 }
 
 .button.connect {
   appearance: none;
-  background-color: #a2a42e;
+  background-color: lightblue;
   border: 1px solid rgba(255, 248, 45, 0.15);
   border-radius: 6px;
   box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
   box-sizing: border-box;
-  color: #fff;
+  color: white;
   cursor: pointer;
   display: inline-block;
   font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 20px;
-  padding: 6px 16px;
+  padding: 10px 20px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -48,7 +54,7 @@ ul{
 }
 
 .button.connect:hover {
-  background-color: #909227;
+  background-color: lightcyan;
 }
 
 .button.connect:focus {
@@ -56,48 +62,18 @@ ul{
   outline: none;
 }
 
-/* .button.connect:disabled {
-  background-color: #94d3a2;
-  border-color: rgba(27, 31, 35, .1);
-  color: rgba(255, 255, 255, .8);
-  cursor: default;
-} */
-
-/* .button.connect:active {
-  background-color: #298e46;
-  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
-} */
-
-.header {
-  margin: 2%;
-}
-
-.header ul li {
-  display: inline-block;
-  margin: 1.5%;
-  font-weight: bolder;
-  min-width:3%;
-  /* border:1px solid red; */
-  /* font-size: 0; */
-}
-
-.center {
+.footer, .header {
   text-align: center;
 }
 
-ul {
-}
-
-ul li {
+.footer ul li, .header ul li {
   display: inline-block;
-  margin: 1.5%;
+  margin: 1.25%;
   font-weight: bolder;
-  min-width:3%;
-  /* border:1px solid red; */
+  font-size: 1.15rem;
 }
 
 .page {
-  margin: 2%;
   text-align: center;
 }
 
@@ -107,14 +83,12 @@ ul li {
   display: inline-block; 
   text-align: left;
   max-width: 60%;
+  margin: 1%;
 }
 
 .content img {
-  aspect-ratio: 1.33;
-
   min-width: 55%;
   max-width: 55%;
-  aspect-ratio: 1;
 
   border-radius: 10%;
   margin: 3%;
@@ -129,32 +103,11 @@ ul li {
   min-width: 33%;
   max-width: 33%;
   
-  /* max-height: 20%; */
   width: auto;
   height: auto;
   border-radius: 10%;
 }
 
 img:hover{
-  opacity: 0.67; /* it's in pourcentage */
-}
-
-.home {
-
-}
-
-.about {
-
-}
-
-.publication {
-
-}
-
-.work {
-
-}
-
-.footer {
-  margin: 2%;
+  opacity: 0.67;
 }
