@@ -54,7 +54,7 @@ const Resume = () => {
           <div class='block_item'>
             <div>
               <div class='highlight bold'>Backend Developer</div>, <div class='after_highlight'><a href='https://apps.apple.com/tw/app/clos-burgundy-dictionary/id1568106896'>Nabawan</a></div>,  <div class='after_highlight'>App Backend Team</div>
-              <p class='highlight_inner'>Go/Python/Gin/SQL/Docker/Docker Compose/Kubernetes/Helm/GCP/Redis/PubSub/CICD/Git</p>
+              <p class='highlight_inner'>Go/Python/Gin/SQL/Docker/Compose/Kubernetes/Helm/GCP/Redis/PubSub/CICD/Git</p>
             </div>
             <div>
               <div class='duration'>May 2022 - Present</div>
@@ -93,18 +93,19 @@ const Resume = () => {
             </div>
           </div>
           <ul>
-            <li>Design and develop a <a href='https://drive.google.com/file/d/1uT08PYlLLETs8jVc3j8V9AnyabNsUCwv/view'>distributed architecture</a> to speed up data processing</li>
-            <li>Develop a data generator to aggregate different data processing functions</li>
+            <li>Design and develop a <a href='https://drive.google.com/file/d/1uT08PYlLLETs8jVc3j8V9AnyabNsUCwv/view'>distributed architecture</a> to speed up ML training pipeline</li>
+            <li>Develop tools for testing the robustness and correctness of ML models</li>
+            <li>Develop and maintain ONNX generation pipelines for different production platforms</li>
+            <li>Develop and maintain data generators for different training pipelines</li>
             <li>Troubleshooting network, OS, and application issues for development and production environments</li>
-            <li>Automating infrastructure build‑outs and deployments for data storage and development environments</li>
-            <li>Build and maintain tools and libraries for development, continuous integration, and system operations</li>
+            <li>Automating infrastructure build‑outs for development environments</li>
+            <li>Build and maintain tools and libraries for development and continuous integration</li>
             <li>Design, build, and maintain a high‑availability development environment</li>
             <li>Perform regular maintenance and upgrades on production systems</li>
-            <li>Own and maintain self‑hosted Linux servers</li>
+            <li>Own and maintain self‑hosted Linux servers and containers</li>
             <li>Perform testing and evaluation across the production release</li>
             <li>Design and implement a git‑based code management strategy that supports multiple environments for development</li>
-            <li>Debug, optimize code, and automate routine tasks</li>
-            <li>Container creation, orchestration, and Linux server management</li>
+            <li>Debug, optimize code, and automate routine tasks like data labeling and experiments</li>
           </ul>
         </div>
 
@@ -113,8 +114,8 @@ const Resume = () => {
         <div class='inner_block'>
             <div class='block_item'>
             <div>
-              <div class='highlight bold'>Algorithm Intern</div>, <div class='after_highlight'><a href='http://www.rogersai.com/home_eng.html'>Rogersai</a></div>,  <div class='after_highlight'>Web Backend Team</div>
-              <p class='highlight_inner'>Go/Python/Linux/Docker/Git</p>
+              <div class='highlight bold'>Algorithm Intern</div>, <div class='after_highlight'><a href='http://www.rogersai.com/home_eng.html'>Rogersai</a></div>,  <div class='after_highlight'>Algorithm Team</div>
+              <p class='highlight_inner'>Python/Linux/Docker/Git</p>
             </div>
             <div>
               <div class='duration'>Jul 2020 ‑ Aug 2020</div>
@@ -123,8 +124,8 @@ const Resume = () => {
           </div>
         </div>
         <ul>
-          <li>Develop and integrate facial login API into production release</li>
           <li>Design and develop algorithms to accelerate human face detection</li>
+          {/* <li>Develop and integrate facial login into production releases</li> */}
         </ul>
       </div>
 
