@@ -1,13 +1,11 @@
-import ecoImg from '../../assets/images/eco.jpg'
+import playImg from '../../assets/images/play.png'
 
 const about = {
     pageName: "about",
     content: (
         <>
-            Me and my friends are always doing or on the way to doing something interesting.<br/>
-            Currently, we are building a trading bot on Ethereum.<br/><br/>
-            In my free time, I enjoy taking a walk, playing piano jazz, and watching stand-up comedy.<br/>
-            I also make ecosystems from time to time.
+            In my free time, I enjoy taking a walk, playing the piano, and watching stand-up comedy.<br/>
+            I also love to watch Rick and Morty episodes.
         </>
     ),
     header: (
@@ -15,7 +13,7 @@ const about = {
             About Me
         </>
     ),
-    img: ecoImg,
+    img: playImg,
     // imgUrl: "https://www.youtube.com/channel/UCmEH_lLXrnW_L3n6x_4l1Pg",
 }
 

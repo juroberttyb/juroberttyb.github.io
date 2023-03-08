@@ -14,10 +14,10 @@ const Header = ({buttonValue, setButtonValue}) => {
         <header className="header">
             <ul>
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
                 <li><Button value={buttonValue} setValue={setButtonValue} /></li>
-                <li><Link to="/piano">Piano</Link></li>
-                <li><Link to="/comedy">Comedy</Link></li>
+                <li><Link to="/about">About</Link></li>
+                {/* <li><Link to="/piano">Piano</Link></li> */}
+                {/* <li><Link to="/comedy">Comedy</Link></li> */}
             </ul>
         </header>
     )

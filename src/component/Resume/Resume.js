@@ -33,6 +33,8 @@ const Resume = () => {
           </div>
       </div>
 
+
+
       <div id='autobiography' class='block'>
         <div class='highlight'>Autobiography</div>
         <hr></hr>
@@ -43,14 +45,16 @@ const Resume = () => {
         </div>
       </div>
 
+
+
       <div id='experience' class='block'>
         <div class='highlight'>Experience</div>
         <hr></hr>
         <div class='inner_block'>
           <div class='block_item'>
             <div>
-              <div class='highlight bold'>Backend Developer</div>, <div class='after_highlight'><a href='https://apps.apple.com/tw/app/clos-burgundy-dictionary/id1568106896'>Nabawan</a></div>,  <div class='after_highlight'>App Backend</div>
-              <p class='highlight_inner'>Go/Python/Gin/SQL/Docker/Compose/Kubernetes/Helm/GCP/Redis/PubSub/CICD/Git</p>
+              <div class='highlight bold'>Backend Developer</div>, <div class='after_highlight'><a href='https://apps.apple.com/tw/app/clos-burgundy-dictionary/id1568106896'>Nabawan</a></div>,  <div class='after_highlight'>App Backend Team</div>
+              <p class='highlight_inner'>Go/Python/Gin/SQL/Docker/Docker Compose/Kubernetes/Helm/GCP/Redis/PubSub/CICD/Git</p>
             </div>
             <div>
               <div class='duration'>May 2022 - Present</div>
@@ -74,10 +78,13 @@ const Resume = () => {
             <li>Automate continuous integration with docker compose and workflow on Github</li>
           </ul>
         </div>
+
+
+
         <div class='inner_block'>
           <div class='block_item'>
             <div>
-              <div class='highlight bold'>Software Engineer</div>, <div class='after_highlight'><a href='http://www.gallopwave.com/en/'>Gallopwave</a></div>,  <div class='after_highlight'>Data Backend/DevOps</div>
+              <div class='highlight bold'>MLOps Engineer</div>, <div class='after_highlight'><a href='http://www.gallopwave.com/en/'>Gallopwave</a></div>,  <div class='after_highlight'>Machine Learning DevOps</div>
               <p class='highlight_inner'>Go/Python/C++/Shell/Linux/Docker/GCP/CICD/Git</p>
             </div>
             <div>
@@ -100,11 +107,14 @@ const Resume = () => {
             <li>Container creation, orchestration, and Linux server management</li>
           </ul>
         </div>
+
+
+
         <div class='inner_block'>
             <div class='block_item'>
             <div>
-              <div class='highlight bold'>Software Engineer Intern</div>, <div class='after_highlight'><a href='http://www.rogersai.com/home_eng.html'>RogersAI</a></div>,  <div class='after_highlight'>App Backend</div>
-              <p class='highlight_inner'>Go/Python/Shell/Linux/Docker/Git</p>
+              <div class='highlight bold'>Algorithm Intern</div>, <div class='after_highlight'><a href='http://www.rogersai.com/home_eng.html'>Rogersai</a></div>,  <div class='after_highlight'>Web Backend Team</div>
+              <p class='highlight_inner'>Go/Python/Linux/Docker/Git</p>
             </div>
             <div>
               <div class='duration'>Jul 2020 ‑ Aug 2020</div>
@@ -112,7 +122,13 @@ const Resume = () => {
             </div>
           </div>
         </div>
+        <ul>
+          <li>Develop and integrate facial login API into production release</li>
+          <li>Design and develop algorithms to accelerate human face detection</li>
+        </ul>
       </div>
+
+
 
       <div id='projects' class='block'>
         <div class='highlight'>Projects</div>
@@ -125,11 +141,13 @@ const Resume = () => {
             </div>
             <div>
               <div class='duration'>Nov 2022 - Present</div>
-              <div class='location'>Taipei, Taiwan</div>
+              {/* <div class='location'>Taipei, Taiwan</div> */}
             </div>
           </div>
         </div>
       </div>
+
+
 
       <div id='awards' class='block'>
         <div class='highlight'>Awards</div>

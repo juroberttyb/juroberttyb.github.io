@@ -4,7 +4,8 @@ const home = {
     pageName: "home",
     content: (
         <>
-            If you went back and fixed all the mistakes you've made, you erase yourself. --- Louis CK
+            Me and my friends are always doing or on the way to doing something interesting.<br/>
+            Currently, we are building a trading bot.
         </>
     ),
     header: (
