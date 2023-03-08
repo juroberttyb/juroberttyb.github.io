@@ -36,7 +36,7 @@ const Resume = () => {
 
 
       <div id='autobiography' class='block'>
-        <div class='highlight'>Autobiography</div>
+        <div class='highlight block_category'>Autobiography</div>
         <hr></hr>
         <div class='inner_block'>
           <p>I am a backend developer at Nabawan, whose founder is the co‑founder of <a href='https://17.live/en-US'>17LIVE</a>.</p>
@@ -48,7 +48,7 @@ const Resume = () => {
 
 
       <div id='experience' class='block'>
-        <div class='highlight'>Experience</div>
+        <div class='highlight block_category'>Experience</div>
         <hr></hr>
         <div class='inner_block'>
           <div class='block_item'>
@@ -70,7 +70,7 @@ const Resume = () => {
             <li>Develop a favorite collection API for users to collect favorite posts in Apen/NStation/Phar/TWPD</li>
             <li>Refactor backend of Apen to follow API/Service/Gateway/Store/Model best practice</li>
             <li>Integrate Google Login into the login API for users in MediTalk/<a href='https://apps.apple.com/tw/app/clos-burgundy-dictionary/id1568106896'>Clos</a></li>
-            <li>ntegrate Google Play 3rd‑party payment into In‑App Purchase API for users to buy products in MediTalk/Clos</li>
+            <li>Integrate Google Play 3rd‑party payment into In‑App Purchase API for users to buy products in MediTalk/Clos</li>
             <li>Integrate Google Cloud Pub/Sub service into In‑App Purchase API for users to buy MediTalk/Clos subscriptions</li>
             <li>Integrate Google Cloud Logging service into backend for engineers to debug and monitor services</li>
             <li>Integrate Redis cache into services to improve http response time</li>
@@ -122,22 +122,22 @@ const Resume = () => {
               <div class='location'>Taipei, Taiwan</div>
             </div>
           </div>
+          <ul>
+            <li>Design and develop algorithms to accelerate human face detection</li>
+            {/* <li>Develop and integrate facial login into production releases</li> */}
+          </ul>
         </div>
-        <ul>
-          <li>Design and develop algorithms to accelerate human face detection</li>
-          {/* <li>Develop and integrate facial login into production releases</li> */}
-        </ul>
       </div>
 
 
 
       <div id='projects' class='block'>
-        <div class='highlight'>Projects</div>
+        <div class='highlight block_category'>Projects</div>
         <hr></hr>
         <div class='inner_block'>
         <div class='block_item'>
             <div>
-              <a href='https://robertchu.xyz'>Personal Website</a>
+              <div class='highlight'><a href='https://robertchu.xyz'>Personal Website</a></div>
               <p class='highlight_inner'>A personal website built with React. This resume is part of the website.</p>
             </div>
             <div>
@@ -151,13 +151,13 @@ const Resume = () => {
 
 
       <div id='awards' class='block'>
-        <div class='highlight'>Awards</div>
+        <div class='highlight block_category'>Awards</div>
         <hr></hr>
         <div class='inner_block'>
           <div class='block_item'>
             <div>
-              <a href='https://arxiv.org/pdf/2112.03690.pdf'>Paper</a> accepted at <a href='https://practical-dl.github.io/2022/index'>AAAI‑22 Workshop</a>
-              <p class='highlight_inner'>The paper proposed a method using tensor decomposition for compression, cited by 5.</p>
+              <div class='highlight'><a href='https://arxiv.org/pdf/2112.03690.pdf'>Paper</a> accepted at <a href='https://practical-dl.github.io/2022/index'>AAAI‑22 Workshop</a></div>
+              <p class='highlight_inner'>The paper proposed a method for tensor compression, cited by 5.</p>
             </div>
             <div>
               <div class='duration'>Mar 2022</div>
