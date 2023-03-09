@@ -62,19 +62,19 @@ const Resume = () => {
             </div>
           </div>
           <ul>
-            <li>Develop a messaging API for users chatting in <a href='https://apps.apple.com/tw/app/mediatalk-dont-be-shy/id1599874400'>MediTalk</a></li>
-            <li>Develop a user recommendation API for user matching in MediTalk</li>
-            <li>Develop a job verification API with Sendgrid to allow users to display job titles in MediTalk</li>
-            <li>Develop MediTalk as a microservice for users in <a href='https://apps.apple.com/tw/app/apen/id1434492280'>Apen</a>/<a href='https://apps.apple.com/tw/app/%E8%AD%B7%E7%90%86%E7%AB%99/id1523414575'>NStation</a>/<a href='https://apps.apple.com/us/app/%E8%97%A5%E5%B8%AB%E5%9C%88/id1661519539'>Phar</a>/<a href='https://apps.apple.com/au/app/%E9%9D%A0%E5%8C%97%E8%AD%A6%E5%AF%9F-%E8%AD%A6%E5%AF%9F%E7%99%BE%E7%A7%91%E5%85%A8%E6%9B%B8/id1637401189'>TWPD</a></li>
-            <li>Develop a company scoring microservice for users to score their working environments in NStationv</li>
-            <li>Develop a favorite collection API for users to collect favorite posts in Apen/NStation/Phar/TWPD</li>
-            <li>Refactor backend of Apen to follow API/Service/Gateway/Store/Model best practice</li>
-            <li>Integrate Google Login into the login API for users in MediTalk/<a href='https://apps.apple.com/tw/app/clos-burgundy-dictionary/id1568106896'>Clos</a></li>
-            <li>Integrate Google Play 3rd‑party payment into In‑App Purchase API for users to buy products in MediTalk/Clos</li>
-            <li>Integrate Google Cloud Pub/Sub service into In‑App Purchase API for users to buy MediTalk/Clos subscriptions</li>
+            <li>Develop a messaging API for users to chat in <a href='https://apps.apple.com/tw/app/mediatalk-dont-be-shy/id1599874400'>MediTalk</a></li>
+            <li>Develop a user recommendation API for users to meet new users in MediTalk</li>
+            <li>Develop a job verification API with Sendgrid that allows users to display job titles in MediTalk</li>
+            <li>Develop MediTalk as a microservice for users of other apps to use</li>
+            <li>Develop a company scoring microservice for users to score their working environments</li>
+            <li>Develop a favorite collection API for users to collect their favorite posts in <a href='https://apps.apple.com/tw/app/apen/id1434492280'>Apen</a>/<a href='https://apps.apple.com/tw/app/%E8%AD%B7%E7%90%86%E7%AB%99/id1523414575'>NStation</a>/<a href='https://apps.apple.com/us/app/%E8%97%A5%E5%B8%AB%E5%9C%88/id1661519539'>Phar</a>/<a href='https://apps.apple.com/au/app/%E9%9D%A0%E5%8C%97%E8%AD%A6%E5%AF%9F-%E8%AD%A6%E5%AF%9F%E7%99%BE%E7%A7%91%E5%85%A8%E6%9B%B8/id1637401189'>TWPD</a></li>
+            <li>Refactor the backend of Apen to follow API/Service/Gateway/Store/Model best practice architecture</li>
+            <li>Integrate Google Login into login API for users in MediTalk and <a href='https://apps.apple.com/tw/app/clos-burgundy-dictionary/id1568106896'>Clos</a></li>
+            <li>Integrate Google Play 3rd-party payment into In-App Purchase API for users to buy products in MediTalk and Clos</li>
+            <li>Integrate Google Cloud Pub/Sub service into In-App Purchase API for users to buy subscriptions in MediTalk and Clos</li>
             <li>Integrate Google Cloud Logging service into backend for engineers to debug and monitor services</li>
-            <li>Integrate Redis cache into services to improve http response time</li>
-            <li>Write unit and integration tests to raise the coverage of the API package from 0% to 68%</li>
+            <li>Develop and integrate Redis caching into services to improve http response time</li>
+            <li>Write unit and integration tests to raise the test coverage of API package from 0% to 74%</li>
             <li>Automate continuous integration with docker compose and workflow on Github</li>
           </ul>
         </div>
