@@ -3,6 +3,30 @@
     /* font-weight: bold; */
 }
 
+#resume {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+#resume hr {
+    background: transparent;
+    border-top: solid 1px #aaa;
+    margin-bottom: 1.5%;
+}
+
+#resume a {
+    text-decoration: none;
+    color: blue;
+}
+  
+#resume a:visited { 
+    text-decoration: none;
+    color: blue;
+}
+
 #resume_header {
     display: flex;
     justify-content: space-between;
@@ -30,8 +54,13 @@
     display: flex;
 }
 
+#education div {
+    margin-top: 1%;
+    font-size: 0.63rem;
+}
+
 #education div p {
-    font-size: 0.65rem;
+    font-size: 0.63rem;
 }
 
 #cap {

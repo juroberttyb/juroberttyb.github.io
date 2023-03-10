@@ -4,10 +4,10 @@ import './index.css';
 
 import { Route, Routes } from 'react-router-dom'
 import { useState } from 'react'
-import Header from './component/Header'
-import Footer from './component/Footer'
+import Header from './component/header/header'
+import Footer from './component/footer/footer'
 import Body from './component/Body'
-import Resume from './component/Resume/Resume'
+import Resume from './component/resume/resume'
 
 import home from './pages/home/Page'
 import about from './pages/about/Page'

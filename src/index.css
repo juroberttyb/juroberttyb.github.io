@@ -3,29 +3,37 @@
   
   padding: 0;
   margin: 0;
-  background-color: lightgray;
-  /* color: #ffffff; */
+  border: 0;
+}
+
+body {
+  background-color: rgb(19, 26, 42);
+  color: white;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 a {
-  text-decoration: none;
-  /* font-size: 1.1rem; */
-  color: blue;
+  color: rgb(255, 255, 255);
 }
 
 a:visited { 
-  text-decoration: none;
-  color: blue;
+  color: rgb(255, 255, 255);
 }
 
 a:hover { 
-  text-decoration: none; 
   color: lightblue;
 }
 
 .button.connect {
   appearance: none;
-  background-color: lightblue;
+  background-color: #4c82fb;
   border: 1px solid rgba(255, 248, 45, 0.15);
   border-radius: 6px;
   box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
@@ -54,7 +62,7 @@ a:hover {
 }
 
 .button.connect:hover {
-  background-color: lightcyan;
+  background-color: rgb(90, 140, 247);
 }
 
 .button.connect:focus {
@@ -62,19 +70,9 @@ a:hover {
   outline: none;
 }
 
-.footer, .header {
+div.page {
   text-align: center;
-}
-
-.footer ul li, .header ul li {
-  display: inline-block;
-  margin: 1.25%;
-  font-weight: bolder;
-  font-size: 1.15rem;
-}
-
-.page {
-  text-align: center;
+  margin-top: 7.5%;
 }
 
 .content {
@@ -83,7 +81,7 @@ a:hover {
   display: inline-block; 
   text-align: left;
   max-width: 60%;
-  margin: 1%;
+  margin: 2%;
 }
 
 .content img {

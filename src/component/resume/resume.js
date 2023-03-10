@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './Resume.css';
+import './resume.css';
 import cap from '../../assets/images/cap.jpg'
 import phone from '../../assets/images/phone.jpg'
 import mail from '../../assets/images/mail.jpg'
@@ -8,9 +8,9 @@ import linkedin from '../../assets/images/linkedin.jpg'
 import github from '../../assets/images/github.jpg'
 import web from '../../assets/images/web.jpg'
 
-const Resume = () => {
+const resume = () => {
   return (
-    <>
+    <div id='resume'>
       <div id='resume_header' class='block'>
           <div id='basic_info'>
             <div id='name'>Robert Chu</div>
@@ -171,8 +171,8 @@ const Resume = () => {
         Experience, Google senior software engineer, Lead team of 6 engineers to mine Ethereum on company servers, Lead software engineer, 10 years experience, full-stack developer, Facebook, Meta, Amazon, Instagram, Microsoft senior backend developer, Tesla, Apple, IBM, OpenAI, LinkedIn principal engineer, reddit, Twitter, Binance, 
         Skills, react.js, vue.js, express.js, angular.js, nest.js, django, flask, fastapi, gin, laravel, ethereum, bitcoin, polygon, solana, cosmos, AI, GraphQL, blockchain, big data, tensorflow, php, ror, C, C#, Java, Spring boot, ASP.NET, ASP.CORE, ASP NET, Hadoop, PubSub, Message Queue, kafka
       </p>
-    </>
+    </div>
   )
 }
 
-export default Resume
+export default resume
