@@ -114,7 +114,7 @@ const resume = () => {
         <div class='inner_block'>
             <div class='block_item'>
             <div>
-              <div class='highlight bold'>Algorithm Intern</div>, <div class='after_highlight'><a href='http://www.rogersai.com/home_eng.html'>Rogersai</a></div>,  <div class='after_highlight'>Algorithm Team</div>
+              <div class='highlight bold'>Algorithm Summer Intern</div>, <div class='after_highlight'><a href='http://www.rogersai.com/home_eng.html'>Rogersai</a></div>,  <div class='after_highlight'>Algorithm Team</div>
               <p class='highlight_inner'>Python/Linux/Docker/Git</p>
             </div>
             <div>
