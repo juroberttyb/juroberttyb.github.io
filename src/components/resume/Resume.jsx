@@ -8,7 +8,7 @@ import linkedin from '../../assets/images/linkedin.jpg'
 import github from '../../assets/images/github.jpg'
 import web from '../../assets/images/web.jpg'
 
-const resume = () => {
+const Resume = () => {
   return (
     <div id='resume'>
       <div id='resume_header' class='block'>
@@ -175,4 +175,4 @@ const resume = () => {
   )
 }
 
-export default resume
+export default Resume

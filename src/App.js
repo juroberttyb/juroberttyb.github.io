@@ -1,22 +1,18 @@
 // import React from 'react'
 
-import './index.css';
+import './App.css';
 
 import { Route, Routes } from 'react-router-dom'
 import { useState } from 'react'
-import Header from './component/header/header'
-import Footer from './component/footer/footer'
-import Body from './component/Body'
-import Resume from './component/resume/resume'
 
-import home from './pages/home/Page'
-import about from './pages/about/Page'
+import { Header, Footer, Page, Resume} from './components'
+import { Home, Contact } from './pages'
 
 function App() {
   const [showResume, setShowResume] = useState("Show Resume")
   
   return (
-    <>
+    <div>
       {
         showResume === "Show Resume" &&
         <Routes location="/*">
@@ -27,8 +23,8 @@ function App() {
       {
         showResume === "Show Resume" &&
         <Routes>
-          <Route path='/' element={<Body {...home} />} />
-          <Route path='/about' element={<Body {...about} />} />
+          <Route path='/' element={<Page {...Home} />} />
+          <Route path='/contact' element={<Page {...Contact} />} />
         </Routes>
       }
 
@@ -45,7 +41,7 @@ function App() {
           <Route path='/*' element={<Resume />} />
         </Routes>
       }
-    </>
+    </div>
   );
 }
 

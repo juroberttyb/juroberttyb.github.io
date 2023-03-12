@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './button.css'
+
 const Button = ({value, setValue}) => {
     const onClick = () => {
         setValue(

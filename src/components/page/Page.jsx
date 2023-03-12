@@ -1,22 +1,22 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 
-const Body = ({header, content, img, pageName, imgUrl}) => {
+import './page.css'
+
+const Page = ({header, text, img, imgUrl}) => {
   return (
-    <div className={pageName+" page"}>
-      <h1>{header}</h1>
-      <p className="content">
-        {content}
-      </p>
-      {
-        img !== undefined
-        ? 
-        <p>
-          <a href={imgUrl}><img className="image" src={img} alt="" /></a>
-        </p>
-        :
-        undefined 
-      }
+    <div className="page">
+      <div className='content'> 
+        <h1>
+          { header }
+        </h1>
+        <div className='text'>
+          { text } 
+        </div>
+      </div>
+      <div className='image_block'>
+        { img !== undefined ? <a href={imgUrl}><img className="image" src={img} alt="" /></a> : undefined }
+      </div>
       <Outlet context={{}} />
     </div>
   )
@@ -37,4 +37,4 @@ const Body = ({header, content, img, pageName, imgUrl}) => {
   // useLocation() imported from "react-router-dom" can be used to get current url
 }
 
-export default Body
+export default Page
