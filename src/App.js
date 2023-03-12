@@ -6,7 +6,7 @@ import { Route, Routes } from 'react-router-dom'
 import { useState } from 'react'
 
 import { Header, Footer, Page, Resume} from './components'
-import { Home, About } from './pages'
+import { Home, Contact } from './pages'
 
 function App() {
   const [showResume, setShowResume] = useState("Show Resume")
@@ -24,7 +24,7 @@ function App() {
         showResume === "Show Resume" &&
         <Routes>
           <Route path='/' element={<Page {...Home} />} />
-          <Route path='/about' element={<Page {...About} />} />
+          <Route path='/contact' element={<Page {...Contact} />} />
         </Routes>
       }
 

@@ -1,18 +1,41 @@
-div.page {
+.page {
+    margin-top: 10%;
+    overflow: auto;
+}
+
+.content h1 {
+    display: block;
     text-align: center;
-    margin-top: 7.5%;
 }
   
 .content {
     font-size: 125%;
-    line-height: 200%;
+    line-height: 150%;
     display: inline-block; 
-    text-align: left;
-    max-width: 60%;
-    margin: 2%;
+    min-width: 50%;
+    max-width: 50%;
+    margin-left: 12%;
+    margin-right: 2%;
+    vertical-align: top;
 }
 
-.content img {
+.content .text {
+    margin-top: 5%;
+}
+
+.page .image_block {
+    display: inline-block; 
+    min-width: 25%;
+    max-width: 25%;
+}
+
+.image_block .image {
+    min-width: 100%;
+    max-width: 100%;
+    aspect-ratio: 1;
     border-radius: 10%;
-    margin: 3%;
+}
+  
+.page img:hover{
+    opacity: 0.67;
 }

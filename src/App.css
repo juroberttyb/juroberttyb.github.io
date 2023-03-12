@@ -30,14 +30,3 @@ a:visited {
 a:hover { 
   color: lightblue;
 }
-
-.image {
-  min-width: 25%;
-  max-width: 25%;
-  aspect-ratio: 1;
-  border-radius: 10%;
-}
-
-img:hover{
-  opacity: 0.67;
-}
