@@ -1,0 +1,43 @@
+* {
+  font-family: "Lucida Console", "Courier New", monospace;
+  
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+  color: rgb(255, 255, 255);
+}
+
+a:visited { 
+  color: rgb(255, 255, 255);
+}
+
+a:hover { 
+  color: lightblue;
+}
+
+.image {
+  min-width: 25%;
+  max-width: 25%;
+  aspect-ratio: 1;
+  border-radius: 10%;
+}
+
+img:hover{
+  opacity: 0.67;
+}

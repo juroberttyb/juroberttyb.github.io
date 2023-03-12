@@ -1,18 +1,18 @@
 // import React from 'react'
 
-import './index.css';
+import './App.css';
 
 import { Route, Routes } from 'react-router-dom'
 import { useState } from 'react'
 
-import { Header, Footer, Page, Resume} from './component'
+import { Header, Footer, Page, Resume} from './components'
 import { Home, About } from './pages'
 
 function App() {
   const [showResume, setShowResume] = useState("Show Resume")
   
   return (
-    <>
+    <div>
       {
         showResume === "Show Resume" &&
         <Routes location="/*">
@@ -41,7 +41,7 @@ function App() {
           <Route path='/*' element={<Resume />} />
         </Routes>
       }
-    </>
+    </div>
   );
 }
 
