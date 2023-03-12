@@ -4,13 +4,9 @@ import './index.css';
 
 import { Route, Routes } from 'react-router-dom'
 import { useState } from 'react'
-import Header from './component/header/header'
-import Footer from './component/footer/footer'
-import Body from './component/Body'
-import Resume from './component/resume/resume'
 
-import home from './pages/home/Page'
-import about from './pages/about/Page'
+import { Header, Footer, Page, Resume} from './component'
+import { Home, About } from './pages'
 
 function App() {
   const [showResume, setShowResume] = useState("Show Resume")
@@ -27,8 +23,8 @@ function App() {
       {
         showResume === "Show Resume" &&
         <Routes>
-          <Route path='/' element={<Body {...home} />} />
-          <Route path='/about' element={<Body {...about} />} />
+          <Route path='/' element={<Page {...Home} />} />
+          <Route path='/about' element={<Page {...About} />} />
         </Routes>
       }
 

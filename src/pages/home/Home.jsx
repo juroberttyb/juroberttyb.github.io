@@ -1,6 +1,6 @@
 import pianoImg from '../../assets/images/piano.jpg'
 
-const home = {
+const Home = {
     pageName: "home",
     content: (
         <>
@@ -16,4 +16,4 @@ const home = {
     img: pianoImg
 }
 
-export default home
+export default Home

@@ -1,7 +1,9 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 
-const Body = ({header, content, img, pageName, imgUrl}) => {
+import './page.css'
+
+const Page = ({header, content, img, pageName, imgUrl}) => {
   return (
     <div className={pageName+" page"}>
       <h1>{header}</h1>
@@ -37,4 +39,4 @@ const Body = ({header, content, img, pageName, imgUrl}) => {
   // useLocation() imported from "react-router-dom" can be used to get current url
 }
 
-export default Body
+export default Page

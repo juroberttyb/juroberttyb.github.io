@@ -1,6 +1,6 @@
 import playImg from '../../assets/images/play.png'
 
-const about = {
+const About = {
     pageName: "about",
     content: (
         <>
@@ -17,4 +17,4 @@ const about = {
     // imgUrl: "https://www.youtube.com/channel/UCmEH_lLXrnW_L3n6x_4l1Pg",
 }
 
-export default about
+export default About
