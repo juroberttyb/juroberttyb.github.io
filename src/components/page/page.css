@@ -2,13 +2,13 @@
     display: flex;
     margin-left: 8%;
     margin-right: 8%;
-    /* align-items: center; */
     justify-content: center;
     margin-top: 10%;
     overflow: auto;
 }
 
 .content h1 {
+    margin-top: 1%;
     display: block;
     text-align: center;
 }
@@ -19,7 +19,7 @@
     /* display: inline-block;  */
     min-width: 60%;
     max-width: 60%;
-    /* margin-left: 12%; */
+    
     margin-right: 1%;
     vertical-align: top;
 }
