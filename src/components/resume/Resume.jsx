@@ -58,7 +58,7 @@ const Resume = () => {
             </div>
             <div>
               <div class='duration'>May 2022 - Present</div>
-              <div class='location'>Taipei, Taiwan</div>
+              <p class='location'>Taipei, Taiwan</p>
             </div>
           </div>
           <ul>
@@ -68,10 +68,10 @@ const Resume = () => {
             <li>Develop MediTalk as a microservice for users of other apps to use</li>
             <li>Develop a company scoring microservice for users to score their working environments</li>
             <li>Develop a favorite collection API for users to collect their favorite posts in <a href='https://apps.apple.com/tw/app/apen/id1434492280'>Apen</a>/<a href='https://apps.apple.com/tw/app/%E8%AD%B7%E7%90%86%E7%AB%99/id1523414575'>NStation</a>/<a href='https://apps.apple.com/us/app/%E8%97%A5%E5%B8%AB%E5%9C%88/id1661519539'>Phar</a>/<a href='https://apps.apple.com/au/app/%E9%9D%A0%E5%8C%97%E8%AD%A6%E5%AF%9F-%E8%AD%A6%E5%AF%9F%E7%99%BE%E7%A7%91%E5%85%A8%E6%9B%B8/id1637401189'>TWPD</a></li>
-            <li>Refactor the backend of Apen to follow API/Service/Gateway/Store/Model best practice architecture</li>
+            <li>Refactor backend code to follow API/Service/Gateway/Store/Model best practice architecture</li>
             <li>Integrate Google Login into login API for users in MediTalk and <a href='https://apps.apple.com/tw/app/clos-burgundy-dictionary/id1568106896'>Clos</a></li>
-            <li>Integrate Google Play 3rd-party payment into In-App Purchase API for users to buy products in MediTalk and Clos</li>
-            <li>Integrate Google Cloud Pub/Sub service into In-App Purchase API for users to buy subscriptions in MediTalk and Clos</li>
+            <li>Integrate Google Play 3rd-party payment into In-App Purchase API for users to buy products</li>
+            <li>Integrate Google Cloud Pub/Sub service into In-App Purchase API for users to buy subscriptions</li>
             <li>Integrate Google Cloud Logging service into backend for engineers to debug and monitor services</li>
             <li>Develop and integrate Redis caching into services to improve http response time</li>
             <li>Write unit and integration tests to raise the test coverage of API package from 0% to 74%</li>
@@ -85,7 +85,7 @@ const Resume = () => {
           <div class='block_item'>
             <div>
               <div class='highlight bold'>MLOps Engineer</div>, <div class='after_highlight'><a href='http://www.gallopwave.com/en/'>Gallopwave</a></div>,  <div class='after_highlight'>Machine Learning DevOps</div>
-              <p class='highlight_inner'>Go/Python/C++/Shell/Linux/Docker/GCP/CICD/Git</p>
+              <p class='highlight_inner'>Go/Python/C++/Bash/Pytorch/Linux/Docker/GCP/CICD/Git</p>
             </div>
             <div>
               <div class='duration'>Aug 2021 ‑ Apr 2022</div>
@@ -101,11 +101,10 @@ const Resume = () => {
             <li>Automating infrastructure build‑outs for development environments</li>
             <li>Build and maintain tools and libraries for development and continuous integration</li>
             <li>Design, build, and maintain a high‑availability development environment</li>
-            <li>Perform regular maintenance and upgrades on production systems</li>
             <li>Own and maintain self‑hosted Linux servers and containers</li>
-            <li>Perform testing and evaluation across the production release</li>
-            <li>Design and implement a git‑based code management strategy that supports multiple environments for development</li>
-            <li>Debug, optimize code, and automate routine tasks like data labeling and experiments</li>
+            <li>Perform regular maintenance, upgrades, testing, and evaluation across production releases</li>
+            <li>Design and implement a git‑based strategy to support multiple environments for development</li>
+            {/* <li>Debug, optimize code, and automate routine tasks like data labeling and experiments</li> */}
           </ul>
         </div>
 
@@ -115,17 +114,17 @@ const Resume = () => {
             <div class='block_item'>
             <div>
               <div class='highlight bold'>Algorithm Summer Intern</div>, <div class='after_highlight'><a href='http://www.rogersai.com/home_eng.html'>Rogersai</a></div>,  <div class='after_highlight'>Algorithm Team</div>
-              <p class='highlight_inner'>Python/Linux/Docker/Git</p>
+              <p class='highlight_inner'>Python/Pytorch/Linux/Docker/Git</p>
             </div>
             <div>
               <div class='duration'>Jul 2020 ‑ Aug 2020</div>
               <div class='location'>Taipei, Taiwan</div>
             </div>
           </div>
-          <ul>
+          {/* <ul>
             <li>Design and develop algorithms to accelerate human face detection</li>
-            {/* <li>Develop and integrate facial login into production releases</li> */}
-          </ul>
+            <li>Develop and integrate facial login into production releases</li>
+          </ul> */}
         </div>
       </div>
 
