@@ -18,9 +18,11 @@ const Header = ({buttonValue, setButtonValue}) => {
         <header className="header">
             <ul>
                 <li><Link to="/">Home</Link></li>
-                <li><Button value={buttonValue} setValue={setButtonValue} /></li>
                 <li><Link to="/contact">Contact</Link></li>
             </ul>
+            <div id='resume_button'>
+                <Button value={buttonValue} setValue={setButtonValue} />
+            </div>
         </header>
     )
 }

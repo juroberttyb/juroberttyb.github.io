@@ -28,12 +28,12 @@ function App() {
         </Routes>
       }
 
-      {
+      {/* {
         showResume === "Show Resume" && 
         <Routes location="/*">
           <Route path='/*' element={<Footer />} />
         </Routes>
-      }
+      } */}
 
       {
         showResume !== "Show Resume" && 

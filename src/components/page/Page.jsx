@@ -37,7 +37,7 @@ const Page = ({header, text, img, imgUrl}) => {
         </div>
       </div>
       <div className='image_block'>
-        { img !== undefined ? <a href={imgUrl}><img className="image" src={img} alt="" /></a> : undefined }
+        { img !== undefined ? <img className="image" src={img} alt="" /> : undefined }
       </div>
       <Outlet context={{}} />
     </div>
