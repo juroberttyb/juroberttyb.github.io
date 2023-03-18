@@ -20,7 +20,13 @@
 
 #resume_button {
   position: absolute;
-  top: 1%;
-  right: 2.5%;
+  top: 0;
+  right: 2%;
 }
 
+#resume_button button {
+  position: relative;
+  margin-top: -5%;
+  top: 20%;
+  /* right: %; */
+}

@@ -1,15 +1,14 @@
-// import React from 'react'
-
 import './App.css';
 
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom' // Navigate
 import { useState } from 'react'
 
-import { Header, Footer, Page, Resume} from './components'
-import { Home, Contact } from './pages'
+import { Header, Resume} from './components'
+import { Home } from './scenes'
 
 function App() {
   const [showResume, setShowResume] = useState("Show Resume")
+  const [chatText, setChatText] = useState("Chat text")
   
   return (
     <div>
@@ -23,17 +22,10 @@ function App() {
       {
         showResume === "Show Resume" &&
         <Routes>
-          <Route path='/' element={<Page {...Home} />} />
-          <Route path='/contact' element={<Page {...Contact} />} />
+          <Route path='/' element={<Home {...{chatText, setChatText}} />} />
+          {/* <Route path='/contact' element={<Contact />} /> */}
         </Routes>
       }
-
-      {/* {
-        showResume === "Show Resume" && 
-        <Routes location="/*">
-          <Route path='/*' element={<Footer />} />
-        </Routes>
-      } */}
 
       {
         showResume !== "Show Resume" && 

@@ -1,10 +1,11 @@
-.page {
+#home {
     display: flex;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 2%;
+    margin-right: 2%;
     justify-content: center;
     margin-top: 10%;
     overflow: auto;
+    height: 30vw;
 }
 
 .content h1 {
@@ -16,11 +17,11 @@
 .content {
     font-size: 125%;
     line-height: 150%;
-    /* display: inline-block;  */
-    min-width: 60%;
-    max-width: 60%;
+    min-width: 65%;
+    max-width: 65%;
     
     margin-right: 2.5%;
+    margin-left: 0%;
     vertical-align: top;
 }
 
@@ -28,10 +29,9 @@
     margin-top: 5%;
 }
 
-.page .image_block {
-    /* display: inline-block;  */
-    min-width: 25%;
-    max-width: 25%;
+#home .image_block {
+    min-width: 30%;
+    max-width: 30%;
 }
 
 .image_block .image {
@@ -41,6 +41,18 @@
     border-radius: 10%;
 }
   
-.page img:hover{
-    opacity: 0.67;
+#home img:hover{
+    opacity: 0.8;
+}
+
+#chatroom {
+    background-color: rgba(241,243,244,.24);
+    border-radius: 12px;
+    margin-top: 1%;
+    width: inherit;
+    height: 82.5%;
+}
+
+#chattext {
+    margin-top: 2%;
 }
