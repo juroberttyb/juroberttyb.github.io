@@ -51,8 +51,15 @@
     margin-top: 1%;
     width: inherit;
     height: 82.5%;
+    padding: 1%;
 }
 
-#chattext {
-    margin-top: 2%;
+#chatroom ul {
+    list-style-type: none;
+}
+
+#chatroom ul li {
+    margin-left: 1%;
+    /* margin-top: 1%; */
+    /* padding-top: 0.5%; */
 }

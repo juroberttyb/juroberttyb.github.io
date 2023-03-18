@@ -11,10 +11,10 @@ const Home = ({chatText, setChatText}) => {
         const getMsgAll = async () => {
             const res = await fetch('http://localhost:3001/message?count=5')
             const msgs = await res.json()
-            console.log("msgs", msgs)
+            // console.log("msgs", msgs)
 
-            const mapMsgs = msgs.map((msg) => (<>{msg.from}: {msg.message} <br/></>))
-            console.log("mapMsgs", mapMsgs)
+            const mapMsgs = msgs.map((msg) => (<li>{msg.from}: {msg.message}</li>))
+            // console.log("mapMsgs", mapMsgs)
 
             setChatText(mapMsgs)
         }
@@ -35,9 +35,9 @@ const Home = ({chatText, setChatText}) => {
                     I also love to watch Rick and Morty episodes.<br/><br/>
                 </div> */}
                 <div id='chatroom'>
-                    <div id='chattext'>
+                    <ul>
                         {chatText}
-                    </div>
+                    </ul>
                 </div>
             </div>
             <div className='image_block'>
