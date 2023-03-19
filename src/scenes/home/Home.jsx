@@ -25,7 +25,6 @@ const Home = ({chatText, setChatText}) => {
     const provider = new GoogleAuthProvider();
 
     const signIn = () => {
-        console.log("clicked")
         const auth = getAuth();
         signInWithPopup(auth, provider).then((result) => {
             // This gives you a Google Access Token. You can use it to access the Google API.
@@ -50,6 +49,17 @@ const Home = ({chatText, setChatText}) => {
         });
     }
 
+    const signOut = () => {
+        const auth = getAuth();
+        signOut(auth).then(() => {
+          // Sign-out successful.
+          console.log("signout successful")
+        }).catch((error) => {
+            console.log("singout failed, error", error)
+          // An error happened.
+        });
+    }
+
     return (
         <div id="home">
             <div className='content'> 
@@ -59,7 +69,7 @@ const Home = ({chatText, setChatText}) => {
                         <button id="signInBtn" class="btn btn-primary" onClick={signIn}>Sign in with Google</button>         
                     </div>
                     <div>
-                        <button id="signOutBtn" class="btn btn-primary">Sign Out</button>
+                        <button id="signOutBtn" class="btn btn-primary" onClick={signOut}>Sign Out</button>
                     </div>
                 </h1>
                 {/* <div className='text'>
