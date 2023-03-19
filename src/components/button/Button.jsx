@@ -4,11 +4,9 @@ import './button.css'
 
 const Button = ({value, setValue}) => {
     const onClick = () => {
-        setValue(
-            () => {
-                return "Showing Resume"
-            }
-        )
+        setValue(() => {
+            return "Showing Resume"
+        })
     }
 
   return (
