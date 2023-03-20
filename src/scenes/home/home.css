@@ -5,7 +5,7 @@
     justify-content: center;
     margin-top: 10%;
     overflow: auto;
-    height: 30vw;
+    height: 32vw;
 }
 
 .content h1 {
@@ -62,4 +62,25 @@
     margin-left: 1%;
     /* margin-top: 1%; */
     /* padding-top: 0.5%; */
+}
+
+#chat_input {
+    height: 8%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.sign_button {
+    height: 100%;
+    width: 12.5%
+}
+
+.chat_text_input{ 
+    height: 100%;
+    width: 81.5%
+}
+ 
+.send_text_button {
+    height: 100%;
+    width: 6%
 }

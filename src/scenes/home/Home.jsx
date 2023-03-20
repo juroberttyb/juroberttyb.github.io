@@ -3,9 +3,9 @@ import { useEffect } from 'react'
 import { Outlet } from 'react-router-dom'
 import "./home.css"
 
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "firebase/auth";
 
-const Home = ({chatText, setChatText}) => { 
+const Home = ({chatText, setChatText, signedIn, setSignedIn}) => { 
 
     useEffect(() => {
         const getMsgAll = async () => {
@@ -20,7 +20,7 @@ const Home = ({chatText, setChatText}) => {
         }
 
         getMsgAll()
-    }, [])
+    })
 
     const provider = new GoogleAuthProvider();
 
@@ -35,28 +35,33 @@ const Home = ({chatText, setChatText}) => {
             // IdP data available using getAdditionalUserInfo(result)
             // ...
 
-            console.log("token", token)
-            console.log("user", user)
+            setSignedIn(() => {return true})
           }).catch((error) => {
-            // Handle Errors here.
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            // The email of the user's account used.
-            const email = error.customData.email;
-            // The AuthCredential type that was used.
-            const credential = GoogleAuthProvider.credentialFromError(error);
+            // // Handle Errors here.
+            // const errorCode = error.code;
+            // const errorMessage = error.message;
+            // // The email of the user's account used.
+            // const email = error.customData.email;
+            // // The AuthCredential type that was used.
+            // const credential = GoogleAuthProvider.credentialFromError(error);
             // ...
         });
     }
 
     const signOut = () => {
         const auth = getAuth();
-        signOut(auth).then(() => {
-          // Sign-out successful.
-          console.log("signout successful")
-        }).catch((error) => {
-            console.log("singout failed, error", error)
-          // An error happened.
+        onAuthStateChanged(auth, (user) => {
+          if (user) {
+            // // User is signed in, see docs for a list of available properties
+            // // https://firebase.google.com/docs/reference/js/firebase.User
+            // const uid = user.uid;
+            // // ...
+            console.log("signout successfull")
+        } else {
+            // User is signed out
+            // ...
+            console.log("signout failed")
+          }
         });
     }
 
@@ -65,12 +70,6 @@ const Home = ({chatText, setChatText}) => {
             <div className='content'> 
                 <h1>
                     Hi, I'm Robert
-                    <div>
-                        <button id="signInBtn" class="btn btn-primary" onClick={signIn}>Sign in with Google</button>         
-                    </div>
-                    <div>
-                        <button id="signOutBtn" class="btn btn-primary" onClick={signOut}>Sign Out</button>
-                    </div>
                 </h1>
                 {/* <div className='text'>
                     Currently, me and my friends are building a trading bot.<br/><br/>
@@ -82,9 +81,16 @@ const Home = ({chatText, setChatText}) => {
                         {chatText}
                     </ul>
                 </div>
+                <div id='chat_input'>
+                    {
+                        signedIn ? <button id="signOutBtn" class="sign_button" onClick={signOut}>Sign Out</button> : <button id="signInBtn" class="sign_button" onClick={signIn}>Sign in with Google</button>
+                    }
+                    <input class='chat_text_input'></input>
+                    <button class='send_text_button'>send</button>
+                </div>
             </div>
             <div className='image_block'>
-                <img className="image" src={pianoImg} alt="" />
+                {/* <img className="image" src={pianoImg} alt="" /> */}
             </div>
             <Outlet context={{}} />
         </div>
