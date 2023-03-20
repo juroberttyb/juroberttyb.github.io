@@ -66,6 +66,23 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
         });
     }
 
+    const sendMsg = async () => {
+        const text = document.getElementById("chat_text_input")
+        console.log(text.value)
+
+        const rawResponse = await fetch('https://httpbin.org/post', {
+            method: 'POST',
+            headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({a: 1, b: 'Textual content'})
+        });
+        const content = await rawResponse.json();
+        
+        console.log(content);
+    }
+
     return (
         <div id="home">
             <div className='content'> 
@@ -88,7 +105,7 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
                         : <Button value="Sign in with Google" onClick={signIn} className="sign_button" id="signInBtn" />
                     }
                     <input id='chat_text_input'></input>
-                    <Button value="Send" onClick={() => {}} id="send_text_button" />
+                    <Button value="Send" onClick={sendMsg} id="send_text_button" />
                 </div>
             </div>
             <div className='image_block'>
