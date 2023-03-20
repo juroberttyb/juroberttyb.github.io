@@ -57,7 +57,7 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
             // // https://firebase.google.com/docs/reference/js/firebase.User
             // const uid = user.uid;
             // // ...
-            console.log("signout successfull")
+            setSignedIn(() => {return false})
         } else {
             // User is signed out
             // ...
@@ -84,10 +84,11 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
                 </div>
                 <div id='chat_input'>
                     {
-                        signedIn ? <button id="signOutBtn" className="button sign_button" onClick={signOut}>Sign Out</button> : <button id="signInBtn" className="button sign_button" onClick={signIn}>Sign in with Google</button>
+                        signedIn ? <Button value="Sign Out" onClick={signOut} className="sign_button" id="signOutBtn" />
+                        : <Button value="Sign in with Google" onClick={signIn} className="sign_button" id="signInBtn" />
                     }
                     <input id='chat_text_input'></input>
-                    <Button value="send" onClick={() => {}} id="send_text_button" />
+                    <Button value="Send" onClick={() => {}} id="send_text_button" />
                 </div>
             </div>
             <div className='image_block'>
