@@ -46,7 +46,7 @@
 }
 
 #chatroom {
-    background-color: rgba(255,255,255,0.07);
+    background-color: rgba(255,255,255,0.12);
     border-radius: 12px;
     margin-top: 1%;
     width: inherit;
@@ -82,7 +82,7 @@
     padding-right: 1.5%;
     font-size: 1.1rem;
     width: 79%;
-    background-color: rgb(62, 62, 73); 
+    background-color: rgba(255,255,255,0.33); 
     color: white;
 }
  
