@@ -87,8 +87,7 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
                         signedIn ? <button id="signOutBtn" className="button sign_button" onClick={signOut}>Sign Out</button> : <button id="signInBtn" className="button sign_button" onClick={signIn}>Sign in with Google</button>
                     }
                     <input id='chat_text_input'></input>
-                    <button id='send_text_button' className='button'>send</button>
-                    <Button value="test" onClick={() => {}} />
+                    <Button value="send" onClick={() => {}} id="send_text_button" />
                 </div>
             </div>
             <div className='image_block'>
