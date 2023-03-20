@@ -83,10 +83,10 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
                 </div>
                 <div id='chat_input'>
                     {
-                        signedIn ? <button id="signOutBtn" class="sign_button" onClick={signOut}>Sign Out</button> : <button id="signInBtn" class="sign_button" onClick={signIn}>Sign in with Google</button>
+                        signedIn ? <button id="signOutBtn" className="button sign_button" onClick={signOut}>Sign Out</button> : <button id="signInBtn" className="button sign_button" onClick={signIn}>Sign in with Google</button>
                     }
-                    <input class='chat_text_input'></input>
-                    <button class='send_text_button'>send</button>
+                    <input className='chat_text_input'></input>
+                    <button className='button send_text_button'>send</button>
                 </div>
             </div>
             <div className='image_block'>

@@ -10,7 +10,7 @@ const Button = ({value, setValue}) => {
     }
 
   return (
-    <button className="button connect" onClick={onClick}>
+    <button className="button" onClick={onClick}>
         {value}
     </button>
   )

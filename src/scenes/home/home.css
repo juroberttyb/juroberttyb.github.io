@@ -46,7 +46,7 @@
 }
 
 #chatroom {
-    background-color: rgba(241,243,244,.24);
+    background-color: rgba(255,255,255,0.07);
     border-radius: 12px;
     margin-top: 1%;
     width: inherit;
@@ -59,28 +59,42 @@
 }
 
 #chatroom ul li {
+    font-size: 1.5rem;
     margin-left: 1%;
-    /* margin-top: 1%; */
-    /* padding-top: 0.5%; */
+    margin-bottom: 0.1%;
 }
 
 #chat_input {
     height: 8%;
     border-radius: 8px;
+    display: flex;
     overflow: hidden;
 }
 
 .sign_button {
-    height: 100%;
-    width: 12.5%
+    width: 15%;
+    border-radius: 0px;
 }
 
-.chat_text_input{ 
-    height: 100%;
-    width: 81.5%
+.chat_text_input{
+    padding: 1%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    font-size: 1.1rem;
+    width: 79%;
+    background-color: rgb(62, 62, 73); 
+    color: white;
 }
  
 .send_text_button {
-    height: 100%;
-    width: 6%
+    width: 6%;
+    border-radius: 0px;
+}
+
+button.sign_button:hover {
+    opacity: 0.8;
+}
+
+button.send_text_button:hover {
+    opacity: 0.8;
 }
