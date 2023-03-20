@@ -1,6 +1,7 @@
 import pianoImg from '../../assets/images/piano.jpg'
 import { useEffect } from 'react'
 import { Outlet } from 'react-router-dom'
+import { Button } from "../../components"
 import "./home.css"
 
 import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "firebase/auth";
@@ -85,8 +86,9 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
                     {
                         signedIn ? <button id="signOutBtn" className="button sign_button" onClick={signOut}>Sign Out</button> : <button id="signInBtn" className="button sign_button" onClick={signIn}>Sign in with Google</button>
                     }
-                    <input className='chat_text_input'></input>
-                    <button className='button send_text_button'>send</button>
+                    <input id='chat_text_input'></input>
+                    <button id='send_text_button' className='button'>send</button>
+                    <Button value="test" onClick={() => {}} />
                 </div>
             </div>
             <div className='image_block'>

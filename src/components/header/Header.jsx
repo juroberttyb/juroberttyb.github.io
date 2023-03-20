@@ -14,6 +14,12 @@ const Header = ({buttonValue, setButtonValue}) => {
             eg: useLocation() imported from "react-router-dom" can be used to get current url
     */
 
+    const resumeOn = () => {
+        setButtonValue(() => {
+            return "Showing Resume"
+        })
+    }
+
     return (
         <header className="header">
             <ul>
@@ -25,7 +31,7 @@ const Header = ({buttonValue, setButtonValue}) => {
                 <li><a href="mailto: juroberttyb@gmail.com">Email</a></li>
             </ul>
             <div id='resume_button'>
-                <Button value={buttonValue} setValue={setButtonValue} />
+                <Button value={buttonValue} onClick={resumeOn} />
             </div>
         </header>
     )

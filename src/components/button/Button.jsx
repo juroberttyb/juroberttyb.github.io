@@ -2,15 +2,10 @@ import React from 'react'
 
 import './button.css'
 
-const Button = ({value, setValue}) => {
-    const onClick = () => {
-        setValue(() => {
-            return "Showing Resume"
-        })
-    }
-
+const Button = ({value, onClick, className, id}) => {
+  className = className == undefined ? "button" : className + " button"
   return (
-    <button className="button" onClick={onClick}>
+    <button id={id == undefined ? id : ""} className={className} onClick={onClick}>
         {value}
     </button>
   )
