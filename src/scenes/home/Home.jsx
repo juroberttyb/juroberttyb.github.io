@@ -1,5 +1,5 @@
-import pianoImg from '../../assets/images/piano.jpg'
-import { useEffect } from 'react'
+// import pianoImg from '../../assets/images/piano.jpg'
+import { useState, useEffect } from 'react'
 import { Outlet } from 'react-router-dom'
 import { Button } from "../../components"
 import "./home.css"
@@ -8,15 +8,18 @@ import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from
 
 const Home = ({chatText, setChatText, signedIn, setSignedIn}) => { 
 
+    const defaultUserName = "Sea_Otter"
+
+    const [userId, setUserId] = useState(undefined)
+    const [userName, setUserName] = useState(defaultUserName)
+
     useEffect(() => {
         const getMsgAll = async () => {
-            const res = await fetch('http://localhost:3001/message?count=5')
+            const res = await fetch('http://localhost:3001/messages?count=10')
             const msgs = await res.json()
             // console.log("msgs", msgs)
 
-            const mapMsgs = msgs.map((msg) => (<li>{msg.from}: {msg.message}</li>))
-            // console.log("mapMsgs", mapMsgs)
-
+            const mapMsgs = msgs.map((msg) => (<li key={`${msg.from} ${msg.created_at}`}>{msg.from}: {msg.message}</li>))
             setChatText(mapMsgs)
         }
 
@@ -29,14 +32,17 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
         const auth = getAuth();
         signInWithPopup(auth, provider).then((result) => {
             // This gives you a Google Access Token. You can use it to access the Google API.
-            const credential = GoogleAuthProvider.credentialFromResult(result);
-            const token = credential.accessToken;
+            // const credential = GoogleAuthProvider.credentialFromResult(result);
+            // const token = credential.accessToken;
             // The signed-in user info.
             const user = result.user;
             // IdP data available using getAdditionalUserInfo(result)
             // ...
 
+            console.log(user.displayName)
             setSignedIn(() => {return true})
+            setUserName(result.user.displayName)
+            setUserId(result.user.uid)
           }).catch((error) => {
             // // Handle Errors here.
             // const errorCode = error.code;
@@ -58,6 +64,8 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
             // const uid = user.uid;
             // // ...
             setSignedIn(() => {return false})
+            setUserName(defaultUserName)
+            setUserId(undefined)
         } else {
             // User is signed out
             // ...
@@ -67,20 +75,29 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
     }
 
     const sendMsg = async () => {
-        const text = document.getElementById("chat_text_input")
-        console.log(text.value)
+        try {
+            const text = document.getElementById("chat_text_input")
+            console.log(text.value)
+    
+            const rawResponse = await fetch('http://localhost:3001/messages', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    userId: userId,
+                    from: userName,
+                    message: text.value,
+                })
+            });
+            const res = await rawResponse.json();
+            console.log("res:", res)
 
-        const rawResponse = await fetch('https://httpbin.org/post', {
-            method: 'POST',
-            headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({a: 1, b: 'Textual content'})
-        });
-        const content = await rawResponse.json();
-        
-        console.log(content);
+            text.value = ""
+        } catch (err) {
+            console.log("error:", err);
+        }
     }
 
     return (
