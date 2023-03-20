@@ -19,7 +19,7 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
             const msgs = await res.json()
             // console.log("msgs", msgs)
 
-            const mapMsgs = msgs.map((msg) => (<li key={`${msg.from} ${msg.created_at}`}>{msg.from}: {msg.message}</li>))
+            const mapMsgs = msgs.map((msg) => (<li key={`${msg.from}-${msg.created_at}`}>{msg.from}: {msg.message}</li>))
             setChatText(mapMsgs)
         }
 
@@ -78,6 +78,7 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
         try {
             const text = document.getElementById("chat_text_input")
             console.log(text.value)
+            console.log("userId:", userId)
     
             const rawResponse = await fetch('http://localhost:3001/messages', {
                 method: 'POST',
