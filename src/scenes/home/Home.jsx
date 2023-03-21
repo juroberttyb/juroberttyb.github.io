@@ -77,8 +77,8 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
     const sendMsg = async () => {
         try {
             const text = document.getElementById("chat_text_input")
-            console.log(text.value)
-            console.log("userId:", userId)
+            // console.log(text.value)
+            // console.log("userId:", userId)
     
             const rawResponse = await fetch('http://localhost:3001/messages', {
                 method: 'POST',
@@ -98,6 +98,12 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
             text.value = ""
         } catch (err) {
             console.log("error:", err);
+        }
+    }
+
+    function sendOnEnter(e) {
+        if(e.key === 'Enter') {
+            sendMsg();
         }
     }
 
@@ -122,7 +128,7 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
                         signedIn ? <Button value="Sign Out" onClick={signOut} className="sign_button" id="signOutBtn" />
                         : <Button value="Sign in with Google" onClick={signIn} className="sign_button" id="signInBtn" />
                     }
-                    <input id='chat_text_input'></input>
+                    <input id='chat_text_input' type="text" onKeyDown={sendOnEnter}></input>
                     <Button value="Send" onClick={sendMsg} id="send_text_button" />
                 </div>
             </div>

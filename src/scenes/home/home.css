@@ -51,7 +51,7 @@
     margin-top: 1%;
     width: inherit;
     height: 82.5%;
-    padding: 1%;
+    padding: 2%;
 }
 
 #chatroom ul {
@@ -60,8 +60,7 @@
 
 #chatroom ul li {
     font-size: 1.5rem;
-    margin-left: 1%;
-    margin-bottom: 0.1%;
+    margin-bottom: 0.5%;
 }
 
 #chat_input {
