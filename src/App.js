@@ -26,7 +26,7 @@ function App() {
   initializeApp(firebaseConfig);
 
   const [showResume, setShowResume] = useState("Show Resume")
-  const [chatText, setChatText] = useState("Chat text")
+  const [chatText, setChatText] = useState("The backend server of chat room is currently down, please inform Robert to fix it.")
   const [signedIn, setSignedIn] = useState(false)
 
   return (
