@@ -84,6 +84,10 @@
     background-color: rgba(255,255,255,0.33); 
     color: white;
 }
+
+.my_chat_text {
+    text-align: end;
+}
  
 #send_text_button {
     width: 6%;

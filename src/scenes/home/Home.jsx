@@ -15,11 +15,19 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
 
     useEffect(() => {
         const getMsgAll = async () => {
-            const res = await fetch('http://localhost:3001/messages?count=10')
+            const res = await fetch('https://robertchu.serveo.net/messages?count=10')
             const msgs = await res.json()
             // console.log("msgs", msgs)
 
-            const mapMsgs = msgs.map((msg) => (<li key={`${msg.from}-${msg.created_at}`}>{msg.from}: {msg.message}</li>))
+            const mapMsgs = msgs.map((msg) => {
+                const isMine = signedIn && msg.from === userName
+
+                return (
+                    <li key={`${msg.from}-${msg.created_at}`} className={isMine ? "my_chat_text" : ""}>
+                        {isMine ? "" : `${msg.from}: `}{msg.message}
+                    </li>
+                )
+            })
             setChatText(mapMsgs)
         }
 
@@ -80,7 +88,7 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
             // console.log(text.value)
             // console.log("userId:", userId)
     
-            const rawResponse = await fetch('http://localhost:3001/messages', {
+            const rawResponse = await fetch('https://robertchu.serveo.net/messages', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
