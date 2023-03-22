@@ -1,4 +1,4 @@
-// import pianoImg from '../../assets/images/piano.jpg'
+import pianoImg from '../../assets/images/piano.jpg'
 import { useState, useEffect } from 'react'
 import { Outlet } from 'react-router-dom'
 import { Button } from "../../components"
@@ -8,14 +8,14 @@ import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from
 
 const Home = ({chatText, setChatText, signedIn, setSignedIn}) => { 
 
-    const defaultUserName = "Sea_Otter"
+    const defaultUserName = "Sea Otter"
 
     const [userId, setUserId] = useState(undefined)
     const [userName, setUserName] = useState(defaultUserName)
 
     useEffect(() => {
         const getMsgAll = async () => {
-            const res = await fetch('https://robertchu.serveo.net/messages?count=10')
+            const res = await fetch('https://robertchu.serveo.net/messages?count=15')
             const msgs = await res.json()
             // console.log("msgs", msgs)
 
@@ -141,7 +141,7 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
                 </div>
             </div>
             <div className='image_block'>
-                {/* <img className="image" src={pianoImg} alt="" /> */}
+                <img className="image" src={pianoImg} alt="" />
             </div>
             <Outlet context={{}} />
         </div>
