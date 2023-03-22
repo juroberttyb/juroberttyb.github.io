@@ -1,16 +1,34 @@
-// import React from 'react'
-
 import './App.css';
 
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom' // Navigate
 import { useState } from 'react'
 
-import { Header, Footer, Page, Resume} from './components'
-import { Home, Contact } from './pages'
+import { Header, Resume} from './components'
+import { Home } from './scenes'
+
+import { initializeApp } from 'firebase/app';
 
 function App() {
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDItep3DeU8ujH7m_Wf-7lJ61MzQrSyiJ8",
+      authDomain: "chatrom-80ffa.firebaseapp.com",
+      projectId: "chatrom-80ffa",
+      storageBucket: "chatrom-80ffa.appspot.com",
+      messagingSenderId: "998543368520",
+      appId: "1:998543368520:web:31be86144a1d393870537d",
+      measurementId: "G-4SX6W8HBLM"
+    };
+
+  // Initialize Firebase
+  // const app = initializeApp(firebaseConfig);
+  initializeApp(firebaseConfig);
+
   const [showResume, setShowResume] = useState("Show Resume")
-  
+  const [chatText, setChatText] = useState("The backend server of chat room is currently down, please inform Robert to fix it.")
+  const [signedIn, setSignedIn] = useState(false)
+
   return (
     <div>
       {
@@ -23,15 +41,8 @@ function App() {
       {
         showResume === "Show Resume" &&
         <Routes>
-          <Route path='/' element={<Page {...Home} />} />
-          <Route path='/contact' element={<Page {...Contact} />} />
-        </Routes>
-      }
-
-      {
-        showResume === "Show Resume" && 
-        <Routes location="/*">
-          <Route path='/*' element={<Footer />} />
+          <Route path='/' element={<Home {...{chatText, setChatText, signedIn, setSignedIn}} />} />
+          {/* <Route path='/contact' element={<Contact />} /> */}
         </Routes>
       }
 

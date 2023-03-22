@@ -1,0 +1,122 @@
+#home {
+    display: flex;
+    margin-left: 2%;
+    margin-right: 2%;
+    justify-content: center;
+    margin-top: 10%;
+    overflow: auto;
+    height: 32vw;
+}
+
+.content h1 {
+    margin-top: 1%;
+    display: block;
+    text-align: center;
+}
+  
+.content {
+    font-size: 125%;
+    line-height: 150%;
+    min-width: 65%;
+    max-width: 65%;
+    
+    margin-right: 2.5%;
+    margin-left: 0%;
+    vertical-align: top;
+}
+
+.content .text {
+    margin-top: 5%;
+}
+
+#home .image_block {
+    min-width: 30%;
+    max-width: 30%;
+    margin-top: auto;
+    /* margin-bottom: auto; */
+}
+
+.image_block .image {
+    min-width: 100%;
+    max-width: 100%;
+    aspect-ratio: 1;
+    border-radius: 10%;
+}
+  
+#home img:hover{
+    opacity: 0.8;
+}
+
+#chatroom {
+    background-color: rgba(255,255,255,0.12);
+    border-radius: 12px;
+    margin-top: 1%;
+    width: inherit;
+    height: 82.5%;
+    padding: 2%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#chatroom ul {
+    /* display: flex; */
+    /* flex-direction: column; */
+    list-style-type: none;
+}
+
+#chatroom ul li {
+    display: table;
+    /* border: solid #000;
+    border-width: 1 1px;
+    border-color: rgb(246, 255, 0); */
+    /* background-color: rgb(25, 133, 215); */
+    background-color: rgba(255,255,255,0.15);
+    font-size: 1.5rem;
+    margin-bottom: 1%;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 1.5%;
+    width: auto;
+}
+
+#chat_input {
+    height: 8%;
+    border-radius: 8px;
+    display: flex;
+    overflow: hidden;
+}
+
+.sign_button {
+    width: 15%;
+    border-radius: 0px;
+}
+
+#chat_text_input{
+    padding: 1%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    font-size: 1.1rem;
+    width: 79%;
+    background-color: rgba(255,255,255,0.33); 
+    color: white;
+}
+
+.my_chat_text {
+    text-align: end;
+    margin-left: auto; 
+    /* margin-right: auto; */
+}
+ 
+#send_text_button {
+    width: 6%;
+    border-radius: 0px;
+}
+
+button.sign_button:hover {
+    opacity: 0.8;
+}
+
+button.send_text_button:hover {
+    opacity: 0.8;
+}

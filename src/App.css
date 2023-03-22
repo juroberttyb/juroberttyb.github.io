@@ -21,6 +21,8 @@ html {
 
 a {
   color: rgb(255, 255, 255);
+  text-decoration: none;
+  opacity: 0.67;
 }
 
 a:visited { 

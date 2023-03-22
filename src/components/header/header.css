@@ -2,13 +2,31 @@
 .header {
   position: fixed;
   width: 100%;
-  text-align: center;
-  top: 2%;
+  left: 1%;
+  top: 3%;
+}
+
+.header ul {
+  margin-left: 1%;
+  margin-top: 0.25%;
 }
 
 .header ul li {
-  display: inline-block;
-  margin: 1.25%;
+  display: inline;
   font-weight: bolder;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
+  margin-right: 2%;
+}
+
+#resume_button {
+  position: absolute;
+  top: 0;
+  right: 2%;
+}
+
+#resume_button button {
+  position: relative;
+  margin-top: -5%;
+  top: 20%;
+  /* right: %; */
 }

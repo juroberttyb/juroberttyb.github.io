@@ -1,5 +1,5 @@
 
-.button.connect {
+.button {
   appearance: none;
   background-color: #4c82fb;
   border: 1px solid rgba(255, 248, 45, 0.15);
@@ -24,16 +24,16 @@
   white-space: nowrap;
 }
 
-.button.connect:focus:not(:focus-visible):not(.focus-visible) {
+.button:focus:not(:focus-visible):not(.focus-visible) {
   box-shadow: none;
   outline: none;
 }
 
-.button.connect:hover {
+.button:hover {
   background-color: rgb(90, 140, 247);
 }
 
-.button.connect:focus {
+.button:focus {
   box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
   outline: none;
 }
