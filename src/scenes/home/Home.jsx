@@ -20,11 +20,25 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
             // console.log("msgs", msgs)
 
             const mapMsgs = msgs.map((msg) => {
+                msg.created_at = msg.created_at.replace("T", " ").split('.')[0]
+
                 const isMine = signedIn && msg.from === userName
 
                 return (
-                    <li key={`${msg.from}-${msg.created_at}`} className={isMine ? "my_chat_text" : ""}>
-                        {isMine ? "" : `${msg.from}: `}{msg.message}
+                    <li 
+                        key={`${msg.from}${msg.created_at}`} 
+                        className={`message ${isMine ? "my_chat_text" : ""}`}
+                    >
+                        <img className="photo" src={pianoImg} alt="" />
+                        <div className='content'>
+                            <div className='info'>
+                                <p className='sender'>
+                                    {msg.from} <span className='created_at'>{msg.created_at}</span>
+                                    {/* {isMine ? "" : `${msg.from}`} <span className='created_at'>{msg.created_at}</span> */}
+                                </p>
+                            </div>
+                            <div className='text'>{msg.message}</div>
+                        </div>
                     </li>
                 )
             })
@@ -44,6 +58,7 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
             // const token = credential.accessToken;
             // The signed-in user info.
             const user = result.user;
+            console.log("user.photoURL:", user.photoURL)
             // IdP data available using getAdditionalUserInfo(result)
             // ...
 
