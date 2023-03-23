@@ -17,7 +17,9 @@ const Home = () => {
 
     useEffect(() => {
         const getMsgAll = async () => {
-            const res = await fetch('http://localhost:3001/messages?count=15')
+            // console.log("activeTopic:", activeTopic.topic)
+            const topic = activeTopic===undefined || activeTopic.topic===undefined ? undefined : activeTopic.topic
+            const res = await fetch(`http://localhost:3001/messages?count=15${`&topic=${topic}`}`)
             const msgs = await res.json()
             // console.log("msgs", msgs)
 
@@ -113,7 +115,7 @@ const Home = () => {
                 },
                 body: JSON.stringify({
                     user: user,
-                    // toTopic: userName,
+                    topic: activeTopic===undefined ? undefined : activeTopic.topic,
                     message: text.value,
                 })
             });
@@ -154,7 +156,7 @@ const Home = () => {
                         signedIn ? <Button value="Sign Out" onClick={signOut} className="sign_button" id="signOutBtn" />
                         : <Button value="Sign in with Google" onClick={signIn} className="sign_button" id="signInBtn" />
                     }
-                    <input id='chat_text_input' type="text" onKeyDown={sendOnEnter} autocomplete="off"></input>
+                    <input id='chat_text_input' type="text" onKeyDown={sendOnEnter} autoComplete="off"></input>
                     <Button value="Send" onClick={sendMsg} id="send_text_button" />
                 </div>
             </div>
