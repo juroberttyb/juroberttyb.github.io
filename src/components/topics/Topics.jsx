@@ -14,13 +14,12 @@ const Topics = ({activeTopic, setActiveTopic}) => {
         const mapTopics = topics.map((t) => {
             // t.created_at = t.created_at.replace("T", " ").split('.')[0]
 
+            const onClick = () => {
+                setActiveTopic(t)
+            }
+
             return (
-                // <li 
-                //     key={`${t._id}`} 
-                //     className="topic_item"
-                // >
-                <img key={t._id} className="topic_photo" src={t.photoUrl} alt="" />
-                /* </li> */
+                <img key={t._id} className="topic_photo" src={t.photoUrl} alt="" onClick={onClick} />
             )
         })
         setTopics(mapTopics)
