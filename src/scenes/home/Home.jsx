@@ -1,67 +1,16 @@
 // import pianoImg from '../../assets/images/piano.jpg'
-import seaOtter from '../../assets/images/seaOtter.jpg'
 import { useState, useEffect } from 'react'
 // import { Outlet } from 'react-router-dom'
-import { Button, Topics } from "../../components"
+import { Button, Chatroom, Topics } from "../../components"
 import "./home.css"
 
 import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "firebase/auth";
 
 const Home = () => { 
 
-    const defaultUserName = "Sea Otter"
-    const [chatText, setChatText] = useState("Loading messages...")
     const [signedIn, setSignedIn] = useState(false)
     const [user, setUser] = useState(undefined)
     const [activeTopic, setActiveTopic] = useState(undefined)
-
-    useEffect(() => {
-        const getMsgAll = async () => {
-
-            const controller = new AbortController()
-            const topic = activeTopic===undefined || activeTopic.topic===undefined ? undefined : activeTopic.topic
-            const res = await fetch(`http://localhost:3001/messages?count=15${`&topic=${topic}`}`, { signal: controller.signal })
-            const msgs = await res.json()
-            // console.log("msgs", msgs)
-
-            const mapMsgs = msgs.map((m) => {
-                m.created_at = m.created_at.replace("T", " ").split('.')[0]
-
-                const userExist = m.user !== undefined
-                const isMine =  signedIn && userExist && m.user.displayName === user.displayName
-
-                return (
-                    <li 
-                        key={`${m._id}`} 
-                        className={`message ${isMine ? "my_chat_text" : ""}`}
-                    >
-                        <img className="photo" src={userExist ? m.user.photoURL : seaOtter} alt="" />
-                        <div className='content'>
-                            <div className='info'>
-                                <p className='sender'>
-                                    {userExist ? m.user.displayName : defaultUserName} <span className='created_at'>{m.created_at}</span>
-                                    {/* {isMine ? "" : `${m.user.displayName}`} <span className='created_at'>{m.created_at}</span> */}
-                                </p>
-                            </div>
-                            <div className='text'>{m.message}</div>
-                        </div>
-                    </li>
-                )
-            })
-            setChatText(mapMsgs)
-            
-            const chatroom = document.getElementById("chatroom");
-            chatroom.scrollTop = chatroom.scrollHeight;
-
-            return () => {
-                controller.abort()
-            }
-        }
-
-        // console.log(user)
-
-        getMsgAll()
-    })
 
     const provider = new GoogleAuthProvider();
 
@@ -146,16 +95,7 @@ const Home = () => {
                 <h1>
                     Hi, I'm Robert
                 </h1>
-                {/* <div className='text'>
-                    Currently, me and my friends are building a trading bot.<br/><br/>
-                    In my free time, I enjoy taking a walk, playing the piano, and watching stand-up comedy. <br/><br/>
-                    I also love to watch Rick and Morty episodes.<br/><br/>
-                </div> */}
-                <div id='chatroom'>
-                    <ul>
-                        {chatText}
-                    </ul>
-                </div>
+                <Chatroom {...{activeTopic, signedIn, user}} />
                 <div id='chat_input'>
                     {
                         signedIn ? <Button value="Sign Out" onClick={signOut} className="sign_button" id="signOutBtn" />
@@ -165,9 +105,6 @@ const Home = () => {
                     <Button value="Send" onClick={sendMsg} id="send_text_button" />
                 </div>
             </div>
-            {/* <div className='image_block'>
-                <img className="image" src="https://firebasestorage.googleapis.com/v0/b/chatrom-80ffa.appspot.com/o/Sea%20Otter%20Raft%20of%20Four.png?alt=media&token=06b8d645-de73-4551-8f62-b7bfe537399f" alt="" />
-            </div> */}
             {/* <Outlet context={{}} /> */}
         </div>
     )
