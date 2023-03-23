@@ -1,0 +1,58 @@
+.message {
+    margin-bottom: 2%;
+}
+
+.message_content {
+    display: inline-block;
+    margin-left: 1.5%;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+#chatroom {
+    background-color: rgba(255,255,255,0.12);
+    border-radius: 12px;
+    margin-top: 1%;
+    width: inherit;
+    height: 35vw;
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    overflow: auto;
+}
+
+#chatroom ul {
+    list-style-type: none;
+}
+
+.photo {
+    position: relative;
+    display: inline-block;
+    border-radius: 100%;
+    min-width: 3vw;
+    max-width: 3vw;
+    min-height: 3vw;
+    max-height: 3vw;
+    margin-top: 0.36%;
+}
+
+.text {
+    margin-top: 2%;
+}
+
+.sender {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.created_at {
+    color: rgba(255,255,255,0.5);
+    font-weight: normal;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.my_chat_text {
+    /* text-align: end;
+    margin-left: auto;  */
+}
