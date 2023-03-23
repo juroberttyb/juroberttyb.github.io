@@ -1,17 +1,19 @@
-import pianoImg from '../../assets/images/piano.jpg'
+// import pianoImg from '../../assets/images/piano.jpg'
+import seaOtter from '../../assets/images/seaOtter.jpg'
 import { useState, useEffect } from 'react'
-import { Outlet } from 'react-router-dom'
-import { Button } from "../../components"
+// import { Outlet } from 'react-router-dom'
+import { Button, Topics } from "../../components"
 import "./home.css"
 
 import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "firebase/auth";
 
-const Home = ({chatText, setChatText, signedIn, setSignedIn}) => { 
+const Home = () => { 
 
     const defaultUserName = "Sea Otter"
-
-    const [userId, setUserId] = useState(undefined)
-    const [userName, setUserName] = useState(defaultUserName)
+    const [chatText, setChatText] = useState("Loading messages...")
+    const [signedIn, setSignedIn] = useState(false)
+    const [user, setUser] = useState(undefined)
+    const [activeTopic, setActiveTopic] = useState(undefined)
 
     useEffect(() => {
         const getMsgAll = async () => {
@@ -19,25 +21,26 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
             const msgs = await res.json()
             // console.log("msgs", msgs)
 
-            const mapMsgs = msgs.map((msg) => {
-                msg.created_at = msg.created_at.replace("T", " ").split('.')[0]
+            const mapMsgs = msgs.map((m) => {
+                m.created_at = m.created_at.replace("T", " ").split('.')[0]
 
-                const isMine = signedIn && msg.from === userName
+                const userExist = m.user !== undefined
+                const isMine =  signedIn && userExist && m.user.displayName === user.displayName
 
                 return (
                     <li 
-                        key={`${msg.from}${msg.created_at}`} 
+                        key={`${m._id}`} 
                         className={`message ${isMine ? "my_chat_text" : ""}`}
                     >
-                        <img className="photo" src={pianoImg} alt="" />
+                        <img className="photo" src={userExist ? m.user.photoURL : seaOtter} alt="" />
                         <div className='content'>
                             <div className='info'>
                                 <p className='sender'>
-                                    {msg.from} <span className='created_at'>{msg.created_at}</span>
-                                    {/* {isMine ? "" : `${msg.from}`} <span className='created_at'>{msg.created_at}</span> */}
+                                    {userExist ? m.user.displayName : defaultUserName} <span className='created_at'>{m.created_at}</span>
+                                    {/* {isMine ? "" : `${m.user.displayName}`} <span className='created_at'>{m.created_at}</span> */}
                                 </p>
                             </div>
-                            <div className='text'>{msg.message}</div>
+                            <div className='text'>{m.message}</div>
                         </div>
                     </li>
                 )
@@ -47,6 +50,8 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
             const chatroom = document.getElementById("chatroom");
             chatroom.scrollTop = chatroom.scrollHeight;
         }
+
+        // console.log(user)
 
         getMsgAll()
     })
@@ -61,14 +66,11 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
             // const token = credential.accessToken;
             // The signed-in user info.
             const user = result.user;
-            console.log("user.photoURL:", user.photoURL)
             // IdP data available using getAdditionalUserInfo(result)
             // ...
 
-            console.log(user.displayName)
             setSignedIn(() => {return true})
-            setUserName(result.user.displayName)
-            setUserId(result.user.uid)
+            setUser(() => {return user})
           }).catch((error) => {
             // // Handle Errors here.
             // const errorCode = error.code;
@@ -90,8 +92,7 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
             // const uid = user.uid;
             // // ...
             setSignedIn(() => {return false})
-            setUserName(defaultUserName)
-            setUserId(undefined)
+            setUser(undefined)
         } else {
             // User is signed out
             // ...
@@ -103,8 +104,6 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
     const sendMsg = async () => {
         try {
             const text = document.getElementById("chat_text_input")
-            // console.log(text.value)
-            // console.log("userId:", userId)
     
             const rawResponse = await fetch('http://localhost:3001/messages', {
                 method: 'POST',
@@ -113,8 +112,8 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    userId: userId,
-                    from: userName,
+                    user: user,
+                    // toTopic: userName,
                     message: text.value,
                 })
             });
@@ -135,6 +134,7 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
 
     return (
         <div id="home">
+            <Topics {...{activeTopic, setActiveTopic}} />
             <div className='content'> 
                 <h1>
                     Hi, I'm Robert
@@ -154,14 +154,14 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
                         signedIn ? <Button value="Sign Out" onClick={signOut} className="sign_button" id="signOutBtn" />
                         : <Button value="Sign in with Google" onClick={signIn} className="sign_button" id="signInBtn" />
                     }
-                    <input id='chat_text_input' type="text" onKeyDown={sendOnEnter}></input>
+                    <input id='chat_text_input' type="text" onKeyDown={sendOnEnter} autocomplete="off"></input>
                     <Button value="Send" onClick={sendMsg} id="send_text_button" />
                 </div>
             </div>
-            <div className='image_block'>
-                {/* <img className="image" src={pianoImg} alt="" /> */}
-            </div>
-            <Outlet context={{}} />
+            {/* <div className='image_block'>
+                <img className="image" src="https://firebasestorage.googleapis.com/v0/b/chatrom-80ffa.appspot.com/o/Sea%20Otter%20Raft%20of%20Four.png?alt=media&token=06b8d645-de73-4551-8f62-b7bfe537399f" alt="" />
+            </div> */}
+            {/* <Outlet context={{}} /> */}
         </div>
     )
 }

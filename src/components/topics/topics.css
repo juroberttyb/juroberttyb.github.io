@@ -1,0 +1,21 @@
+.topic {
+    margin-top: 3.75%;
+}
+
+.topic_photo {
+    display: block;
+    border-radius: 100%;
+    min-width: 5vw;
+    max-width: 5vw;
+    min-height: 5vw;
+    max-height: 5vw;
+    margin-bottom: 15%;
+
+    border-style: solid;
+    border-width: thick;
+    border-color: rgba(255,255,255,0.5); ;
+}
+
+.topic_photo:hover {
+    cursor: pointer;
+}

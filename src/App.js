@@ -26,8 +26,6 @@ function App() {
   initializeApp(firebaseConfig);
 
   const [showResume, setShowResume] = useState("Show Resume")
-  const [chatText, setChatText] = useState("Loading messages...")
-  const [signedIn, setSignedIn] = useState(false)
 
   return (
     <div>
@@ -41,7 +39,8 @@ function App() {
       {
         showResume === "Show Resume" &&
         <Routes>
-          <Route path='/' element={<Home {...{chatText, setChatText, signedIn, setSignedIn}} />} />
+          <Route path='/' element={<Home />} />
+          {/* <Route path='/' element={<Home {...{chatText, setChatText, signedIn, setSignedIn}} />} /> */}
           {/* <Route path='/contact' element={<Contact />} /> */}
         </Routes>
       }
