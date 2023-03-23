@@ -13,7 +13,7 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
 
             const controller = new AbortController()
             const topic = activeTopic===undefined || activeTopic.topic===undefined ? undefined : activeTopic.topic
-            const res = await fetch(`http://localhost:3001/messages?count=15${`&topic=${topic}`}`, { signal: controller.signal })
+            const res = await fetch(`https://robertchu.serveo.net/messages?count=15${`&topic=${topic}`}`, { signal: controller.signal })
             const msgs = await res.json()
             // console.log("msgs", msgs)
 
