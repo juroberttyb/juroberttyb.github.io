@@ -8,7 +8,7 @@ const Topics = ({activeTopic, setActiveTopic}) => {
     useEffect(() => {
         const controller = new AbortController()
         const getAllTopics = async () => {
-            const res = await fetch('http://localhost:3001/topics?count=6', { signal: controller.signal })
+            const res = await fetch('https://robertchu.serveo.net/topics?count=6', { signal: controller.signal })
             const topics = await res.json()
             // console.log("topics", topics)
 
