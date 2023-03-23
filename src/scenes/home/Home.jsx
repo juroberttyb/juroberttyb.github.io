@@ -15,7 +15,7 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
 
     useEffect(() => {
         const getMsgAll = async () => {
-            const res = await fetch('https://robertchu.serveo.net/messages?count=15')
+            const res = await fetch('http://localhost:3001/messages?count=15')
             const msgs = await res.json()
             // console.log("msgs", msgs)
 
@@ -43,6 +43,9 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
                 )
             })
             setChatText(mapMsgs)
+            
+            const chatroom = document.getElementById("chatroom");
+            chatroom.scrollTop = chatroom.scrollHeight;
         }
 
         getMsgAll()
@@ -103,7 +106,7 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
             // console.log(text.value)
             // console.log("userId:", userId)
     
-            const rawResponse = await fetch('https://robertchu.serveo.net/messages', {
+            const rawResponse = await fetch('http://localhost:3001/messages', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
@@ -156,7 +159,7 @@ const Home = ({chatText, setChatText, signedIn, setSignedIn}) => {
                 </div>
             </div>
             <div className='image_block'>
-                <img className="image" src={pianoImg} alt="" />
+                {/* <img className="image" src={pianoImg} alt="" /> */}
             </div>
             <Outlet context={{}} />
         </div>
