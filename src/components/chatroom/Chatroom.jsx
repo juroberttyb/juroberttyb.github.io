@@ -19,12 +19,12 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
             const msgs = await res.json()
             // console.log("msgs", msgs)
     
-            console.log("chatMsgs[chatMsgs.length-1]", chatMsgs[chatMsgs.length-1])
-            console.log("msgs[msgs.length-1]", msgs[msgs.length-1])
-            console.log("msgs[msgs.length-1] === chatMsgs[chatMsgs.length-1]", msgs[msgs.length-1] === chatMsgs[chatMsgs.length-1])
-            if (chatMsgs !== defaultMsg && chatMsgs[chatMsgs.length-1] === msgs[msgs.length-1]) {
-                return
-            }
+            // console.log("chatMsgs[chatMsgs.length-1]", chatMsgs[chatMsgs.length-1])
+            // console.log("msgs[msgs.length-1]", msgs[msgs.length-1])
+            // console.log("msgs[msgs.length-1] === chatMsgs[chatMsgs.length-1]", msgs[msgs.length-1] === chatMsgs[chatMsgs.length-1])
+            // if (chatMsgs !== defaultMsg && chatMsgs[chatMsgs.length-1] === msgs[msgs.length-1]) {
+            //     return
+            // }
     
             const mapMsgs = msgs.map((m) => {
                 m.created_at = m.created_at.replace("T", " ").split('.')[0]
