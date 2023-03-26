@@ -8,6 +8,8 @@ import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from
 
 const Home = () => { 
 
+    console.log("render home")
+
     const [signedIn, setSignedIn] = useState(false)
     const [user, setUser] = useState(undefined)
     const [activeTopic, setActiveTopic] = useState(undefined)
@@ -61,7 +63,7 @@ const Home = () => {
         try {
             const text = document.getElementById("chat_text_input")
     
-            const rawResponse = await fetch('https://robertchu.serveo.net/messages', {
+            const rawResponse = await fetch('http://localhost:3001/messages', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',

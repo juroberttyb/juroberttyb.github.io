@@ -3,12 +3,14 @@ import './topics.css'
 
 const Topics = ({activeTopic, setActiveTopic}) => {
 
+    console.log("render topic")
+
     const [topics, setTopics] = useState(undefined)
+    const controller = new AbortController()
     
     useEffect(() => {
-        const controller = new AbortController()
         const getAllTopics = async () => {
-            const res = await fetch('https://robertchu.serveo.net/topics?count=6', { signal: controller.signal })
+            const res = await fetch('http://localhost:3001/topics?count=6', { signal: controller.signal })
             const topics = await res.json()
             // console.log("topics", topics)
 
@@ -34,10 +36,9 @@ const Topics = ({activeTopic, setActiveTopic}) => {
         }
 
         getAllTopics()
-
-        return () => {
-            controller.abort()
-        }
+        // return () => {
+        //     controller.abort()
+        // }
     })
 
     return (

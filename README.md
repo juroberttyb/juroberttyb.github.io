@@ -1,4 +1,4 @@
-# [Robert's website](https://robertchu.xyz)
+# [Robert's website](https://robert.xyz)
 
 ### TODO
 * ethereum mailbox
