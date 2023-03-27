@@ -38,7 +38,7 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
                         </div>
                     </li>
             )
-        })
+        }, [activeTopic, signedIn, user])
 
         // const myPromise = new Promise((resolve, reject) => {
         //     setTimeout(() => {
