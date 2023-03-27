@@ -37,23 +37,37 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
             )
         })
 
+        // const myPromise = new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //       resolve("Promise resolved");
+        //     }, 10000);
+        // });
+        
+        // // wait for the promise to resolve
+        // await myPromise.then((result) => {
+        //     console.log(result);
+        //     // continue with the rest of the code here
+        
+        //     console.log("log before promise resolved");
+        // });
+
         return {
             element: <ul>{liMsgs}</ul>,
             lastMsg: resJson[resJson.length - 1], 
         };
     }
 
-    const initMsgs = getMsgs()
-    const [msgs, setMsgs] = useState(initMsgs)
+    const initMsg = getMsgs()
+    const [msg, setMsg] = useState(initMsg)
     
     const chatRefreshTime = 1200
     useEffect(() => {
         const interval = setInterval(() => {
             const updateMsg = async () => {
                 const m = await getMsgs()
-                console.log("_.isEqual(lastMsg, lastChatMsg)", _.isEqual(m.lastMsg, msgs.lastMsg));
-                if (!_.isEqual(m.lastMsg, msgs.lastMsg)) {
-                    setMsgs(m)
+                console.log("_.isEqual(lastMsg, lastChatMsg)", _.isEqual(m.lastMsg, msg.lastMsg));
+                if (!_.isEqual(m.lastMsg, msg.lastMsg)) {
+                    setMsg(m)
                 }
             }
     
@@ -74,11 +88,11 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
         }
 
         scrollToLatestMsg()
-    }, [msgs])
+    }, [msg])
 
     return (
         <div id='chatroom'>
-            {msgs.element}
+            {msg.element}
         </div>
     )
 }
