@@ -12,7 +12,10 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
         const topic = activeTopic===undefined || activeTopic.topic===undefined ? undefined : activeTopic.topic
 
         const controller = new AbortController()
-        const res = await fetch(`http://localhost:3001/messages?count=25${`&topic=${topic}`}`, { signal: controller.signal })
+        const res = await fetch(`https://ro.serveo.net/messages?count=25${`&topic=${topic}`}`, { 
+            signal: controller.signal,
+            mode: 'cors', 
+        })
         const resJson = await res.json()
 
         const liMsgs = resJson.map((m) => {
@@ -65,7 +68,7 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
         const interval = setInterval(() => {
             const updateMsg = async () => {
                 const m = await getMsgs()
-                // console.log("_.isEqual(lastMsg, lastChatMsg)", _.isEqual(m.lastMsg, msg.lastMsg));
+                console.log("_.isEqual(lastMsg, lastChatMsg)", _.isEqual(m.lastMsg, msg.lastMsg));
                 if (!_.isEqual(m.lastMsg, msg.lastMsg)) {
                     setMsg(m)
                 }
@@ -92,7 +95,9 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
 
     return (
         <div id='chatroom'>
-            {msg.element}
+            {
+                msg.element === undefined ? "loading messages from far away, please wait around 5 seconds..." : msg.element
+            }
         </div>
     )
 }

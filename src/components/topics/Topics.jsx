@@ -6,11 +6,11 @@ const Topics = ({activeTopic, setActiveTopic}) => {
     console.log("render topic")
 
     const [topics, setTopics] = useState(undefined)
-    const controller = new AbortController()
-    
+
     useEffect(() => {
         const getAllTopics = async () => {
-            const res = await fetch('http://localhost:3001/topics?count=6', { signal: controller.signal })
+            const controller = new AbortController()
+            const res = await fetch('https://ro.serveo.net/topics?count=6', { signal: controller.signal })
             const topics = await res.json()
             // console.log("topics", topics)
 
