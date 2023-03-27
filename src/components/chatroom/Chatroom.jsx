@@ -60,8 +60,7 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
         };
     }
 
-    const initMsg = getMsgs()
-    const [msg, setMsg] = useState(initMsg)
+    const [msg, setMsg] = useState(() => {return getMsgs()})
     
     const chatRefreshTime = 1200
     useEffect(() => {

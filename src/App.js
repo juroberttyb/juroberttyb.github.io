@@ -56,3 +56,20 @@ function App() {
 }
 
 export default App;
+
+// import React, { useState } from 'react'
+
+// export default function App() {
+
+//   console.log(`render App`)
+
+//   const [name, setName] = useState('')
+//   console.log(`rendering app with name=(${name})`)
+
+//   return (
+//     <>
+//       <input value={name} onChange={e => setName(e.target.value)} />
+//       <div>My name is: {name}</div>
+//     </>
+//   )
+// }
