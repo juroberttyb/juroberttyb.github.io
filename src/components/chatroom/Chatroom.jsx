@@ -65,7 +65,7 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
         const interval = setInterval(() => {
             const updateMsg = async () => {
                 const m = await getMsgs()
-                console.log("_.isEqual(lastMsg, lastChatMsg)", _.isEqual(m.lastMsg, msg.lastMsg));
+                // console.log("_.isEqual(lastMsg, lastChatMsg)", _.isEqual(m.lastMsg, msg.lastMsg));
                 if (!_.isEqual(m.lastMsg, msg.lastMsg)) {
                     setMsg(m)
                 }

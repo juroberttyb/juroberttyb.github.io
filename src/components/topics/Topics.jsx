@@ -39,7 +39,7 @@ const Topics = ({activeTopic, setActiveTopic}) => {
         // return () => {
         //     controller.abort()
         // }
-    }, [])
+    }, [activeTopic, setActiveTopic])
 
     return (
       <div className="topic">
