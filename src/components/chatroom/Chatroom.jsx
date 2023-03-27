@@ -12,7 +12,7 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
         const topic = activeTopic===undefined || activeTopic.topic===undefined ? undefined : activeTopic.topic
 
         const controller = new AbortController()
-        const res = await fetch(`http://localhost:3001/messages?count=15${`&topic=${topic}`}`, { signal: controller.signal })
+        const res = await fetch(`http://localhost:3001/messages?count=20${`&topic=${topic}`}`, { signal: controller.signal })
         const resJson = await res.json()
 
         const unPackedMsgs = resJson.map((m) => {
@@ -49,7 +49,7 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
     
     useEffect(() => {
         const interval = setInterval(() => {
-            console.log('Logs every minute');
+            // console.log('Logs every minute');
 
             const updateMsg = async () => {
                 msgs = await getMsgs()
@@ -60,9 +60,10 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
             }
     
             updateMsg()
-        }, 1000);
+        }, 1200);
 
         return () => {
+            console.log("destructing...")
             const controller = new AbortController()
             controller.abort()
             clearInterval(interval);
