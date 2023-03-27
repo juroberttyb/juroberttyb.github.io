@@ -60,6 +60,7 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
         };
     }
 
+    // should probably use useRef here instead of useState
     const [msg, setMsg] = useState(() => {return getMsgs()})
     
     const chatRefreshTime = 1200
