@@ -1,5 +1,5 @@
 // import pianoImg from '../../assets/images/piano.jpg'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 // import { Outlet } from 'react-router-dom'
 import { Button, Chatroom, Topics } from "../../components"
 import "./home.css"
@@ -93,7 +93,7 @@ const Home = () => {
     return (
         <div id="home">
             <Topics {...{activeTopic, setActiveTopic}} />
-            <div className='content'> 
+            <div className='chat'> 
                 <h1>
                     Hi, I'm Robert
                 </h1>
