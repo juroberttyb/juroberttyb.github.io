@@ -45,11 +45,11 @@ useEffect(() => {
 })
 ```
 
-run on state change
+run on state or var change
 ```
 useEffect(() => {
     ...
-}, [state1, state2...])
+}, [state1, state2, var1, var2...])
 ```
 
 ---
@@ -100,3 +100,40 @@ return (
 ```
 
 ---
+
+## [useMemo](https://www.youtube.com/watch?v=THL1OPn72vo)
+
+* store heavy-work result and not rerun on rerender, unless dependent states changed 
+```
+const computed = useMemo(() => {
+    return compute(_input)
+}, [_input]) // dependency array
+```
+
+* this is a tricky one, about referential equality
+    * darkMode = {...}
+        * useEffect triggered every render cause reference of darkMode changes
+    * darkMode = useMemo(...)
+        * useEffect not triggered cause reference of darkMode is the same accross renders
+        * But if variable dark is altered, even the reference does not changed, the value is different, therefore useEffect will be triggered
+```
+
+/*
+const darkMode = {
+    backgroundColor: dark ? 'black' : 'white',
+    color: dark ? 'white' : 'black'
+}
+*/
+
+const darkMode = useMemo(() => {
+    return {
+        backgroundColor: dark ? 'black' : 'white',
+        color: dark ? 'white' : 'black'
+    }
+}, [dark])
+
+useEffect(() => {
+    console.log('darkMode changed')
+}, [darkMode])
+
+```
