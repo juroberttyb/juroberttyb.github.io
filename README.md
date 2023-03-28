@@ -51,6 +51,16 @@ useEffect(() => {
     ...
 }, [state1, state2, var1, var2...])
 ```
+---
+
+## [useReducer](https://www.youtube.com/watch?v=kK_Wqx3RnHk)
+
+* [easy migration from useState to useReducer](https://www.reddit.com/r/reactjs/comments/10bohti/usereducer_is_easier_to_adopt_than_you_might_think/)
+
+
+```
+
+```
 
 ---
 
@@ -138,7 +148,7 @@ useEffect(() => {
 }, [darkMode])
 
 ```
-
+---
 ## [useCallback](https://www.youtube.com/watch?v=_AyFP5s69N4)
 
 * this is mainly used when one is concerning about 'referential equality'
@@ -153,7 +163,7 @@ const getNums = useCallback(() => {
     return [num, num+1, num+2]
 }, [num])
 ```
-
+---
 ## [useContext](https://www.youtube.com/watch?v=5LrDIWkK_Bc)
 
 * [difference between useContext and Redux](https://www.reddit.com/r/reactjs/comments/vmf4c8/as_a_beginner_which_is_better_redux_or_usecontext/)
@@ -213,3 +223,5 @@ export default function FuncCtx() {
     )
 }
 ```
+---
+## [custom hook](https://www.youtube.com/watch?v=6ThXsUwLWvc)
