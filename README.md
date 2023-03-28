@@ -85,6 +85,18 @@ return (
 )
 ```
 
+* can store the previous value of state
+```
+const prevState = useRef('')
+useEffect(() => {
+    prevState.current = state1
+}, [state1])
 
+return (
+    <>
+        {prevState.current}
+    </>
+)
+```
 
 ---
