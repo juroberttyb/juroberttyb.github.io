@@ -22,7 +22,14 @@ npm run serve
 
 
 # React Note
-## useEffect
+
+## [useState](https://stackoverflow.com/questions/60120261/when-to-use-usestate-initial-value-as-function)
+
+* useState(var), the var will only be set once on state creation, ignored at rerender
+* setState(new state) will cause rerender, but setState(current state) will not
+    * current state here means the exact current state object, not just value
+
+## [useEffect](https://stackoverflow.com/questions/58579426/in-useeffect-whats-the-difference-between-providing-no-dependency-array-and-an)
 
 run only once
 ```
@@ -47,7 +54,7 @@ useEffect(() => {
 
 ---
 
-## useRef
+## [useRef](https://www.youtube.com/watch?v=t2ypzz6gJm0)
 
 * store persistent var accross renders
 * useRef does not cause component to rerender when value changed
