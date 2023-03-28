@@ -12,7 +12,7 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
         const topic = activeTopic===undefined || activeTopic.topic===undefined ? undefined : activeTopic.topic
 
         const controller = new AbortController()
-        const res = await fetch(`https://ro.serveo.net/messages?count=25${`&topic=${topic}`}`, { 
+        const res = await fetch(`http://localhost:3001/messages?count=25${`&topic=${topic}`}`, { 
             signal: controller.signal,
             mode: 'cors', 
         })
@@ -61,19 +61,19 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
     }
 
     // should probably use useRef here instead of useState
-    const [msg, setMsg] = useState(() => {return getMsgs()})
-    
+    const [msg, setMsg] = useState()
     const chatRefreshTime = 1200
     useEffect(() => {
         const interval = setInterval(() => {
             const updateMsg = async () => {
                 const m = await getMsgs()
-                console.log("_.isEqual(lastMsg, lastChatMsg)", _.isEqual(m.lastMsg, msg.lastMsg));
-                if (!_.isEqual(m.lastMsg, msg.lastMsg)) {
+                if (msg !== undefined) {
+                    console.log("isEqual(m.lastMsg, msg.lastMsg)", _.isEqual(m.lastMsg, msg.lastMsg));
+                }
+                if (msg === undefined || !_.isEqual(m.lastMsg, msg.lastMsg)) {
                     setMsg(m)
                 }
             }
-    
             updateMsg()
         }, chatRefreshTime);
 
@@ -96,7 +96,7 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
     return (
         <div id='chatroom'>
             {
-                msg.element === undefined ? "loading messages from far away, please wait around 5 seconds..." : msg.element
+                msg === undefined ? "loading messages from far away, please wait around 5 seconds..." : msg.element
             }
         </div>
     )
