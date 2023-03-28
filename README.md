@@ -156,6 +156,7 @@ const getNums = useCallback(() => {
 
 ## [useContext](https://www.youtube.com/watch?v=5LrDIWkK_Bc)
 
+* [difference between useContext and Redux](https://www.reddit.com/r/reactjs/comments/vmf4c8/as_a_beginner_which_is_better_redux_or_usecontext/)
 * this is similar to context in go, so all children components can access some shared data
 * a functional component way to wrap element inside context
 
