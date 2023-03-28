@@ -103,6 +103,7 @@ return (
 
 ## [useMemo](https://www.youtube.com/watch?v=THL1OPn72vo)
 
+* this is mainly used when one is concerning about 'referential equality'
 * store heavy-work result and not rerun on rerender, unless dependent states changed 
 ```
 const computed = useMemo(() => {
@@ -135,5 +136,28 @@ const darkMode = useMemo(() => {
 useEffect(() => {
     console.log('darkMode changed')
 }, [darkMode])
+
+```
+
+## [useCallback](https://www.youtube.com/watch?v=_AyFP5s69N4)
+
+* this is mainly used when one is concerning about 'referential equality'
+* useCallback is similar to useMemo, the difference is
+    * useMemo => store the return value
+        * [num, num+1, num+2] in below example
+    * useCallback => store the whole func
+        * () => {return [num, num+1, num+2]} in below example
+```
+// only re-create getNums func when 'num' changed, not on re-render
+const getNums = useCallback(() => {
+    return [num, num+1, num+2]
+}, [num])
+```
+
+## [useContext](https://www.youtube.com/watch?v=5LrDIWkK_Bc)
+
+* ...
+
+```
 
 ```
