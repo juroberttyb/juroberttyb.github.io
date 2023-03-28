@@ -56,7 +56,7 @@ useEffect(() => {
 ```
 const renderCount = useRef(0)
 useEffect(() => {
-    renderIntoDocument.current = renderCount.current + 1
+    renderCount.current = renderCount.current + 1
 })
 ```
 
