@@ -156,8 +156,59 @@ const getNums = useCallback(() => {
 
 ## [useContext](https://www.youtube.com/watch?v=5LrDIWkK_Bc)
 
-* ...
+* this is similar to context in go, so all children components can access some shared data
+* a functional component way to wrap element inside context
 
+ThemeContext.js
 ```
+const ThemeContext = React.createContext()
+export function useTheme() {
+    useContext(ThemeContext)
+}
 
+export function ThemeProvider({ child }) {
+    const [darkTheme, setDarkTheme] = useState(true)
+    
+    function toggleTheme() {
+        setDarkTheme(prevDarkTheme => !prevDarkTheme)
+    }
+
+    return (
+        <ThemeContext.Provider 
+            value={ [darkTheme, toggleTheme] }
+        >
+            {child}
+        </ThemeContext.Provider>
+    )
+}
+```
+App.js
+```
+import { ThemeProvider } from './ThemeContext'
+
+export default function App() {
+    return (
+        <ThemeProvider> // allow children to access context
+            <FuncCtx>
+        </ThemeProvider>
+    )
+}
+```
+FuncCtx.js
+```
+export default function FuncCtx() {
+    const [darkTheme, toggleTheme] = useTheme()
+
+    const themeStyles = {
+        backgroundColor: darkTheme ? 'black' : 'white',
+        color: darkTheme ? 'white' : 'black',
+    }
+
+    return (
+        <>
+            <button onClick={toggleTheme}>Toggle Theme</button>
+            <div style=themeStyles>Actual Theme</div>
+        </>
+    )
+}
 ```
