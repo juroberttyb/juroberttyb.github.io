@@ -55,11 +55,36 @@ useEffect(() => {
 
 ## [useReducer](https://www.youtube.com/watch?v=kK_Wqx3RnHk)
 
+* dispatch is like setState with custom logic
+* useReducer often used to handle complex state
+    * for example if every setState of a complex state always require some common logic, we can write it inside func of useReducer(func, state) to simplify code
 * [easy migration from useState to useReducer](https://www.reddit.com/r/reactjs/comments/10bohti/usereducer_is_easier_to_adopt_than_you_might_think/)
 
 
 ```
+function reducer(state, action) {
+    switch (action.type) {
+        case 'up':
+            return { count: state.count + 1 }
+        case 'dw':
+            return { count: state.count - 1 }
+        default:
+            return state
+    }
+}
 
+// dispatch call the 'reducer' func provided in arg
+const [state, dispatch] = useReducer(reducer, { count: 0 })
+
+function increment() {
+    dispatch({ type: 'up' })
+}
+
+return (
+    <>
+        <button onClick={increment}>+</button>
+    </>
+)
 ```
 
 ---
