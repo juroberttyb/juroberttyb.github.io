@@ -58,7 +58,7 @@ useEffect(() => {
 * dispatch is like setState with custom logic
 * useReducer often used to handle complex state
     * for example if every setState of a complex state always require some common logic, we can write it inside func of useReducer(func, state) to simplify code
-* [easy migration from useState to useReducer](https://www.reddit.com/r/reactjs/comments/10bohti/usereducer_is_easier_to_adopt_than_you_might_think/)
+* [why use useReducer](https://www.reddit.com/r/reactjs/comments/10bohti/usereducer_is_easier_to_adopt_than_you_might_think/)
 
 
 ```
@@ -250,3 +250,15 @@ export default function FuncCtx() {
 ```
 ---
 ## [custom hook](https://www.youtube.com/watch?v=6ThXsUwLWvc)
+
+* by convention, named as use***
+
+```
+// custom logger hook that console log when value altered
+
+export default function useUpdateLogger(value) {
+    useEffect(() => {
+        console.log(value)
+    }, [value])
+}
+```
