@@ -355,3 +355,13 @@ export function NotFound() {
 }
 ```
 
+# how to establish https connection
+
+1.      The client sends an HTTPS request to the server.
+2.      The server responds with its SSL/TLS certificate, which includes its public key.
+3.      The client verifies that the server's SSL/TLS certificate is valid and trustworthy. If the certificate is not trusted, the client will display a warning to the user and may not establish a connection.
+4.      Once the certificate is verified, the client generates a random symmetric encryption key and encrypts it with the server's public key.
+5.      The client sends the encrypted symmetric key to the server.
+6.      The server uses its private key to decrypt the symmetric key.
+7.      The client and server now share a symmetric key that they can use to encrypt and decrypt data sent between them. All further communication between the client and server is encrypted using this shared key.
+
