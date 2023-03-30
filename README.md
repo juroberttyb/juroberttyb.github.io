@@ -329,3 +329,20 @@ export function Book() {
 }
 ```
 
+NotFound.js
+```
+import { useNavigate } from "react-router-dom"
+
+export function NotFound() {
+    const navigator = useNavigate()
+
+    useEffect(() => {
+        setTimeout(() => {
+            navigator("/")
+        }, 1000)
+    }, [])
+
+    return <div>Not Found</div>
+}
+```
+
