@@ -262,3 +262,70 @@ export default function useUpdateLogger(value) {
     }, [value])
 }
 ```
+---
+# React Router
+
+## [Browser Router](https://www.youtube.com/watch?v=Ul3y1LXxzdU)
+
+* mosted used react router
+* route vs api
+    * api => catch the matching one
+    * route => render all matching route components
+        ```
+        <Routes>
+            <Route path="/books" element={<div>matching 1</div>} />
+        </Routes>
+
+        <Routes>
+            <Route path="/books" element={<div>matching 2</div>} />
+        </Routes>
+
+        // if route is at "/books", this will render both
+        ```
+
+App.js
+```
+<Routes>
+    <Route path="/" element={<Home />} />
+
+    // render => BookLayout => redner => sub-routes => ...
+    // use <Route elements={<BookLayout />}> if just want to add the render of this component to sub-routes
+    <Route path="/books" elements={<BookLayout />}>
+        <Route index element={<Booklist />} /> // "messages", index match exact parent path
+        <Route path="/:id" element={<Book />} /> // "messages/:id"
+    </Route>
+
+    // default 404 page
+    <Route path="*" element={<NotFound />} />
+<Routes>
+```
+
+BookLayout.js
+```
+export function BookLayout() {
+    return (
+        <>
+            <Link to="/books/1">Book 1</Link>
+            <br />
+            <Link to="/books/2">Book 2</Link>
+            <br />
+
+            // to enable rendering sub-route component, add <Outlet />
+            // context can be used to pass data to sub-routes
+            <Outlet context={{ hello: "world" }} />
+        </>
+    )
+}
+```
+
+Book.js
+```
+export function Book() {
+    const { id } = useParams()
+    // for sub-route components, to use context passed
+    const obj = useOutletContext()
+
+    return <div>Book {id} {object.hello}</div>
+}
+```
+
