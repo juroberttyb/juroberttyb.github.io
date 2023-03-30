@@ -249,6 +249,15 @@ export default function FuncCtx() {
 }
 ```
 ---
+## [useSearchParams](https://www.youtube.com/watch?v=Ul3y1LXxzdU)
+
+* add param in url, for example adding id, {baseUrl}/books?id='kgj84go8fd90k3'
+
+```
+const [searchParams, setSearchParams] = useSearchParams({ id: 'kgj84go8fd90k3' })
+const bookId = searchParams.get("id") 
+```
+---
 ## [custom hook](https://www.youtube.com/watch?v=6ThXsUwLWvc)
 
 * by convention, named as use***
