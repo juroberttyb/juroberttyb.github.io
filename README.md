@@ -271,7 +271,6 @@ export default function useUpdateLogger(value) {
     }, [value])
 }
 ```
----
 # React Router
 
 ## [Browser Router](https://www.youtube.com/watch?v=Ul3y1LXxzdU)
@@ -460,8 +459,16 @@ return (
     <button onClick={addBy}>Add 10</button>
 )
 ```
+# [Typescript](https://www.youtube.com/watch?v=30LWjhZzg50)
 
-# how to establish https connection
+* npm install typescript --save-dev
+
+* to transpile ts to js, given intro.ts, in command line
+    ```
+    tsc intro.ts
+    ```
+
+# How to establish https connection
 
 1.      The client sends an HTTPS request to the server.
 2.      The server responds with its SSL/TLS certificate, which includes its public key.
