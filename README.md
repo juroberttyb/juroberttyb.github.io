@@ -355,6 +355,40 @@ export function NotFound() {
 }
 ```
 
+# [Redux](https://www.youtube.com/watch?v=zrs7u6bdbUw&t=58s)
+
+```
+import { createStore } from "redux";
+
+const reducerFn = (state = { counter: 0 }, action) => {
+
+    if (action.type === "INC") {
+        return { counter: state.counter++ }
+    }
+
+    return state;
+}; 
+
+const store = createStore(reducerFn);
+export default store;
+```
+
+App.js
+```
+import { useSelector, useDispatch } from "react-redux"
+
+const counter = useSelector((state) => state.counter);
+const dispatch = useDispatch();
+const increment = () => {
+    dispatch({ type: "INC" });
+};
+
+return (
+    <div>{counter}</div>
+    <button onClick={increment}>Increment</button>
+)
+```
+
 # how to establish https connection
 
 1.      The client sends an HTTPS request to the server.
