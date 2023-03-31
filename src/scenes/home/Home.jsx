@@ -1,5 +1,5 @@
 // import pianoImg from '../../assets/images/piano.jpg'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 // import { Outlet } from 'react-router-dom'
 import { Button, Chatroom, Topics } from "../../components"
 import "./home.css"
@@ -7,6 +7,8 @@ import "./home.css"
 import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "firebase/auth";
 
 const Home = () => { 
+
+    console.log("render home")
 
     const [signedIn, setSignedIn] = useState(false)
     const [user, setUser] = useState(undefined)
@@ -61,7 +63,7 @@ const Home = () => {
         try {
             const text = document.getElementById("chat_text_input")
     
-            const rawResponse = await fetch('https://robertchu.serveo.net/messages', {
+            const rawResponse = await fetch('https://rob.serveo.net/messages', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
@@ -91,7 +93,7 @@ const Home = () => {
     return (
         <div id="home">
             <Topics {...{activeTopic, setActiveTopic}} />
-            <div className='content'> 
+            <div className='chat'> 
                 <h1>
                     Hi, I'm Robert
                 </h1>

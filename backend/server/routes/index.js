@@ -1,0 +1,5 @@
+export { default as authRoutes } from "./auth.js"
+export { default as userRoutes } from "./user.js"
+export { default as postRoutes } from "./post.js"
+export { default as msgRoutes } from "./message.js"
+export { default as topicRoutes } from "./topic.js"
