@@ -357,6 +357,8 @@ export function NotFound() {
 
 # [Redux](https://www.youtube.com/watch?v=zrs7u6bdbUw&t=58s)
 
+* createStore from redux
+
 ```
 import { createStore } from "redux";
 
@@ -364,6 +366,12 @@ const reducerFn = (state = { counter: 0 }, action) => {
 
     if (action.type === "INC") {
         return { counter: state.counter++ }
+    }
+    if (action.type === "DEC") {
+        return { counter: state.counter-- }
+    }
+    if (action.type === "ADD") {
+        return { counter: state.counter + action.payload }
     }
 
     return state;
@@ -382,10 +390,74 @@ const dispatch = useDispatch();
 const increment = () => {
     dispatch({ type: "INC" });
 };
+const decrement = () => {
+    dispatch({ type: "DEC" });
+};
+const addBy = () => {
+    dispatch({ type: "ADD", payload: 10 });
+};
 
 return (
     <div>{counter}</div>
     <button onClick={increment}>Increment</button>
+    <button onClick={decrement}>Decrement</button>
+    <button onClick={addBy}>Add 10</button>
+)
+```
+
+* createSlice from redux toolkit
+
+./store/index.js
+```
+import { configureStore, createSlice } from '@redux.js/toolkit'
+
+const counterSlice = createSlice({
+    name: 'counter',
+    initialState = {
+        counter: 0,
+    },
+    reducers: {
+        incrememnt(state, action) {
+            state.counter++;
+        },
+        decrement(state, action) {
+            state.counter--;
+        },
+        addby(state, action) {
+            state.counter += action.payload;
+        },
+    }
+})
+
+export const actions = counterSlice.actions;
+const store = configureStore({
+    reducer: counterSlice.reducers,
+})
+export default store;
+```
+
+App.js
+```
+import { useSelector, useDispatch } from "react-redux";
+import { actions } from "./store/index";
+
+const counter = useSelector((state) => state.counter);
+const dispatch = useDispatch();
+const increment = () => {
+    dispatch(actions.increment());
+};
+const decrement = () => {
+    dispatch(actions.decrement());
+};
+const addBy = () => {
+    dispatch(actions.addBy(10));
+};
+
+return (
+    <div>{counter}</div>
+    <button onClick={increment}>Increment</button>
+    <button onClick={decrement}>Decrement</button>
+    <button onClick={addBy}>Add 10</button>
 )
 ```
 
