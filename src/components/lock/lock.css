@@ -1,0 +1,19 @@
+.lock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+  
+.lock input, .lock button {
+    height: 2.5rem;
+}
+  
+.lock input {
+    outline: none;
+}
+  
+.lock button {
+}

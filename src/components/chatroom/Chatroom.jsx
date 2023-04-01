@@ -1,14 +1,22 @@
 import { useState, useEffect } from 'react'
 import seaOtter from '../../assets/images/seaOtter.jpg'
 import { Lock } from '../../components'
-import _ from "lodash";
+import _ from "lodash"
 import './chatroom.css'
 
 const Chatroom = ({activeTopic, signedIn, user}) => {
 
     console.log("render chatroom")
 
-    var lock = activeTopic===undefined ? false : activeTopic.topic === "Family" || activeTopic.topic === "RobertSophie"
+    const [lock, setLock] = useState(false)
+    useEffect(() => {
+        const checkLock = async () => {
+            setLock(activeTopic===undefined ? false : activeTopic.topic === "Family" || activeTopic.topic === "RobertSophie")
+        }
+
+        checkLock()
+    })
+    // var lock = activeTopic===undefined ? false : activeTopic.topic === "Family" || activeTopic.topic === "RobertSophie"
 
     const getMsgs = async () => {
         const topic = activeTopic===undefined || activeTopic.topic===undefined ? undefined : activeTopic.topic
@@ -82,11 +90,11 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
         scrollToLatestMsg()
     }, [msg])
 
-    const displayMsg = msg === undefined ? "Loading messages far away, please wait for a second..." : msg.element
+    const chatroom = msg === undefined ? "Loading messages far away, please wait a second..." : msg.element
     return (
         <div id='chatroom'>
-            { 
-                lock ? <Lock /> : displayMsg
+            {
+                lock ? <Lock {...{setLock}} /> : chatroom
             }
         </div>
     )
