@@ -12,7 +12,7 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
         const topic = activeTopic===undefined || activeTopic.topic===undefined ? undefined : activeTopic.topic
 
         const controller = new AbortController()
-        const res = await fetch(`https://rob.serveo.net/messages?count=25${`&topic=${topic}`}`, { 
+        const res = await fetch(`http://34.31.39.182/messages?count=25${`&topic=${topic}`}`, { 
             signal: controller.signal,
             mode: 'cors', 
         })

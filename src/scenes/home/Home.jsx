@@ -63,7 +63,7 @@ const Home = () => {
         try {
             const text = document.getElementById("chat_text_input")
     
-            const rawResponse = await fetch('https://rob.serveo.net/messages', {
+            const rawResponse = await fetch('http://34.31.39.182/messages', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
