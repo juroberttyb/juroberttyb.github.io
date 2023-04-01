@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import seaOtter from '../../assets/images/seaOtter.jpg'
+import { Lock } from '../../components'
 import _ from "lodash";
 import './chatroom.css'
 
@@ -7,7 +8,8 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
 
     console.log("render chatroom")
 
-    const defaultUserName = "Sea Otter"
+    var lock = activeTopic===undefined ? false : activeTopic.topic === "Family" || activeTopic.topic === "RobertSophie"
+
     const getMsgs = async () => {
         const topic = activeTopic===undefined || activeTopic.topic===undefined ? undefined : activeTopic.topic
 
@@ -33,27 +35,13 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
                         <img className="photo" src={userExist ? m.user.photoURL : seaOtter} alt="" />
                         <div className='message_content'>
                             <div className='sender'>
-                                {userExist ? m.user.displayName : defaultUserName} <span className='created_at'>{m.created_at}</span>
+                                {userExist ? m.user.displayName : "Sea Otter"} <span className='created_at'>{m.created_at}</span>
                             </div>
                             <div className='text'>{m.message}</div>
                         </div>
                     </li>
             )
         }, [activeTopic, signedIn, user])
-
-        // const myPromise = new Promise((resolve, reject) => {
-        //     setTimeout(() => {
-        //       resolve("Promise resolved");
-        //     }, 10000);
-        // });
-        
-        // // wait for the promise to resolve
-        // await myPromise.then((result) => {
-        //     console.log(result);
-        //     // continue with the rest of the code here
-        
-        //     console.log("log before promise resolved");
-        // });
 
         return {
             element: <ul>{liMsgs}</ul>,
@@ -94,10 +82,11 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
         scrollToLatestMsg()
     }, [msg])
 
+    const displayMsg = msg === undefined ? "Loading messages far away, please wait for a second..." : msg.element
     return (
         <div id='chatroom'>
-            {
-                msg === undefined ? "loading messages from far away, please wait around 5 seconds..." : msg.element
+            { 
+                lock ? <Lock /> : displayMsg
             }
         </div>
     )
