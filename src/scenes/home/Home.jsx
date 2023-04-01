@@ -1,6 +1,4 @@
-// import pianoImg from '../../assets/images/piano.jpg'
 import { useState } from 'react'
-// import { Outlet } from 'react-router-dom'
 import { Button, Chatroom, Topics } from "../../components"
 import "./home.css"
 
@@ -107,7 +105,6 @@ const Home = () => {
                     <Button value="Send" onClick={sendMsg} id="send_text_button" />
                 </div>
             </div>
-            {/* <Outlet context={{}} /> */}
         </div>
     )
 }
