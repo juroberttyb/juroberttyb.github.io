@@ -65,7 +65,7 @@ app.use("/messages", msgRoutes);
 
 
 /* mongoose setup */
-const PORT = process.env.PORT || 6001;
+const PORT = process.env.PORT || 8000;
 // console.log(`process.env.MONGO_URL ${process.env.MONGO_URL}`)
 mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
