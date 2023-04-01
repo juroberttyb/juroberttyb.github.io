@@ -10,7 +10,17 @@ const Topics = ({activeTopic, setActiveTopic}) => {
     useEffect(() => {
         const getAllTopics = async () => {
             const controller = new AbortController()
-            const res = await fetch('http://34.31.39.182/topics?count=6', { signal: controller.signal })
+            const res = await fetch(
+                'http://34.31.39.182/topics?count=6', 
+                { 
+                    method: "GET",
+                    mode: 'cors', 
+                    headers: {
+                        "Content-Type": "text/plain"
+                    },
+                    signal: controller.signal,
+                },
+            )
             const topics = await res.json()
             // console.log("topics", topics)
 

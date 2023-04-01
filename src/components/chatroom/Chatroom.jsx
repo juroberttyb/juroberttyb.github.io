@@ -13,8 +13,9 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
 
         const controller = new AbortController()
         const res = await fetch(`http://34.31.39.182/messages?count=25${`&topic=${topic}`}`, { 
-            signal: controller.signal,
+            method: "GET",
             mode: 'cors', 
+            signal: controller.signal,
         })
         const resJson = await res.json()
 
