@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react'
 import seaOtter from '../../assets/images/seaOtter.jpg'
-import _ from "lodash";
+import { Lock } from '../../components'
+import _ from "lodash"
 import './chatroom.css'
 
-const Chatroom = ({activeTopic, signedIn, user}) => {
+const Chatroom = ({lock, setLock, activeTopic, signedIn, user}) => {
 
     console.log("render chatroom")
 
-    const defaultUserName = "Sea Otter"
     const getMsgs = async () => {
         const topic = activeTopic===undefined || activeTopic.topic===undefined ? undefined : activeTopic.topic
 
@@ -33,27 +33,13 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
                         <img className="photo" src={userExist ? m.user.photoURL : seaOtter} alt="" />
                         <div className='message_content'>
                             <div className='sender'>
-                                {userExist ? m.user.displayName : defaultUserName} <span className='created_at'>{m.created_at}</span>
+                                {userExist ? m.user.displayName : "Sea Otter"} <span className='created_at'>{m.created_at}</span>
                             </div>
                             <div className='text'>{m.message}</div>
                         </div>
                     </li>
             )
         }, [activeTopic, signedIn, user])
-
-        // const myPromise = new Promise((resolve, reject) => {
-        //     setTimeout(() => {
-        //       resolve("Promise resolved");
-        //     }, 10000);
-        // });
-        
-        // // wait for the promise to resolve
-        // await myPromise.then((result) => {
-        //     console.log(result);
-        //     // continue with the rest of the code here
-        
-        //     console.log("log before promise resolved");
-        // });
 
         return {
             element: <ul>{liMsgs}</ul>,
@@ -64,15 +50,29 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
     // should probably use useRef here instead of useState
     const [msg, setMsg] = useState()
     const chatRefreshTime = 1200
+
+    useEffect(() => {
+        setMsg(undefined)
+
+        const checkLock = async () => {
+            setLock(activeTopic===undefined ? false : activeTopic.topic === "Family" || activeTopic.topic === "RobertSophie")
+        }
+
+        checkLock()
+    }, [activeTopic, setLock])
+
     useEffect(() => {
         const interval = setInterval(() => {
             const updateMsg = async () => {
-                const m = await getMsgs()
-                if (msg !== undefined) {
-                    console.log("isEqual(m.lastMsg, msg.lastMsg)", _.isEqual(m.lastMsg, msg.lastMsg));
-                }
-                if (msg === undefined || !_.isEqual(m.lastMsg, msg.lastMsg)) {
-                    setMsg(m)
+                if (lock === false) {
+                    const m = await getMsgs()
+
+                    if (msg !== undefined) {
+                        console.log("isEqual(m.lastMsg, msg.lastMsg)", _.isEqual(m.lastMsg, msg.lastMsg));
+                    }
+                    if (msg === undefined || !_.isEqual(m.lastMsg, msg.lastMsg)) {
+                        setMsg(m)
+                    }
                 }
             }
             updateMsg()
@@ -94,10 +94,11 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
         scrollToLatestMsg()
     }, [msg])
 
+    const chatroom = msg === undefined ? "Loading messages far away, please wait a second..." : msg.element
     return (
         <div id='chatroom'>
             {
-                msg === undefined ? "loading messages from far away, please wait around 5 seconds..." : msg.element
+                lock ? <Lock {...{activeTopic, setLock}} /> : chatroom
             }
         </div>
     )

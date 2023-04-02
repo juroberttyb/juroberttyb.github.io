@@ -25,9 +25,18 @@ npm run serve
 
 ## [useState](https://stackoverflow.com/questions/60120261/when-to-use-usestate-initial-value-as-function)
 
-* useState(var), the var will only be set once on state creation, ignored at rerender
-* setState(new state) will cause rerender, but setState(current state) will not
-    * current state here means the exact current state object, not just value
+* useState(init_state) will be set only once, ignored on re-render
+* setState(new_state) will cause re-render if old_state != new_state
+    * will not cause re-render
+        ```
+        \\ given old_state=true
+        setState(true)
+        ```
+    * will cause re-render
+        ```
+        \\ given old_state={s: true}
+        setState({s: true})
+        ```
 
 ## [useEffect](https://stackoverflow.com/questions/58579426/in-useeffect-whats-the-difference-between-providing-no-dependency-array-and-an)
 

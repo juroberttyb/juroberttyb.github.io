@@ -11,6 +11,7 @@ const Home = () => {
     const [signedIn, setSignedIn] = useState(false)
     const [user, setUser] = useState(undefined)
     const [activeTopic, setActiveTopic] = useState(undefined)
+    const [lock, setLock] = useState(false)
 
     const provider = new GoogleAuthProvider();
 
@@ -95,15 +96,17 @@ const Home = () => {
                 <h1>
                     Hi, I'm Robert
                 </h1>
-                <Chatroom {...{activeTopic, signedIn, user}} />
-                <div id='chat_input'>
-                    {
-                        signedIn ? <Button value="Sign Out" onClick={signOut} className="sign_button" id="signOutBtn" />
-                        : <Button value="Sign in with Google" onClick={signIn} className="sign_button" id="signInBtn" />
-                    }
-                    <input id='chat_text_input' type="text" onKeyDown={sendOnEnter} autoComplete="off"></input>
-                    <Button value="Send" onClick={sendMsg} id="send_text_button" />
-                </div>
+                <Chatroom {...{lock, setLock, activeTopic, signedIn, user}} />
+                { lock===false && 
+                    <div id='chat_input'>
+                        {
+                            signedIn ? <Button value="Sign Out" onClick={signOut} className="sign_button" id="signOutBtn" />
+                            : <Button value="Sign in with Google" onClick={signIn} className="sign_button" id="signInBtn" />
+                        }
+                        <input id='chat_text_input' type="text" onKeyDown={sendOnEnter} autoComplete="off"></input>
+                        <Button value="Send" onClick={sendMsg} id="send_text_button" />
+                    </div>
+                }
             </div>
         </div>
     )

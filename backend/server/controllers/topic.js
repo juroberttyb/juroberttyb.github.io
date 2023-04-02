@@ -1,17 +1,6 @@
 import Topic from "../models/Topic.js";
 
 /* READ */
-// export const getMsg = async (req, res) => {
-//   try {
-//     const { message_id } = req.params;
-//     // console.log("message_id", message_id)
-//     const msg = await Message.find({ _id: message_id });
-//     res.status(200).json(msg);
-//   } catch (err) {
-//     res.status(404).json({ error: err.message });
-//   }
-// };
-
 export const getAllTopics = async (req, res) => {
   try {
     const count = req.query.count
@@ -21,11 +10,44 @@ export const getAllTopics = async (req, res) => {
 
     // sort({created_at: -1}) for reverse order
     // sort('created_at') for original order
-    const msgs = await Topic.find().sort({created_at: -1}).limit(count);
-    msgs.reverse()
-    res.status(200).json(msgs);
+    const topics = await Topic.find().sort({created_at: -1}).limit(count);
+    topics.reverse()
+
+    for (let i = 0; i < topics.length; i++) {
+      if (topics[i].password !== undefined) {
+        topics[i].password = "*"
+      }
+    }
+
+    res.status(200).json(topics);
   } catch (err) {
     res.status(404).json({ error: err.message });
+  }
+};
+
+export const loginTopic = async (req, res) => {
+  try {
+    const { topic_id } = req.params;
+    console.log("topic_id", topic_id)
+    const topic = await Topic.findOne({ _id: topic_id });
+    console.log("topic", topic)
+    if (topic.password === undefined) {
+      console.log("topic.password", topic.password)
+      res.status(200).json({});
+      return;
+    } 
+
+    const { password } = req.query
+    console.log("password", password)
+    if (password !== topic.password) {
+      res.status(401).json({});
+      return;
+    }
+    console.log("password === topic.password", password === topic.password)
+    res.status(200).json({});
+  } catch (err) {
+    res.status(401).json({});
+    // res.status(404).json({ error: err.message });
   }
 };
 
