@@ -10,9 +10,16 @@ export const getAllTopics = async (req, res) => {
 
     // sort({created_at: -1}) for reverse order
     // sort('created_at') for original order
-    const msgs = await Topic.find().sort({created_at: -1}).limit(count);
-    msgs.reverse()
-    res.status(200).json(msgs);
+    const topics = await Topic.find().sort({created_at: -1}).limit(count);
+    topics.reverse()
+
+    for (let i = 0; i < topics.length; i++) {
+      if (topics[i].password !== undefined) {
+        topics[i].password = "*"
+      }
+    }
+
+    res.status(200).json(topics);
   } catch (err) {
     res.status(404).json({ error: err.message });
   }
