@@ -41,6 +41,7 @@ export const loginTopic = async (req, res) => {
     console.log("password", password)
     if (password !== topic.password) {
       res.status(401).json({});
+      return;
     }
     console.log("password === topic.password", password === topic.password)
     res.status(200).json({});
