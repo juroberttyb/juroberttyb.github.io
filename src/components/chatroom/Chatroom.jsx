@@ -98,7 +98,7 @@ const Chatroom = ({lock, setLock, activeTopic, signedIn, user}) => {
     return (
         <>
             <h1>
-                {activeTopic.topic}
+                {activeTopic === undefined ? "" : activeTopic.topic}
             </h1>
             <div id='chatroom'>
                 {
