@@ -96,11 +96,17 @@ const Chatroom = ({lock, setLock, activeTopic, signedIn, user}) => {
 
     const chatroom = msg === undefined ? "Loading messages far away, please wait a second..." : msg.element
     return (
-        <div id='chatroom'>
-            {
-                lock ? <Lock {...{activeTopic, setLock}} /> : chatroom
-            }
-        </div>
+        <>
+            <h1>
+                {activeTopic.topic}
+            </h1>
+            <div id='chatroom'>
+                {
+                    lock ? <Lock {...{activeTopic, setLock}} /> : chatroom
+                }
+            </div>
+        </>
+
     )
 }
 

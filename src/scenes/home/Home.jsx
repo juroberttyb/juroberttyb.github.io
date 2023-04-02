@@ -93,9 +93,6 @@ const Home = () => {
         <div id="home">
             <Topics {...{activeTopic, setActiveTopic}} />
             <div className='chat'> 
-                <h1>
-                    Hi, I'm Robert
-                </h1>
                 <Chatroom {...{lock, setLock, activeTopic, signedIn, user}} />
                 { lock===false && 
                     <div id='chat_input'>
