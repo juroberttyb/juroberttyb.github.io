@@ -5,8 +5,8 @@ import { verifyToken } from "../middleware/auth.js";
 const router = express.Router();
 
 /* READ */
-router.get("", getAllTopics);
 router.get(":topic_id/login", loginTopic);
+router.get("", getAllTopics);
 
 /* POST */
 router.post("", postTopic);
