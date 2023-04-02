@@ -6,7 +6,7 @@ const messageSchema = mongoose.Schema(
       type: Object,
       default: undefined,
     },
-    topic: {
+    topic_id: {
       type: String,
       default: undefined,
     },

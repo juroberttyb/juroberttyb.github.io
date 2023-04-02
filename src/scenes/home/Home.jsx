@@ -62,7 +62,7 @@ const Home = () => {
         try {
             const text = document.getElementById("chat_text_input")
     
-            const rawResponse = await fetch('https://34.31.39.182/messages', {
+            const rawResponse = await fetch('https://34.134.142.162/messages', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
@@ -70,7 +70,7 @@ const Home = () => {
                 },
                 body: JSON.stringify({
                     user: user,
-                    topic: activeTopic===undefined ? undefined : activeTopic.topic,
+                    topic_id: activeTopic===undefined ? undefined : activeTopic._id,
                     message: text.value,
                 })
             });

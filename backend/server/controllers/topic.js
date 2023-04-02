@@ -70,3 +70,24 @@ export const postTopic = async (req, res) => {
     res.status(409).json({ error: err.message });
   }
 };
+
+/* UPDATE */
+export const updateTopic = async (req, res) => {
+  try {
+    const { topic_id } = req.params;
+    const { topic_name } = req.body;
+    
+    const updatedTopic = await Topic.findByIdAndUpdate(
+      topic_id,
+      { topic: topic_name },
+    );
+
+    if (updatedTopic.password !== undefined) {
+      updatedTopic.password = "*"
+    }
+
+    res.status(200).json(updatedTopic);
+  } catch (err) {
+    res.status(404).json({ message: err.message });
+  }
+};

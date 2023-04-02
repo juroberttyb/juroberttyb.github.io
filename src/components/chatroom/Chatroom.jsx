@@ -9,10 +9,12 @@ const Chatroom = ({lock, setLock, activeTopic, signedIn, user}) => {
     console.log("render chatroom")
 
     const getMsgs = async () => {
-        const topic = activeTopic===undefined || activeTopic.topic===undefined ? undefined : activeTopic.topic
+        if (activeTopic === undefined) {
+            return undefined
+        }
 
         const controller = new AbortController()
-        const res = await fetch(`https://34.31.39.182/messages?count=25${`&topic=${topic}`}`, { 
+        const res = await fetch(`https://34.134.142.162/messages?count=25${`&topic_id=${activeTopic._id}`}`, { 
             method: "GET",
             mode: 'cors', 
             signal: controller.signal,
@@ -55,7 +57,7 @@ const Chatroom = ({lock, setLock, activeTopic, signedIn, user}) => {
         setMsg(undefined)
 
         const checkLock = async () => {
-            setLock(activeTopic===undefined ? false : activeTopic.topic === "Family" || activeTopic.topic === "RobertSophie")
+            setLock(activeTopic===undefined ? false : activeTopic.password !== undefined)
         }
 
         checkLock()
@@ -98,7 +100,7 @@ const Chatroom = ({lock, setLock, activeTopic, signedIn, user}) => {
     return (
         <>
             <h1>
-                {activeTopic.topic}
+                {activeTopic === undefined ? "" : activeTopic.topic}
             </h1>
             <div id='chatroom'>
                 {

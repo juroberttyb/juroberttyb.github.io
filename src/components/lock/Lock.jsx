@@ -15,7 +15,7 @@ const Lock = ({ activeTopic, setLock }) => {
 
         const passwd = document.getElementById(passwdInputId).value
         const controller = new AbortController()
-        const res = await fetch(`https://34.31.39.182/topics/${activeTopic._id}/login?password=${passwd}`, { 
+        const res = await fetch(`https://34.134.142.162/topics/${activeTopic._id}/login?password=${passwd}`, { 
             method: "GET",
             mode: 'cors', 
             signal: controller.signal,

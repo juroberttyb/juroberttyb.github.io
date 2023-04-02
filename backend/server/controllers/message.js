@@ -14,15 +14,15 @@ export const getMsg = async (req, res) => {
 
 export const getAllMsg = async (req, res) => {
   try {
-    const { count, topic } = req.query
-    if (count === undefined) {
+    const { count, topic_id } = req.query
+    if (count === undefined || topic_id === undefined) {
       throw Error ('query parameter: count, not provided')
     }
 
     // sort({created_at: -1}) for reverse order
     // sort('created_at') for original order
     // console.log({topic: topic})
-    const msgs = await Message.find(topic == "undefined" ? {topic: "default"} : {topic: topic}).sort({created_at: -1}).limit(count);
+    const msgs = await Message.find({topic_id: topic_id}).sort({created_at: -1}).limit(count);
     msgs.reverse()
     res.status(200).json(msgs);
   } catch (err) {
@@ -33,12 +33,12 @@ export const getAllMsg = async (req, res) => {
 /* CREATE */
 export const postMsg = async (req, res) => {
   try {
-    const { user, topic, message } = req.body;
+    const { user, topic_id, message } = req.body;
     // const user = await User.findById(userId);
 
     const newMsg = new Message({
       user: user,
-      topic: topic,
+      topic_id: topic_id,
       message: message,
     });
 
