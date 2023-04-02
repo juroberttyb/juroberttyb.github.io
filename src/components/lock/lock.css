@@ -18,6 +18,7 @@
   
 #password_input_text {
     /* margin-left: 1%; */
+    text-align: center;
     border-radius: 8px;
 }
 
