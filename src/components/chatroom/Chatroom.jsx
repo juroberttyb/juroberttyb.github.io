@@ -4,18 +4,9 @@ import { Lock } from '../../components'
 import _ from "lodash"
 import './chatroom.css'
 
-const Chatroom = ({activeTopic, signedIn, user}) => {
+const Chatroom = ({lock, setLock, activeTopic, signedIn, user}) => {
 
     console.log("render chatroom")
-
-    const [lock, setLock] = useState(false)
-    useEffect(() => {
-        const checkLock = async () => {
-            setLock(activeTopic===undefined ? false : activeTopic.topic === "Family" || activeTopic.topic === "RobertSophie")
-        }
-
-        checkLock()
-    }, [activeTopic])
 
     const getMsgs = async () => {
         const topic = activeTopic===undefined || activeTopic.topic===undefined ? undefined : activeTopic.topic
@@ -59,15 +50,29 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
     // should probably use useRef here instead of useState
     const [msg, setMsg] = useState()
     const chatRefreshTime = 1200
+
+    useEffect(() => {
+        setMsg(undefined)
+
+        const checkLock = async () => {
+            setLock(activeTopic===undefined ? false : activeTopic.topic === "Family" || activeTopic.topic === "RobertSophie")
+        }
+
+        checkLock()
+    }, [activeTopic, setLock])
+
     useEffect(() => {
         const interval = setInterval(() => {
             const updateMsg = async () => {
-                const m = await getMsgs()
-                if (msg !== undefined) {
-                    console.log("isEqual(m.lastMsg, msg.lastMsg)", _.isEqual(m.lastMsg, msg.lastMsg));
-                }
-                if (msg === undefined || !_.isEqual(m.lastMsg, msg.lastMsg)) {
-                    setMsg(m)
+                if (lock === false) {
+                    const m = await getMsgs()
+
+                    if (msg !== undefined) {
+                        console.log("isEqual(m.lastMsg, msg.lastMsg)", _.isEqual(m.lastMsg, msg.lastMsg));
+                    }
+                    if (msg === undefined || !_.isEqual(m.lastMsg, msg.lastMsg)) {
+                        setMsg(m)
+                    }
                 }
             }
             updateMsg()
@@ -93,7 +98,7 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
     return (
         <div id='chatroom'>
             {
-                lock ? <Lock {...{setLock}} /> : chatroom
+                lock ? <Lock {...{activeTopic, setLock}} /> : chatroom
             }
         </div>
     )

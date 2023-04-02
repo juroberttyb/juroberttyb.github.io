@@ -2,10 +2,10 @@ import React from 'react'
 import { Button } from '../../components'
 import './lock.css'
 
-const Lock = ({ setLock }) => {
+const Lock = ({ activeTopic, setLock }) => {
 
     const passwdInputId = 'password_input_text'
-    var passwd
+    const passwdStatusId = 'password_status'
 
     const unLock = async () => {
         const cleanUp = () => {
@@ -13,21 +13,17 @@ const Lock = ({ setLock }) => {
             controller.abort()
         }
 
-        passwd = document.getElementById(passwdInputId).value
-        console.log("password", passwd)
-        if (passwd === undefined || passwd === '') {
-            alert("wrong password")
-            return cleanUp
-        }
-
+        const passwd = document.getElementById(passwdInputId).value
         const controller = new AbortController()
-        const res = await fetch(`https://34.31.39.182/passwords/${passwd}`, { 
+        const res = await fetch(`https://34.31.39.182/topics/${activeTopic._id}/login?password=${passwd}`, { 
             method: "GET",
             mode: 'cors', 
             signal: controller.signal,
         })
         if (res.status === 200) {
             setLock(false)
+        } else {
+            document.getElementById(passwdStatusId).innerHTML = 'wrong password'
         }
         // const resJson = await res.json()
 
@@ -35,12 +31,15 @@ const Lock = ({ setLock }) => {
     }
 
     return (
-        <div className='lock'>
-            <div className='border-slicer'>
-                <input id={passwdInputId} className='unlockInput' type='text' value='Enter Password' onChange={()=>{}} />
-                <Button value="unlock" onClick={unLock} className="unLockBtn" id="unLockBtn" />
+        <>
+            <div className='lock'>
+                <div className='border-slicer'>
+                    <input id={passwdInputId} type='text' placeholder="Enter Password" onKeyDown={(e) => { if (e.key === 'Enter') unLock() }} />
+                    <Button value="unlock" onClick={unLock} className="unLockBtn" id="unLockBtn" />
+                    <div id={passwdStatusId}></div>
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 

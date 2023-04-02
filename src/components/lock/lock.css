@@ -2,12 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 95%;
+    height: 100%;
 }
 
 .border-slicer {
-    border-radius: 8px;
-    overflow: hidden;
+    /* border-radius: 8px; */
+    /* overflow: hidden; */
+    /* padding: 1%; */
 }
   
 .lock input, .lock button {
@@ -15,10 +16,12 @@
     max-height: 3.2rem;
 }
   
-.lock input {
-    /* outline: none; */
+#password_input_text {
+    /* margin-left: 1%; */
+    border-radius: 8px;
 }
-  
-.lock button {
-    border-radius: 0px;
+
+#password_status {
+    margin-top: 3%;
+    margin-left: 16%;
 }
