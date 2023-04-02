@@ -65,7 +65,7 @@
     /* CSS styles for screens smaller than 768px */
 
     #chatroom {
-        height: 72vh;
+        height: 66.7vh;
         /* width: 80vw; */
         font-size: 0.8rem;
     }
