@@ -62,7 +62,7 @@ const Home = () => {
         try {
             const text = document.getElementById("chat_text_input")
     
-            const rawResponse = await fetch('https://34.134.142.162/messages', {
+            const rawResponse = await fetch('https://api.robertchu.xyz/messages', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
