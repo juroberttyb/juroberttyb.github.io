@@ -36,11 +36,11 @@
     max-width: 3vw;
     min-height: 3vw;
     max-height: 3vw;
-    margin-top: 0.3%;
+    /* margin-top: 0.3%; */
 }
 
 .text {
-    margin-top: 1%;
+    /* margin-top: 1%; */
     word-wrap: break-word;
 }
 
@@ -79,8 +79,9 @@
     }
 
     .text {
-        margin-top: -8%;
+        margin-top: -3.75%;
         word-wrap: break-word;
+        line-height: 150%;
     }
 
     .created_at {
