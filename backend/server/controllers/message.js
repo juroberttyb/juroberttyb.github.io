@@ -33,12 +33,12 @@ export const getAllMsg = async (req, res) => {
 /* CREATE */
 export const postMsg = async (req, res) => {
   try {
-    const { user, topic, message } = req.body;
+    const { user, topic_id, message } = req.body;
     // const user = await User.findById(userId);
 
     const newMsg = new Message({
       user: user,
-      topic: topic,
+      topic_id: topic_id,
       message: message,
     });
 

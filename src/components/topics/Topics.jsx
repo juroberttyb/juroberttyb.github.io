@@ -11,7 +11,7 @@ const Topics = ({activeTopic, setActiveTopic}) => {
         const getAllTopics = async () => {
             const controller = new AbortController()
             const res = await fetch(
-                'https://34.31.39.182/topics?count=6', 
+                'https://34.134.142.162/topics?count=6', 
                 { 
                     method: "GET",
                     mode: 'cors', 
