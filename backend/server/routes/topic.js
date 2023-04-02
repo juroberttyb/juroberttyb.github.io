@@ -1,5 +1,5 @@
 import express from "express";
-import { getAllTopics, postTopic, loginTopic } from "../controllers/topic.js";
+import { getAllTopics, postTopic, loginTopic, updateTopic } from "../controllers/topic.js";
 import { verifyToken } from "../middleware/auth.js";
 
 const router = express.Router();
@@ -12,6 +12,6 @@ router.get("", getAllTopics);
 router.post("", postTopic);
 
 /* UPDATE */
-router.post("", postTopic);
+router.patch("/:topic_id", updateTopic);
 
 export default router;
