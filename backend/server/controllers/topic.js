@@ -29,6 +29,10 @@ export const loginTopic = async (req, res) => {
   try {
     const { topic_id } = req.params;
     const topic = await Topic.find({ _id: topic_id });
+    if (topic.password === undefined) {
+      res.status(200).json({});
+      return;
+    } 
 
     const { password } = req.query
     if (password !== topic.password) {
