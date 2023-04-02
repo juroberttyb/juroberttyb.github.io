@@ -17,3 +17,19 @@
 .topic_photo:hover {
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+    /* CSS styles for screens smaller than 768px */
+
+    .topic {
+        margin-top: 20%;
+        margin-right: 2%;
+    }
+
+    .topic_photo {
+        width: 6vw;
+        height: 6vw;
+        margin-bottom: 25%;
+        border-width: thin;
+    }
+}

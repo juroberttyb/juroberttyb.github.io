@@ -30,3 +30,23 @@
   top: 20%;
   /* right: %; */
 }
+
+@media screen and (max-width: 768px) {
+  /* CSS styles for screens smaller than 768px */
+
+  .header ul {
+    margin-left: 4%;
+  }
+
+  .header ul li {
+    font-size: 0.8rem;
+    margin-right: 3%;
+  }
+
+  #resume_button button {
+    right: 15%;
+    font-size: 0.6rem;
+    margin: 0;
+    padding: 1%;
+  }
+}
