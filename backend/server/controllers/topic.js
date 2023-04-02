@@ -29,7 +29,7 @@ export const loginTopic = async (req, res) => {
   try {
     const { topic_id } = req.params;
     console.log("topic_id", topic_id)
-    const topic = await Topic.find({ _id: topic_id });
+    const topic = await Topic.findOne({ _id: topic_id });
     console.log("topic", topic)
     if (topic.password === undefined) {
       console.log("topic.password", topic.password)
