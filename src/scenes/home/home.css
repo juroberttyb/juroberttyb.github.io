@@ -80,3 +80,31 @@ button.sign_button:hover {
 button.send_text_button:hover {
     opacity: 0.8;
 }
+
+@media screen and (max-width: 768px) {
+    /* CSS styles for screens smaller than 768px */
+
+    #home {
+        margin-top: 20%;
+        height: 100%;
+    }
+
+    #chat_input {
+        height: inherit;
+    }
+
+    .chat h1 {
+        font-size: 1.6rem;
+        margin-bottom: 5%;
+    }
+
+    #send_text_button, .sign_button {
+        font-size: 0.6rem;
+        margin: 0;
+        padding: 1%;
+    }
+
+    #chat_text_input{
+        width: 35vw;
+    }
+}

@@ -60,3 +60,33 @@
     /* text-align: end;
     margin-left: auto;  */
 }
+
+@media screen and (max-width: 768px) {
+    /* CSS styles for screens smaller than 768px */
+
+    #chatroom {
+        height: 72vh;
+        /* width: 80vw; */
+        font-size: 0.8rem;
+    }
+
+    .photo {
+        min-width: 6vw;
+        max-width: 6vw;
+        min-height: 6vw;
+        max-height: 6vw;
+        margin-top: 3.5%;
+    }
+
+    .text {
+        margin-top: -8%;
+        word-wrap: break-word;
+    }
+
+    .created_at {
+        color: rgba(255,255,255,0.5);
+        font-weight: normal;
+        font-size: 0.5rem;
+        white-space: nowrap;
+    }
+}

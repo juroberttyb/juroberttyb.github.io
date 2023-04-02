@@ -37,3 +37,11 @@
   box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
   outline: none;
 }
+
+@media screen and (max-width: 768px) {
+  /* CSS styles for screens smaller than 768px */
+
+  .button {
+    font-size: 1rem;
+  }
+}
