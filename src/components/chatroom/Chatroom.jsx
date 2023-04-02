@@ -15,8 +15,7 @@ const Chatroom = ({activeTopic, signedIn, user}) => {
         }
 
         checkLock()
-    })
-    // var lock = activeTopic===undefined ? false : activeTopic.topic === "Family" || activeTopic.topic === "RobertSophie"
+    }, [activeTopic])
 
     const getMsgs = async () => {
         const topic = activeTopic===undefined || activeTopic.topic===undefined ? undefined : activeTopic.topic

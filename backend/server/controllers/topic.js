@@ -1,17 +1,6 @@
 import Topic from "../models/Topic.js";
 
 /* READ */
-// export const getMsg = async (req, res) => {
-//   try {
-//     const { message_id } = req.params;
-//     // console.log("message_id", message_id)
-//     const msg = await Message.find({ _id: message_id });
-//     res.status(200).json(msg);
-//   } catch (err) {
-//     res.status(404).json({ error: err.message });
-//   }
-// };
-
 export const getAllTopics = async (req, res) => {
   try {
     const count = req.query.count
@@ -26,6 +15,22 @@ export const getAllTopics = async (req, res) => {
     res.status(200).json(msgs);
   } catch (err) {
     res.status(404).json({ error: err.message });
+  }
+};
+
+export const loginTopic = async (req, res) => {
+  try {
+    const { topic_id } = req.params;
+    const topic = await Topic.find({ _id: topic_id });
+
+    const { password } = req.query
+    if (password !== topic.password) {
+      res.status(401).json({});
+    }
+    res.status(200).json({});
+  } catch (err) {
+    res.status(401).json({});
+    // res.status(404).json({ error: err.message });
   }
 };
 

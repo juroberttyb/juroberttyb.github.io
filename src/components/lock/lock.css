@@ -3,17 +3,22 @@
     justify-content: center;
     align-items: center;
     height: 95%;
+}
+
+.border-slicer {
     border-radius: 8px;
     overflow: hidden;
 }
   
 .lock input, .lock button {
-    height: 2.5rem;
+    min-height: 3.2rem;
+    max-height: 3.2rem;
 }
   
 .lock input {
-    outline: none;
+    /* outline: none; */
 }
   
 .lock button {
+    border-radius: 0px;
 }
