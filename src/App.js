@@ -1,12 +1,9 @@
-import './App.css';
-
 import { Route, Routes } from 'react-router-dom' // Navigate
 import { useState } from 'react'
-
 import { Header, Resume} from './components'
 import { Home } from './scenes'
-
-import { initializeApp } from 'firebase/app';
+import { initializeApp } from 'firebase/app'
+import './App.css'
 
 function App() {
     // Your web app's Firebase configuration
