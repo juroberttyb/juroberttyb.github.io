@@ -14,7 +14,7 @@ const Chatroom = ({lock, setLock, activeTopic, signedIn, user}) => {
         }
 
         const controller = new AbortController()
-        const res = await fetch(`https://34.134.142.162/messages?count=25${`&topic_id=${activeTopic._id}`}`, { 
+        const res = await fetch(`https://api.robertchu.xyz/messages?count=25${`&topic_id=${activeTopic._id}`}`, { 
             method: "GET",
             mode: 'cors', 
             signal: controller.signal,
