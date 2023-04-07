@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom' // Navigate
 import { useState } from 'react'
 import { Header, Resume} from './components'
-import { Home } from './scenes'
+import { Home, About } from './scenes'
 import { initializeApp } from 'firebase/app'
 import './App.css'
 
@@ -37,6 +37,7 @@ function App() {
         showResume === "Show Resume" &&
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
         </Routes>
       }
 

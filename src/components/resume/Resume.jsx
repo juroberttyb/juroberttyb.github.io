@@ -28,7 +28,7 @@ const Resume = () => {
               <li><img className="prefix_img" src={mail} alt="" />juroberttyb@gmail.com</li>
               <li><a href='https://www.linkedin.com/in/robert-chu-5b66081a9/'><img className="prefix_img" src={linkedin} alt="" />Linkedin</a></li>
               <li><a href='https://github.com/juroberttyb'><img className="prefix_img" src={github} alt="" />Github</a></li>
-              <li><a href='https://robert.xyz'><img className="prefix_img" src={web} alt="" />Website</a></li>
+              <li><a href='https://web.robertchu.xyz'><img className="prefix_img" src={web} alt="" />Website</a></li>
             </ul>
           </div>
       </div>
