@@ -28,6 +28,10 @@
     color: blue;
 }
 
+#autobiography .inner_block p {
+    margin-bottom: 0.5%;
+}
+
 #resume_header {
     display: flex;
     justify-content: space-between;
@@ -38,8 +42,8 @@
     max-width: 25.5%;
     justify-content: flex-end;
     flex-direction: row;
-    margin-top: 1.5%;
-    /* margin-right: 1%; */
+    margin-top: 1%;
+    margin-right: -1%;
 }
 
 #contact ul {
@@ -48,10 +52,11 @@
 }
 
 #contact ul li {
-    margin-bottom: 1.5%;
+    margin-top: 1%;
 }
 
-#basic_info p {
+#resume #basic_info p {
+    margin-top: 0.6%;
     font-size: 0.725rem;
 }
 
@@ -60,29 +65,20 @@
 }
 
 #education div {
-    margin-top: 1%;
-    font-size: 0.65rem;
-}
-
-#education div p {
-    font-size: 0.65rem;
+    margin-top: 0.5%;
 }
 
 #cap {
     min-width: 5%;
-    min-height: 5%;
     max-width: 5%;
-    max-height: 5%;
+    aspect-ratio: 0.75;
     margin-right: 1%;
 }
 
 .prefix_img {
-    margin: 0;
-    margin-right: 2%;
-    min-width: 6%;
-    min-height: 6%;
-    max-width: 6%;
-    max-height: 6%;
+    margin-right: 2.5%;
+    min-width: 8%;
+    max-width: 8%;
 }
 
 .block {
@@ -100,9 +96,14 @@
     font-size: 0.725rem;
 }
 
+.block ul li {
+    margin-top: 0.25%;
+}
+
 .inner_block {
     margin-top: 1%;
     margin-bottom: 2%;
+    margin-left: 1%;
 }
 
 .block_item {
@@ -112,13 +113,13 @@
 
 .duration {
     margin-top: 0.5%;
-    font-size: 0.725rem;
+    font-size: 0.8rem;
     text-align: end;
 }
 
 .location {
-    margin-top: 2%;
-    font-size: 0.725rem;
+    margin-top: 3%;
+    font-size: 0.65rem;
     text-align: end;
 }
 
@@ -132,11 +133,20 @@
 }
 
 .highlight_inner {
-    margin-top: 0.1%;
+    margin-top: 1%;
+}
+
+#experience .inner_block .block_item .highlight_inner {
+    margin-top: 0.5%;
 }
 
 .bold {
     font-weight: bold;
+}
+
+.company {
+    display: inline-block;
+    font-size: 1rem;
 }
 
 .after_highlight {
