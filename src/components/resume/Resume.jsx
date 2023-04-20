@@ -164,8 +164,8 @@ const Resume = () => {
         <div className='inner_block'>
         <div className='block_item'>
             <div>
-              <div className='highlight'><a href='https://robert.xyz'>Personal Website</a></div>
-              <p className='highlight_inner'>A personal website built with React. This resume is part of the website.</p>
+              <div className='highlight'><a href='https://web.robertchu.xyz'>Personal Website</a></div>
+              <p className='highlight_inner'>A website built with React for introducing myself and online chatting.</p>
             </div>
             <div>
               {/* <div className='duration'>Nov 2022 - Present</div> */}
