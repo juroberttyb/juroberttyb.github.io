@@ -33,7 +33,7 @@ const Resume = () => {
         <div className='highlight block_category'>Autobiography</div>
         <hr></hr>
         <div className='inner_block'>
-          <p>I am a backend developer at Nabawan, whose founder is the co‑founder of <a href='https://17.live/en-US'>17LIVE</a>.</p>
+          <p>I am a passionate backend developer at Nabawan, whose founder is the co‑founder of <a href='https://17.live/en-US'>17LIVE</a>.</p>
           <p>At work, I use Go/Python/SQL/Kubernetes/GCP on a daily basis.</p>
           <p>After work, I am building websites with React.</p>
         </div>
@@ -45,7 +45,7 @@ const Resume = () => {
         <div className='inner_block'>
           <div className='block_item'>
             <div>
-              <div className='highlight bold'>Backend Developer</div>, <div className='company'><a href='https://apps.apple.com/tw/app/clos-burgundy-dictionary/id1568106896'>Nabawan</a></div>,  <div className='after_highlight'>App Backend and DevOps</div>
+              <div className='highlight bold'><a href='https://apps.apple.com/tw/app/clos-burgundy-dictionary/id1568106896'>Nabawan</a></div>, <div className='company bold'>Backend Developer</div>,  <div className='after_highlight'>App Backend and DevOps</div>
               <p className='highlight_inner'>Go/Python/Gin/SQL/Docker/Compose/Kubernetes/Helm/GCP/Redis/PubSub/CICD/Git</p>
             </div>
             <div>
@@ -75,7 +75,7 @@ const Resume = () => {
             {/* <li>Integrate Google Play 3rd-party payment into In-App Purchase API for users to buy products</li> */}
             {/* <li>Develop a user recommendation API for users to meet new users in MediTalk</li> */}
             {/* <li>Develop MediTalk as a microservice for users of other apps to use</li> */}
-            {/* <li>Develop a company scoring microservice for users to score their working environments</li> */}
+            {/* <li>Develop a company bold scoring microservice for users to score their working environments</li> */}
             {/* <li>Automate continuous integration with docker compose and workflow on Github</li> */}
           </ul>
         </div>
@@ -83,7 +83,7 @@ const Resume = () => {
         <div className='inner_block'>
           <div className='block_item'>
             <div>
-              <div className='highlight bold'>Software Engineer</div>, <div className='company'><a href='http://www.gallopwave.com/en/'>Gallopwave</a></div>,  <div className='after_highlight'>Distributed System and DevOps</div>
+              <div className='highlight bold'><a href='http://www.gallopwave.com/en/'>Gallopwave</a></div>, <div className='company bold'>Software Engineer</div>,  <div className='after_highlight'>Distributed System and DevOps</div>
               <p className='highlight_inner'>Go/Python/C++/Bash/Pytorch/Linux/Docker/GCP/CICD/Git</p>
             </div>
             <div>
@@ -110,7 +110,7 @@ const Resume = () => {
         <div className='inner_block'>
             <div className='block_item'>
             <div>
-              <div className='highlight bold'>Software Engineer</div>, <div className='company'><a href='https://www.mediatek.com/'>Mediatek</a></div>,  <div className='after_highlight'>3A Algorithm</div>
+              <div className='highlight bold'><a href='https://www.mediatek.com/'>Mediatek</a></div>, <div className='company bold'>Software Engineer</div>,  <div className='after_highlight'>3A Algorithm</div>
               <p className='highlight_inner'>C++/Python/Pytorch/Git</p>
             </div>
             <div>
@@ -127,7 +127,7 @@ const Resume = () => {
         <div className='inner_block'>
             <div className='block_item'>
             <div>
-              <div className='highlight bold'>Software Engineer Intern</div>, <div className='company'><a href='http://www.rogersai.com/home_eng.html'>Rogersai</a></div>,  <div className='after_highlight'>Face Recognition</div>
+              <div className='highlight bold'><a href='http://www.rogersai.com/home_eng.html'>Rogersai</a></div>, <div className='company bold'>Software Engineer Intern</div>,  <div className='after_highlight'>Face Recognition</div>
               <p className='highlight_inner'>Python/Pytorch/Linux/Docker/Git</p>
             </div>
             <div>
@@ -212,7 +212,7 @@ const Resume = () => {
       </div>
 
       <p className='blank'>
-        Experience, Google senior software engineer, Lead team of 6 engineers to mine Ethereum on company servers, Lead software engineer, 10 years experience, full-stack developer, Facebook, Meta, Amazon, Instagram, Microsoft senior backend developer, Tesla, Apple, IBM, OpenAI, LinkedIn principal engineer, reddit, Twitter, Binance, 
+        Experience, Google senior software engineer, Lead team of 6 engineers to mine Ethereum on company bold servers, Lead software engineer, 10 years experience, full-stack developer, Facebook, Meta, Amazon, Instagram, Microsoft senior backend developer, Tesla, Apple, IBM, OpenAI, LinkedIn principal engineer, reddit, Twitter, Binance, 
         Skills, react.js, vue.js, express.js, angular.js, nest.js, django, flask, fastapi, gin, laravel, ethereum, bitcoin, polygon, solana, cosmos, AI, GraphQL, blockchain, big data, tensorflow, php, ror, C, C#, Java, Spring boot, ASP.NET, ASP.CORE, ASP NET, Hadoop, PubSub, Message Queue, kafka
       </p>
     </div>
