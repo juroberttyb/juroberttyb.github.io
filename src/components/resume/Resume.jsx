@@ -40,8 +40,8 @@ const Resume = () => {
         <hr></hr>
         <div className='inner_block'>
           <p>I am a backend developer at Nabawan, whose founder is the co‑founder of <a href='https://17.live/en-US'>17LIVE</a>.</p>
-          <p>At work, I use Go/Python/SQL/Docker/Kubernetes/GCP/Git on a daily basis.</p>
-          <p>After work, I am building websites with HTML/CSS/Javascript/React.</p>
+          <p>At work, I use Go/Python/SQL/Kubernetes/GCP on a daily basis.</p>
+          <p>After work, I am building websites with React.</p>
         </div>
       </div>
 
@@ -53,7 +53,7 @@ const Resume = () => {
         <div className='inner_block'>
           <div className='block_item'>
             <div>
-              <div className='highlight bold'>Backend Developer</div>, <div className='after_highlight'><a href='https://apps.apple.com/tw/app/clos-burgundy-dictionary/id1568106896'>Nabawan</a></div>,  <div className='after_highlight'>App Backend Team</div>
+              <div className='highlight bold'>Backend Developer</div>, <div className='company'><a href='https://apps.apple.com/tw/app/clos-burgundy-dictionary/id1568106896'>Nabawan</a></div>,  <div className='after_highlight'>App Backend and DevOps</div>
               <p className='highlight_inner'>Go/Python/Gin/SQL/Docker/Compose/Kubernetes/Helm/GCP/Redis/PubSub/CICD/Git</p>
             </div>
             <div>
@@ -79,12 +79,10 @@ const Resume = () => {
           </ul>
         </div>
 
-
-
         <div className='inner_block'>
           <div className='block_item'>
             <div>
-              <div className='highlight bold'>MLOps Engineer</div>, <div className='after_highlight'><a href='http://www.gallopwave.com/en/'>Gallopwave</a></div>,  <div className='after_highlight'>Machine Learning DevOps</div>
+              <div className='highlight bold'>Software Engineer</div>, <div className='company'><a href='http://www.gallopwave.com/en/'>Gallopwave</a></div>,  <div className='after_highlight'>Distributed System and DevOps</div>
               <p className='highlight_inner'>Go/Python/C++/Bash/Pytorch/Linux/Docker/GCP/CICD/Git</p>
             </div>
             <div>
@@ -108,12 +106,27 @@ const Resume = () => {
           </ul>
         </div>
 
-
+        <div className='inner_block'>
+            <div className='block_item'>
+            <div>
+              <div className='highlight bold'>Software Engineer</div>, <div className='company'><a href='https://www.mediatek.com/'>Mediatek</a></div>,  <div className='after_highlight'>3A Algorithm</div>
+              <p className='highlight_inner'>C++/Python/Pytorch/Git</p>
+            </div>
+            <div>
+              <div className='duration'>May 2021 ‑ June 2021</div>
+              <div className='location'>Hsinchu, Taiwan</div>
+            </div>
+          </div>
+          {/* <ul>
+            <li>Design and develop algorithms to accelerate human face detection</li>
+            <li>Develop and integrate facial login into production releases</li>
+          </ul> */}
+        </div>
 
         <div className='inner_block'>
             <div className='block_item'>
             <div>
-              <div className='highlight bold'>Algorithm Summer Intern</div>, <div className='after_highlight'><a href='http://www.rogersai.com/home_eng.html'>Rogersai</a></div>,  <div className='after_highlight'>Algorithm Team</div>
+              <div className='highlight bold'>Software Engineer Intern</div>, <div className='company'><a href='http://www.rogersai.com/home_eng.html'>Rogersai</a></div>,  <div className='after_highlight'>Face Recognition</div>
               <p className='highlight_inner'>Python/Pytorch/Linux/Docker/Git</p>
             </div>
             <div>
@@ -128,27 +141,6 @@ const Resume = () => {
         </div>
       </div>
 
-
-
-      <div id='projects' className='block'>
-        <div className='highlight block_category'>Projects</div>
-        <hr></hr>
-        <div className='inner_block'>
-        <div className='block_item'>
-            <div>
-              <div className='highlight'><a href='https://robert.xyz'>Personal Website</a></div>
-              <p className='highlight_inner'>A personal website built with React. This resume is part of the website.</p>
-            </div>
-            <div>
-              <div className='duration'>Nov 2022 - Present</div>
-              {/* <div className='location'>Taipei, Taiwan</div> */}
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
       <div id='awards' className='block'>
         <div className='highlight block_category'>Awards</div>
         <hr></hr>
@@ -161,6 +153,23 @@ const Resume = () => {
             <div>
               <div className='duration'>Mar 2022</div>
               <div className='location'>Vancouver, Canada</div> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id='projects' className='block'>
+        <div className='highlight block_category'>Projects</div>
+        <hr></hr>
+        <div className='inner_block'>
+        <div className='block_item'>
+            <div>
+              <div className='highlight'><a href='https://robert.xyz'>Personal Website</a></div>
+              <p className='highlight_inner'>A personal website built with React. This resume is part of the website.</p>
+            </div>
+            <div>
+              {/* <div className='duration'>Nov 2022 - Present</div> */}
+              {/* <div className='location'>Taipei, Taiwan</div> */}
             </div>
           </div>
         </div>
