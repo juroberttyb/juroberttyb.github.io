@@ -1,6 +1,7 @@
 #name {
-    font-size: 3.5rem;
-    /* font-weight: bold; */
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 #resume {
@@ -8,7 +9,7 @@
     top: 0;
     bottom: 0;
     background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.85);
     overflow: auto;
 }
 
@@ -38,21 +39,21 @@
 }
 
 #contact {
-    display: flex;
-    max-width: 25.5%;
-    justify-content: flex-end;
-    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 1%;
-    margin-right: -1%;
-}
-
-#contact ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     font-size: 0.8rem;
     list-style-type: none;
+    width: 80%;
 }
 
-#contact ul li {
-    margin-top: 1%;
+.prefix_img {
+    display: inline-block;
+    width: 12px;
+    aspect-ratio: 1;
 }
 
 #resume #basic_info p {
@@ -62,23 +63,40 @@
 
 #education {
     display: flex;
+    font-size: 0.8rem;
+    margin-top: 1%;
+    margin-left: 1%;
 }
 
 #education div {
-    margin-top: 0.5%;
+    margin-top: 1.75%;
 }
 
 #cap {
     min-width: 5%;
     max-width: 5%;
     aspect-ratio: 0.75;
-    margin-right: 1%;
+    margin-right: 2%;
 }
 
-.prefix_img {
-    margin-right: 2.5%;
-    min-width: 8%;
-    max-width: 8%;
+#skills table {
+    border: 0.5px solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-collapse: collapse;
+}
+
+#skills table td, #skills table th {
+    border: 0.5px solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 20%;
+    padding: 8px;
+}
+
+#skills table th {
+    background-color: rgba(0, 0, 0, 0);
+    text-align: left;
 }
 
 .block {
@@ -103,6 +121,9 @@
 .inner_block {
     margin-top: 1%;
     margin-bottom: 2%;
+}
+
+#autobiography .inner_block {
     margin-left: 1%;
 }
 
