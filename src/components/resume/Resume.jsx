@@ -87,7 +87,7 @@ const Resume = () => {
               <p className='highlight_inner'>Go/Python/C++/Bash/Pytorch/Linux/Docker/GCP/CICD/Git</p>
             </div>
             <div>
-              <div className='duration'>Aug 2021 ‑ Apr 2022</div>
+              <div className='duration'>Aug 2021 - Apr 2022</div>
               <div className='location'>Taipei, Taiwan</div>
             </div>
           </div>
@@ -114,7 +114,7 @@ const Resume = () => {
               <p className='highlight_inner'>C++/Python/Pytorch/Git</p>
             </div>
             <div>
-              <div className='duration'>May 2021 ‑ June 2021</div>
+              <div className='duration'>May 2021 - June 2021</div>
               <div className='location'>Hsinchu, Taiwan</div>
             </div>
           </div>
@@ -131,7 +131,7 @@ const Resume = () => {
               <p className='highlight_inner'>Python/Pytorch/Linux/Docker/Git</p>
             </div>
             <div>
-              <div className='duration'>Jul 2020 ‑ Aug 2020</div>
+              <div className='duration'>Jul 2020 - Aug 2020</div>
               <div className='location'>Taipei, Taiwan</div>
             </div>
           </div>
