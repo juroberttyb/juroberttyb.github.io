@@ -46,7 +46,7 @@ const Resume = () => {
           <div className='block_item'>
             <div>
               <div className='highlight bold'><a href='https://apps.apple.com/tw/app/clos-burgundy-dictionary/id1568106896'>Nabawan</a></div>, <div className='company bold'>Backend Developer</div>,  <div className='after_highlight'>App Backend and DevOps</div>
-              <p className='highlight_inner'>Go/Python/Gin/SQL/Docker/Compose/Kubernetes/Helm/GCP/Redis/PubSub/CICD/Git</p>
+              <p className='highlight_inner'>Go/Gin/SQL/Docker/Kubernetes/Helm/GCP/Redis/PubSub/CICD/Git</p>
             </div>
             <div>
               <div className='duration'>May 2022 - Present</div>
@@ -84,7 +84,7 @@ const Resume = () => {
           <div className='block_item'>
             <div>
               <div className='highlight bold'><a href='http://www.gallopwave.com/en/'>Gallopwave</a></div>, <div className='company bold'>Software Engineer</div>,  <div className='after_highlight'>Distributed System and DevOps</div>
-              <p className='highlight_inner'>Go/Python/C++/Bash/Pytorch/Linux/Docker/GCP/CICD/Git</p>
+              <p className='highlight_inner'>Python/Shell/Pytorch/Linux/Docker/CICD/Git</p>
             </div>
             <div>
               <div className='duration'>Aug 2021 - Apr 2022</div>
@@ -111,7 +111,7 @@ const Resume = () => {
             <div className='block_item'>
             <div>
               <div className='highlight bold'><a href='https://www.mediatek.com/'>Mediatek</a></div>, <div className='company bold'>Software Engineer</div>,  <div className='after_highlight'>3A Algorithm</div>
-              <p className='highlight_inner'>C++/Python/Pytorch/Git</p>
+              <p className='highlight_inner'>C++/Python/Git</p>
             </div>
             <div>
               <div className='duration'>May 2021 - June 2021</div>
