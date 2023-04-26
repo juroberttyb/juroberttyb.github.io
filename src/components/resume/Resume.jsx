@@ -67,20 +67,20 @@ const Resume = () => {
             <li>Refactor 97% of backend code to follow API/Service/Gateway/Store/Model best-practice architecture</li>
             <li>Integrate Google Cloud Logging to raise the logging coverage of backend code from 61% to 96%</li>
             <li>Integrate Google Cloud Pub/Sub into Purchase API with Go channels and context</li>
-            {/* <li>Develop a job verification API with Sendgrid that allows users to display job titles in MediTalk</li> */}
-            {/* and <a href='https://apps.apple.com/au/app/%E9%9D%A0%E5%8C%97%E8%AD%A6%E5%AF%9F-%E8%AD%A6%E5%AF%9F%E7%99%BE%E7%A7%91%E5%85%A8%E6%9B%B8/id1637401189'>TWPD</a> */}
-            {/* <li>Develop a favorite collection API for users to collect their favorite posts in <a href='https://apps.apple.com/tw/app/apen/id1434492280'>Apen</a>/<a href='https://apps.apple.com/tw/app/%E8%AD%B7%E7%90%86%E7%AB%99/id1523414575'>NStation</a>/<a href='https://apps.apple.com/us/app/%E8%97%A5%E5%B8%AB%E5%9C%88/id1661519539'>Phar</a>/<a href='https://apps.apple.com/au/app/%E9%9D%A0%E5%8C%97%E8%AD%A6%E5%AF%9F-%E8%AD%A6%E5%AF%9F%E7%99%BE%E7%A7%91%E5%85%A8%E6%9B%B8/id1637401189'>TWPD</a></li> */}
-            {/* <li>Develop a messaging API for users to chat in <a href='https://apps.apple.com/tw/app/mediatalk-dont-be-shy/id1599874400'>MediTalk</a></li> */}
-            {/* <li>Integrate Google Login into login API for users in MediTalk and <a href='https://apps.apple.com/tw/app/clos-burgundy-dictionary/id1568106896'>Clos</a></li> */}
-            {/* <li>Integrate Google Play 3rd-party payment into In-App Purchase API for users to buy products</li> */}
-            {/* <li>Develop a user recommendation API for users to meet new users in MediTalk</li> */}
-            {/* <li>Develop MediTalk as a microservice for users of other apps to use</li> */}
-            {/* <li>Develop a company bold scoring microservice for users to score their working environments</li> */}
-            {/* <li>Automate continuous integration with docker compose and workflow on Github</li> */}
           </ul>
         </div>
+        {/* <li>Develop a job verification API with Sendgrid that allows users to display job titles in MediTalk</li> */}
+        {/* and <a href='https://apps.apple.com/au/app/%E9%9D%A0%E5%8C%97%E8%AD%A6%E5%AF%9F-%E8%AD%A6%E5%AF%9F%E7%99%BE%E7%A7%91%E5%85%A8%E6%9B%B8/id1637401189'>TWPD</a> */}
+        {/* <li>Develop a favorite collection API for users to collect their favorite posts in <a href='https://apps.apple.com/tw/app/apen/id1434492280'>Apen</a>/<a href='https://apps.apple.com/tw/app/%E8%AD%B7%E7%90%86%E7%AB%99/id1523414575'>NStation</a>/<a href='https://apps.apple.com/us/app/%E8%97%A5%E5%B8%AB%E5%9C%88/id1661519539'>Phar</a>/<a href='https://apps.apple.com/au/app/%E9%9D%A0%E5%8C%97%E8%AD%A6%E5%AF%9F-%E8%AD%A6%E5%AF%9F%E7%99%BE%E7%A7%91%E5%85%A8%E6%9B%B8/id1637401189'>TWPD</a></li> */}
+        {/* <li>Develop a messaging API for users to chat in <a href='https://apps.apple.com/tw/app/mediatalk-dont-be-shy/id1599874400'>MediTalk</a></li> */}
+        {/* <li>Integrate Google Login into login API for users in MediTalk and <a href='https://apps.apple.com/tw/app/clos-burgundy-dictionary/id1568106896'>Clos</a></li> */}
+        {/* <li>Integrate Google Play 3rd-party payment into In-App Purchase API for users to buy products</li> */}
+        {/* <li>Develop a user recommendation API for users to meet new users in MediTalk</li> */}
+        {/* <li>Develop MediTalk as a microservice for users of other apps to use</li> */}
+        {/* <li>Develop a company bold scoring microservice for users to score their working environments</li> */}
+        {/* <li>Automate continuous integration with docker compose and workflow on Github</li> */}
 
-        <div className='inner_block'>
+        {/* <div className='inner_block'>
           <div className='block_item'>
             <div>
               <div className='highlight bold'><a href='http://www.gallopwave.com/en/'>Gallopwave</a></div>, <div className='company bold'>Software Engineer</div>,  <div className='after_highlight'>Distributed System and DevOps</div>
@@ -98,16 +98,16 @@ const Resume = () => {
             <li>Develop and maintain ONNX generation pipelines for different production platforms</li>
             <li>Automating infrastructure build‑outs for development environments</li>
             <li>Troubleshooting network, OS, and application issues for development and production environments</li>
-            {/* <li>Own and maintain self‑hosted Linux servers and containers</li> */}
-            {/* <li>Design, build, and maintain a high‑availability development environment</li> */}
-            {/* <li>Build and maintain tools and libraries for development and continuous integration</li> */}
-            {/* <li>Perform regular maintenance, upgrades, testing, and evaluation across production releases</li> */}
-            {/* <li>Design and implement a git‑based strategy to support multiple environments for development</li> */}
-            {/* <li>Debug, optimize code, and automate routine tasks like data labeling and experiments</li> */}
           </ul>
-        </div>
+        </div> */}
+        {/* <li>Own and maintain self‑hosted Linux servers and containers</li> */}
+        {/* <li>Design, build, and maintain a high‑availability development environment</li> */}
+        {/* <li>Build and maintain tools and libraries for development and continuous integration</li> */}
+        {/* <li>Perform regular maintenance, upgrades, testing, and evaluation across production releases</li> */}
+        {/* <li>Design and implement a git‑based strategy to support multiple environments for development</li> */}
+        {/* <li>Debug, optimize code, and automate routine tasks like data labeling and experiments</li> */}
 
-        <div className='inner_block'>
+        {/* <div className='inner_block'>
             <div className='block_item'>
             <div>
               <div className='highlight bold'><a href='https://www.mediatek.com/'>Mediatek</a></div>, <div className='company bold'>Software Engineer</div>,  <div className='after_highlight'>3A Algorithm</div>
@@ -118,11 +118,11 @@ const Resume = () => {
               <div className='location'>Hsinchu, Taiwan</div>
             </div>
           </div>
-          {/* <ul>
-            <li>Design and develop algorithms to accelerate human face detection</li>
-            <li>Develop and integrate facial login into production releases</li>
-          </ul> */}
-        </div>
+        </div> */}
+        {/* <ul>
+          <li>Design and develop algorithms to accelerate human face detection</li>
+          <li>Develop and integrate facial login into production releases</li>
+        </ul> */}
 
         <div className='inner_block'>
             <div className='block_item'>
@@ -135,12 +135,12 @@ const Resume = () => {
               <div className='location'>Taipei, Taiwan</div>
             </div>
           </div>
-          {/* <ul>
-            <li>Design and develop algorithms to accelerate human face detection</li>
-            <li>Develop and integrate facial login into production releases</li>
-          </ul> */}
         </div>
       </div>
+      {/* <ul>
+        <li>Design and develop algorithms to accelerate human face detection</li>
+        <li>Develop and integrate facial login into production releases</li>
+      </ul> */}
 
       <div id='awards' className='block'>
         <div className='highlight block_category'>Awards</div>
