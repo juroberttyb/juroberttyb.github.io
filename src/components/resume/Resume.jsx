@@ -127,7 +127,7 @@ const Resume = () => {
         <div className='inner_block'>
             <div className='block_item'>
             <div>
-              <div className='highlight bold'><a href='http://www.rogersai.com/home_eng.html'>Rogersai</a></div>, <div className='company bold'>Software Engineer Intern</div>,  <div className='after_highlight'>Face Recognition</div>
+              <div className='highlight bold'><a href='http://www.rogersai.com/home_eng.html'>Rogersai</a></div>, <div className='company bold'>Software Engineer Intern</div>,  <div className='after_highlight'>Web Backend</div>
               <p className='highlight_inner'>Python/Pytorch/Linux/Docker/Git</p>
             </div>
             <div>
