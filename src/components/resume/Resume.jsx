@@ -195,7 +195,7 @@ const Resume = () => {
                 <tr>React.js</tr>
               </td>
               <td>
-                <tr>Go/Gin</tr>
+                <tr>Go/Gin/Multithreading</tr>
                 <tr>PostgreSQL/MongoDB/Redis</tr>
                 <tr>Python/Pytorch</tr>
               </td>
