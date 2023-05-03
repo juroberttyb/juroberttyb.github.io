@@ -84,7 +84,7 @@ const Resume = () => {
           <div className='block_item'>
             <div>
               <div className='highlight bold'><a href='http://www.gallopwave.com/en/'>Gallopwave</a></div>, <div className='company bold'>Software Engineer</div>,  <div className='after_highlight'>Distributed System and DevOps</div>
-              <p className='highlight_inner'>Python/Shell/Pytorch/Linux/Docker/CICD/Git</p>
+              <p className='highlight_inner'>Python/Distributed System/Pytorch/Linux/Docker/CICD/Git</p>
             </div>
             <div>
               <div className='duration'>Aug 2021 - Apr 2022</div>
@@ -128,7 +128,7 @@ const Resume = () => {
             <div className='block_item'>
             <div>
               <div className='highlight bold'><a href='http://www.rogersai.com/home_eng.html'>Rogersai</a></div>, <div className='company bold'>Software Engineer Intern</div>,  <div className='after_highlight'>Web Backend</div>
-              <p className='highlight_inner'>Python/Pytorch/Linux/Docker/Git</p>
+              <p className='highlight_inner'>Python/Pytorch/Linux/Docker/CICD/Git</p>
             </div>
             <div>
               <div className='duration'>Jul 2020 - Aug 2020</div>
@@ -197,13 +197,13 @@ const Resume = () => {
               <td>
                 <tr>Go/Gin</tr>
                 <tr>PostgreSQL/MongoDB/Redis</tr>
-                <tr>Node.js/Express.js</tr>
                 <tr>Python/Pytorch</tr>
               </td>
               <td>
                 <tr>Docker</tr>
-                <tr>Kubernetes</tr>
-                <tr>Google Cloud</tr>
+                <tr>Kubernetes/Helm</tr>
+                <tr>GCP Cloud</tr>
+                <tr>Linux</tr>
                 <tr>Github Action</tr>
               </td>
             </tbody>
