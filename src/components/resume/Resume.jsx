@@ -80,7 +80,7 @@ const Resume = () => {
         {/* <li>Develop a company bold scoring microservice for users to score their working environments</li> */}
         {/* <li>Automate continuous integration with docker compose and workflow on Github</li> */}
 
-        {/* <div className='inner_block'>
+        <div className='inner_block'>
           <div className='block_item'>
             <div>
               <div className='highlight bold'><a href='http://www.gallopwave.com/en/'>Gallopwave</a></div>, <div className='company bold'>Software Engineer</div>,  <div className='after_highlight'>Distributed System and DevOps</div>
@@ -99,7 +99,7 @@ const Resume = () => {
             <li>Automating infrastructure build‑outs for development environments</li>
             <li>Troubleshooting network, OS, and application issues for development and production environments</li>
           </ul>
-        </div> */}
+        </div>
         {/* <li>Own and maintain self‑hosted Linux servers and containers</li> */}
         {/* <li>Design, build, and maintain a high‑availability development environment</li> */}
         {/* <li>Build and maintain tools and libraries for development and continuous integration</li> */}
@@ -127,7 +127,7 @@ const Resume = () => {
         <div className='inner_block'>
             <div className='block_item'>
             <div>
-              <div className='highlight bold'><a href='http://www.rogersai.com/home_eng.html'>Rogersai</a></div>, <div className='company bold'>Software Engineer Intern</div>,  <div className='after_highlight'>Face Recognition</div>
+              <div className='highlight bold'><a href='http://www.rogersai.com/home_eng.html'>Rogersai</a></div>, <div className='company bold'>Software Engineer Intern</div>,  <div className='after_highlight'>Web Backend</div>
               <p className='highlight_inner'>Python/Pytorch/Linux/Docker/Git</p>
             </div>
             <div>
