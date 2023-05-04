@@ -34,8 +34,8 @@ const Resume = () => {
         <hr></hr>
         <div className='inner_block'>
           <p>I am a passionate backend developer at Nabawan, whose founder is the co‑founder of <a href='https://17.live/en-US'>17LIVE</a>.</p>
-          <p>At work, I use Go/Python/SQL/Kubernetes/GCP on a daily basis.</p>
-          <p>After work, I am building websites with React.</p>
+          <p>At work, I use Go/SQL/Docker/Kubernetes/GCP on a daily basis.</p>
+          <p>After work, I built a fullstack <a href='https://web.robertchu.xyz'>online chat room</a> with React.js/Express.js/MongoDB/GCP.</p>
         </div>
       </div>
 
@@ -166,7 +166,7 @@ const Resume = () => {
         <div className='block_item'>
             <div>
               <div className='highlight'><a href='https://web.robertchu.xyz'>Personal Website</a></div>
-              <p className='highlight_inner'>A website built with React for introducing myself and online chatting.</p>
+              <p className='highlight_inner'>A website built with React.js for introducing myself and online chatting.</p>
             </div>
             <div>
               {/* <div className='duration'>Nov 2022 - Present</div> */}
@@ -200,9 +200,9 @@ const Resume = () => {
                 <tr>Python/Pytorch</tr>
               </td>
               <td>
-                <tr>Docker</tr>
-                <tr>Kubernetes/Helm</tr>
                 <tr>GCP Cloud</tr>
+                <tr>Kubernetes/Helm</tr>
+                <tr>Docker</tr>
                 <tr>Linux</tr>
                 <tr>Github Action</tr>
               </td>
