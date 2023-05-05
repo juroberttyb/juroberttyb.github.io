@@ -35,7 +35,7 @@ const Resume = () => {
         <div className='inner_block'>
           <p>I am a passionate backend developer at Nabawan, whose founder is the co‑founder of <a href='https://17.live/en-US'>17LIVE</a>.</p>
           <p>At work, I use Go/SQL/Docker/Kubernetes/GCP on a daily basis.</p>
-          <p>After work, I built a fullstack <a href='https://web.robertchu.xyz'>online chat room</a> with React.js/Express.js/MongoDB/GCP.</p>
+          <p>After work, I built an <a href='https://web.robertchu.xyz'>online chat room</a> with React.js/Express.js/MongoDB/GCP.</p>
         </div>
       </div>
 
@@ -69,22 +69,12 @@ const Resume = () => {
             <li>Integrate Google Cloud Pub/Sub into Purchase API with Go channels and context</li>
           </ul>
         </div>
-        {/* <li>Develop a job verification API with Sendgrid that allows users to display job titles in MediTalk</li> */}
-        {/* and <a href='https://apps.apple.com/au/app/%E9%9D%A0%E5%8C%97%E8%AD%A6%E5%AF%9F-%E8%AD%A6%E5%AF%9F%E7%99%BE%E7%A7%91%E5%85%A8%E6%9B%B8/id1637401189'>TWPD</a> */}
-        {/* <li>Develop a favorite collection API for users to collect their favorite posts in <a href='https://apps.apple.com/tw/app/apen/id1434492280'>Apen</a>/<a href='https://apps.apple.com/tw/app/%E8%AD%B7%E7%90%86%E7%AB%99/id1523414575'>NStation</a>/<a href='https://apps.apple.com/us/app/%E8%97%A5%E5%B8%AB%E5%9C%88/id1661519539'>Phar</a>/<a href='https://apps.apple.com/au/app/%E9%9D%A0%E5%8C%97%E8%AD%A6%E5%AF%9F-%E8%AD%A6%E5%AF%9F%E7%99%BE%E7%A7%91%E5%85%A8%E6%9B%B8/id1637401189'>TWPD</a></li> */}
-        {/* <li>Develop a messaging API for users to chat in <a href='https://apps.apple.com/tw/app/mediatalk-dont-be-shy/id1599874400'>MediTalk</a></li> */}
-        {/* <li>Integrate Google Login into login API for users in MediTalk and <a href='https://apps.apple.com/tw/app/clos-burgundy-dictionary/id1568106896'>Clos</a></li> */}
-        {/* <li>Integrate Google Play 3rd-party payment into In-App Purchase API for users to buy products</li> */}
-        {/* <li>Develop a user recommendation API for users to meet new users in MediTalk</li> */}
-        {/* <li>Develop MediTalk as a microservice for users of other apps to use</li> */}
-        {/* <li>Develop a company bold scoring microservice for users to score their working environments</li> */}
-        {/* <li>Automate continuous integration with docker compose and workflow on Github</li> */}
 
         <div className='inner_block'>
           <div className='block_item'>
             <div>
               <div className='highlight bold'><a href='http://www.gallopwave.com/en/'>Gallopwave</a></div>, <div className='company bold'>Software Engineer</div>,  <div className='after_highlight'>Distributed System and DevOps</div>
-              <p className='highlight_inner'>Python/Distributed System/Pytorch/Linux/Docker/CICD/Git</p>
+              <p className='highlight_inner'>C++/Python/Distributed System/Pytorch/Linux/Docker/CICD/Git</p>
             </div>
             <div>
               <div className='duration'>Aug 2021 - Apr 2022</div>
@@ -93,42 +83,19 @@ const Resume = () => {
           </div>
           <ul>
             <li>Design and develop a <a href='https://drive.google.com/file/d/1uT08PYlLLETs8jVc3j8V9AnyabNsUCwv/view'>distributed architecture</a> to speed up the training pipeline by 3.89 times</li>
-            <li>Develop tools for testing the robustness and correctness of object detection models</li>
-            <li>Develop and maintain data generators for different training pipelines</li>
-            <li>Develop and maintain ONNX generation pipelines for different production platforms</li>
-            <li>Automating infrastructure build‑outs for development environments</li>
-            <li>Troubleshooting network, OS, and application issues for development and production environments</li>
+            <li>Develop tools for testing object detection models and raise the test coverage from 37% to 85%</li>
+            <li>Develop and maintain data generators for 93% of training pipelines</li>
+            <li>Develop and maintain ONNX generation pipelines for 81% of production platforms</li>
+            <li>Automate 77% of infrastructure build‑outs for development environments</li>
+            <li>Troubleshooting network, linux, and docker issues for development and production environments</li>
           </ul>
         </div>
-        {/* <li>Own and maintain self‑hosted Linux servers and containers</li> */}
-        {/* <li>Design, build, and maintain a high‑availability development environment</li> */}
-        {/* <li>Build and maintain tools and libraries for development and continuous integration</li> */}
-        {/* <li>Perform regular maintenance, upgrades, testing, and evaluation across production releases</li> */}
-        {/* <li>Design and implement a git‑based strategy to support multiple environments for development</li> */}
-        {/* <li>Debug, optimize code, and automate routine tasks like data labeling and experiments</li> */}
-
-        {/* <div className='inner_block'>
-            <div className='block_item'>
-            <div>
-              <div className='highlight bold'><a href='https://www.mediatek.com/'>Mediatek</a></div>, <div className='company bold'>Software Engineer</div>,  <div className='after_highlight'>3A Algorithm</div>
-              <p className='highlight_inner'>C++/Python/Git</p>
-            </div>
-            <div>
-              <div className='duration'>May 2021 - June 2021</div>
-              <div className='location'>Hsinchu, Taiwan</div>
-            </div>
-          </div>
-        </div> */}
-        {/* <ul>
-          <li>Design and develop algorithms to accelerate human face detection</li>
-          <li>Develop and integrate facial login into production releases</li>
-        </ul> */}
 
         <div className='inner_block'>
             <div className='block_item'>
             <div>
               <div className='highlight bold'><a href='http://www.rogersai.com/home_eng.html'>Rogersai</a></div>, <div className='company bold'>Software Engineer Intern</div>,  <div className='after_highlight'>Web Backend</div>
-              <p className='highlight_inner'>Python/Pytorch/Linux/Docker/CICD/Git</p>
+              <p className='highlight_inner'>C++/Python/Pytorch/Linux/Docker/CICD/Git</p>
             </div>
             <div>
               <div className='duration'>Jul 2020 - Aug 2020</div>
@@ -137,10 +104,6 @@ const Resume = () => {
           </div>
         </div>
       </div>
-      {/* <ul>
-        <li>Design and develop algorithms to accelerate human face detection</li>
-        <li>Develop and integrate facial login into production releases</li>
-      </ul> */}
 
       <div id='awards' className='block'>
         <div className='highlight block_category'>Awards</div>
