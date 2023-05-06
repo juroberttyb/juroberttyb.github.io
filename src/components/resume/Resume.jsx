@@ -160,7 +160,7 @@ const Resume = () => {
               <td>
                 <tr>Go/Gin/Multithreading</tr>
                 <tr>PostgreSQL/MongoDB/Redis</tr>
-                <tr>Python/Pytorch</tr>
+                <tr>C++/Python/Pytorch</tr>
               </td>
               <td>
                 <tr>GCP Cloud</tr>
