@@ -184,7 +184,7 @@ const Resume = () => {
                 <tr>Javascript</tr>
                 <tr>Typescript</tr>
                 <tr>React.js</tr>
-                <tr>C/C++</tr>
+                <tr>C++</tr>
               </td>
             </tbody>
           </table>
