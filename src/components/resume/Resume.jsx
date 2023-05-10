@@ -177,6 +177,7 @@ const Resume = () => {
                 <tr>Kubernetes/Helm</tr>
                 <tr>Linux/Docker</tr>
                 <tr>Git/Github Action</tr>
+                <tr>Google PubSub</tr>
               </td>
               <td>
                 <tr>HTML/CSS</tr>
