@@ -1,16 +1,15 @@
 // import { useState } from 'react'
 import "./about.css"
 
-import pianoImg from '../../assets/images/piano.jpg'
+import rust from '../../assets/images/rust.png'
 
 const About = () => {
     const text = (
         <>
-            Currently, me and my friends are building a trading bot on Ethereum layer 2.<br/><br/>
-            In my free time, I enjoy taking a walk and watching stand-up comedy.<br/><br/>
-            For programming language, I am proficient in Go and Solidity.<br/><br/>
-            {/* , playing the piano, I also love to watch Rick and Morty episodes.<br/><br/> */}
-            To reach me, please use this email: juroberttyb@gmail.com
+            I am a passionate developer, a loved son, and a kind person. Who also wants to be an active open source contributor and a caring father one day.<br/><br/>
+            Currently, me and my friends are learning <a href='https://github.com/rust-lang/book'>Rust</a>.<br/><br/>
+            In my free time, I enjoy taking a walk, watching stand-up comedy, and playing the piano.<br/><br/>
+            I also love to watch Rick and Morty episodes!
         </>
     )
     const header = (
@@ -18,7 +17,7 @@ const About = () => {
             About Me
         </>
     )
-    const img = pianoImg
+    const img = rust
 
     return (
         <div className="page">
