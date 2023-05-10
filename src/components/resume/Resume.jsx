@@ -35,7 +35,7 @@ const Resume = () => {
         <div className='inner_block'>
           <p>I am a passionate backend developer at Nabawan, whose founder is the co‑founder of <a href='https://17.live/en-US'>17LIVE</a>.</p>
           <p>At work, I use Go/PostgreSQL/Docker/Kubernetes/Helm/GCP on a daily basis.</p>
-          <p>After work, I built an <a href='https://web.robertchu.xyz'>online chat room</a> with React.js/Express.js/MongoDB/GCP.</p>
+          <p>After work, I am currently learning <a href='https://github.com/rust-lang/rust'>Rust</a> and aim to be an active open source contributor.</p>
         </div>
       </div>
 
@@ -45,7 +45,7 @@ const Resume = () => {
         <div className='inner_block'>
           <div className='block_item'>
             <div>
-              <div className='highlight bold'><a href='https://apps.apple.com/tw/app/clos-burgundy-dictionary/id1568106896'>Nabawan</a></div>, <div className='company bold'>Backend Developer</div>,  <div className='after_highlight'>App Backend and DevOps</div>
+              <div className='highlight bold'><a href='https://apps.apple.com/tw/app/apen/id1434492280'>Nabawan</a></div>, <div className='company bold'>Backend Developer</div>,  <div className='after_highlight'>App Backend and DevOps</div>
               <p className='highlight_inner'>Go/Gin/SQL/Docker/Kubernetes/Helm/GCP/Redis/PubSub/CICD/Git</p>
             </div>
             <div>
@@ -95,7 +95,7 @@ const Resume = () => {
         <div className='inner_block'>
             <div className='block_item'>
             <div>
-              <div className='highlight bold'></div><div className='company bold'></div><div className='after_highlight'>Continue going for a master's degree in computer science</div>
+              <div className='highlight bold'></div><div className='company bold'></div><div className='after_highlight'>Continue master's in computer science</div>
               {/* <p className='highlight_inner'></p> */}
             </div>
             <div>
@@ -143,7 +143,8 @@ const Resume = () => {
         <div className='block_item'>
             <div>
               <div className='highlight'><a href='https://web.robertchu.xyz'>Personal Website</a></div>
-              <p className='highlight_inner'>A website built with React.js for introducing myself and online chatting.</p>
+              <p className='highlight_inner'>An <a href='https://github.com/juroberttyb/page'>online chat room</a> built with React.js/Express.js/MongoDB/GCP.</p>
+              {/* <p className='highlight_inner'>A website built with React.js for introducing myself and online chatting.</p> */}
             </div>
             <div>
               {/* <div className='duration'>Nov 2022 - Present</div> */}
@@ -160,28 +161,29 @@ const Resume = () => {
           <table>
             <thead>
               <tr>
-                <th>Frontend</th>
                 <th>Backend</th>
                 <th>DevOps</th>
+                <th>Others (Basic)</th>
               </tr>
             </thead>
             <tbody>
               <td>
-                <tr>HTML/CSS</tr>
-                <tr>Javascript/Typescript</tr>
-                <tr>React.js</tr>
-              </td>
-              <td>
-                <tr>Go/Gin/Multithreading</tr>
-                <tr>Python/Flask/Pytorch</tr>
+                <tr>Go/Gin/Sqlx/Multithreading</tr>
+                <tr>Python/Flask/Pytorch/Keras</tr>
                 <tr>PostgreSQL/MongoDB/Redis</tr>
               </td>
               <td>
                 <tr>GCP Cloud</tr>
                 <tr>Kubernetes/Helm</tr>
-                <tr>Docker</tr>
-                <tr>Linux</tr>
-                <tr>Github Action</tr>
+                <tr>Linux/Docker</tr>
+                <tr>Git/Github Action</tr>
+              </td>
+              <td>
+                <tr>HTML/CSS</tr>
+                <tr>Javascript</tr>
+                <tr>Typescript</tr>
+                <tr>React.js</tr>
+                <tr>C/C++</tr>
               </td>
             </tbody>
           </table>
