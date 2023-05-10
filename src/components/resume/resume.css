@@ -1,15 +1,16 @@
 #name {
-    font-size: 1.8rem;
-    /* font-weight: bold; */
+    font-size: 1.33rem;
+    font-weight: bold;
     text-align: center;
 }
 
 #resume {
+    /* zoom: 1.05; */
     position: fixed;
     top: 0;
     bottom: 0;
     background-color: rgb(255, 255, 255);
-    color: rgba(0, 0, 0, 0.85);
+    color: rgba(0, 0, 0, 0.95);
     overflow: auto;
 }
 
@@ -45,7 +46,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 0.725rem;
+    font-size: 0.78rem;
     list-style-type: none;
     width: 80%;
 }
@@ -58,12 +59,12 @@
 
 #resume #basic_info p {
     margin-top: 0.6%;
-    font-size: 0.725rem;
+    font-size: 0.78rem;
 }
 
 #education {
     display: flex;
-    font-size: 0.725rem;
+    font-size: 0.78rem;
     margin-top: 1%;
     margin-left: 1%;
 }
@@ -75,12 +76,12 @@
 #cap {
     min-width: 5%;
     max-width: 5%;
-    aspect-ratio: 0.75;
+    aspect-ratio: 0.76;
     margin-right: 2%;
 }
 
 #skills table {
-    /* font-size: 0.85rem; */
+    font-size: 0.95rem;
     border: 0.5px solid;
     border-color: rgba(0, 0, 0, 0.2);
     border-collapse: collapse;
@@ -106,18 +107,18 @@
 }
 
 .block p {
-    font-size: 0.725rem;
+    font-size: 0.78rem;
 }
 
 .block ul {
-    margin-top: 0.5%;
+    margin-top: 1%;
     margin-left: 2.5%;
-    font-size: 0.725rem;
+    font-size: 0.78rem;
 }
 
 .block ul li {
     margin-top: 0.25%;
-    line-height: 120%;
+    line-height: 125%;
 }
 
 .inner_block {
@@ -136,23 +137,23 @@
 
 .duration {
     margin-top: 1%;
-    font-size: 0.825rem;
+    font-size: 0.78rem;
     text-align: end;
 }
 
 .location {
-    margin-top: 2%;
+    margin-top: 1.5%;
     font-size: 0.65rem;
     text-align: end;
 }
 
 .highlight {
     display: inline-block;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
 }
 
 .block_category {
-    font-size: 1rem;
+    /* font-size: 1rem; */
 }
 
 .highlight_inner {
@@ -169,13 +170,13 @@
 
 .company {
     display: inline-block;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     font-weight: bold;
 }
 
 .after_highlight {
     display: inline-block;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
 }
 
 .blank {
