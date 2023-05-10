@@ -1,10 +1,4 @@
-# [Robert's website](https://robert.xyz)
-
-## TODO
-* ethereum mailbox
-* twn nft market
-* piano sheet market
-* NTDC
+# [Robert's website](https://web.robertchu.xyz)
 
 ---
 ## Run Local
