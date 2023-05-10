@@ -34,7 +34,7 @@ const Resume = () => {
         <hr></hr>
         <div className='inner_block'>
           <p>I am a passionate backend developer at Nabawan, whose founder is the co‑founder of <a href='https://17.live/en-US'>17LIVE</a>.</p>
-          <p>At work, I use Go/SQL/Docker/Kubernetes/GCP on a daily basis.</p>
+          <p>At work, I use Go/PostgreSQL/Docker/Kubernetes/Helm/GCP on a daily basis.</p>
           <p>After work, I built an <a href='https://web.robertchu.xyz'>online chat room</a> with React.js/Express.js/MongoDB/GCP.</p>
         </div>
       </div>
@@ -50,7 +50,7 @@ const Resume = () => {
             </div>
             <div>
               <div className='duration'>May 2022 - Present</div>
-              <p className='location'>Taipei, Taiwan</p>
+              <div className='location'>Taipei, Taiwan</div>
             </div>
           </div>
           <ul>
@@ -73,8 +73,8 @@ const Resume = () => {
         <div className='inner_block'>
           <div className='block_item'>
             <div>
-              <div className='highlight bold'><a href='http://www.gallopwave.com/en/'>Gallopwave</a></div>, <div className='company bold'>Software Engineer</div>,  <div className='after_highlight'>Distributed System and DevOps</div>
-              <p className='highlight_inner'>C++/Python/Distributed System/Pytorch/Linux/Docker/CICD/Git</p>
+              <div className='highlight bold'><a href='http://www.gallopwave.com/en/'>Gallopwave</a></div>, <div className='company bold'>Machine Learning Engineer</div>,  <div className='after_highlight'>ML and DevOps</div>
+              <p className='highlight_inner'>Python/C++/Pytorch/Distributed-System/Linux/Docker/CICD/Git</p>
             </div>
             <div>
               <div className='duration'>Aug 2021 - Apr 2022</div>
@@ -82,6 +82,7 @@ const Resume = () => {
             </div>
           </div>
           <ul>
+            <li>Design and develop image segmentation and object detection features for autonomous driving</li>
             <li>Design and develop a <a href='https://drive.google.com/file/d/1uT08PYlLLETs8jVc3j8V9AnyabNsUCwv/view'>distributed architecture</a> to speed up the training pipeline by 3.89 times</li>
             <li>Develop tools for testing object detection models and raise the test coverage from 37% to 85%</li>
             <li>Develop and maintain data generators for 93% of training pipelines</li>
@@ -94,8 +95,21 @@ const Resume = () => {
         <div className='inner_block'>
             <div className='block_item'>
             <div>
-              <div className='highlight bold'><a href='http://www.rogersai.com/home_eng.html'>Rogersai</a></div>, <div className='company bold'>Software Engineer Intern</div>,  <div className='after_highlight'>Web Backend</div>
-              <p className='highlight_inner'>C++/Python/Pytorch/Linux/Docker/CICD/Git</p>
+              <div className='highlight bold'></div><div className='company bold'></div><div className='after_highlight'>Continue going for a master's degree in computer science</div>
+              {/* <p className='highlight_inner'></p> */}
+            </div>
+            <div>
+              <div className='duration'>Aug 2020 - Mar 2021</div>
+              {/* <div className='location'>Hsinchu, Taiwan</div> */}
+            </div>
+          </div>
+        </div>
+
+        <div className='inner_block'>
+            <div className='block_item'>
+            <div>
+              <div className='highlight bold'><a href='http://www.rogersai.com/home_eng.html'>Rogersai</a></div>, <div className='company bold'>Machine Learning Intern</div>,  <div className='after_highlight'>ML and Backend</div>
+              <p className='highlight_inner'>Python/Pytorch/Linux/Docker/CICD/Git</p>
             </div>
             <div>
               <div className='duration'>Jul 2020 - Aug 2020</div>
@@ -159,8 +173,8 @@ const Resume = () => {
               </td>
               <td>
                 <tr>Go/Gin/Multithreading</tr>
+                <tr>Python/Flask/Pytorch</tr>
                 <tr>PostgreSQL/MongoDB/Redis</tr>
-                <tr>C++/Python/Pytorch</tr>
               </td>
               <td>
                 <tr>GCP Cloud</tr>
