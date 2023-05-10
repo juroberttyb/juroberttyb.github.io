@@ -81,7 +81,7 @@
 }
 
 #skills table {
-    font-size: 0.95rem;
+    font-size: 1rem;
     border: 0.5px solid;
     border-color: rgba(0, 0, 0, 0.2);
     border-collapse: collapse;
@@ -149,7 +149,7 @@
 
 .highlight {
     display: inline-block;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 /* .block_category {
@@ -170,13 +170,13 @@
 
 .company {
     display: inline-block;
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 .after_highlight {
     display: inline-block;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 .blank {
