@@ -171,18 +171,19 @@ const Resume = () => {
                 <tr>Go/Gin/Sqlx/Multithreading</tr>
                 <tr>Python/Flask/Pytorch/Keras</tr>
                 <tr>PostgreSQL/MongoDB/Redis</tr>
+                <tr>RabbitMQ/PubSub</tr>
               </td>
               <td>
-                <tr>GCP Cloud</tr>
-                <tr>Kubernetes/Helm</tr>
-                <tr>Linux/Docker</tr>
+                <tr>GCP (Cloud Provider)</tr>
+                <tr>Docker/Kubernetes/Helm</tr>
+                <tr>Linux/Shell</tr>
                 <tr>Git/Github Action</tr>
-                <tr>Google PubSub</tr>
+                <tr>Storage/Logging/Cache</tr>
               </td>
               <td>
                 <tr>HTML/CSS</tr>
                 <tr>Javascript</tr>
-                <tr>Typescript</tr>
+                {/* <tr>Typescript</tr> */}
                 <tr>React.js</tr>
                 <tr>C++</tr>
               </td>
