@@ -46,7 +46,7 @@ const Resume = () => {
           <div className='block_item'>
             <div>
               <div className='highlight bold'><a href='https://apps.apple.com/tw/app/apen/id1434492280'>Nabawan</a></div>, <div className='company bold'>Backend Developer</div>,  <div className='after_highlight'>App Backend and DevOps</div>
-              <p className='highlight_inner'>Go/Gin/SQL/Docker/Kubernetes/Helm/GCP/Redis/PubSub/CICD/Git</p>
+              <p className='highlight_inner'>Go/Gin/SQL/Docker/Kubernetes/Helm/GCP/Redis/RabbitMQ/CICD/Git</p>
             </div>
             <div>
               <div className='duration'>May 2022 - Present</div>
