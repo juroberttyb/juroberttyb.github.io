@@ -46,7 +46,7 @@ const Resume = () => {
           <div className='block_item'>
             <div>
               <div className='highlight bold'><a href='https://apps.apple.com/tw/app/apen/id1434492280'>Nabawan</a></div>, <div className='company bold'>Backend Developer</div>,  <div className='after_highlight'>App Backend and DevOps</div>
-              <p className='highlight_inner'>Go/Gin/SQL/Docker/Kubernetes/Helm/GCP/Redis/PubSub/CICD/Git</p>
+              <p className='highlight_inner'>Go/Gin/SQL/Docker/Kubernetes/Helm/GCP/Redis/RabbitMQ/CICD/Git</p>
             </div>
             <div>
               <div className='duration'>May 2022 - Present</div>
@@ -171,18 +171,19 @@ const Resume = () => {
                 <tr>Go/Gin/Sqlx/Multithreading</tr>
                 <tr>Python/Flask/Pytorch/Keras</tr>
                 <tr>PostgreSQL/MongoDB/Redis</tr>
+                <tr>RabbitMQ/PubSub</tr>
               </td>
               <td>
-                <tr>GCP Cloud</tr>
-                <tr>Kubernetes/Helm</tr>
-                <tr>Linux/Docker</tr>
+                <tr>GCP (Cloud Provider)</tr>
+                <tr>Docker/Kubernetes/Helm</tr>
+                <tr>Linux/Shell</tr>
                 <tr>Git/Github Action</tr>
-                <tr>Google PubSub</tr>
+                <tr>Storage/Logging/Cache</tr>
               </td>
               <td>
                 <tr>HTML/CSS</tr>
                 <tr>Javascript</tr>
-                <tr>Typescript</tr>
+                {/* <tr>Typescript</tr> */}
                 <tr>React.js</tr>
                 <tr>C++</tr>
               </td>
