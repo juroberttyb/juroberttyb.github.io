@@ -34,7 +34,7 @@ const Resume = () => {
         <hr></hr>
         <div className='inner_block'>
           <p>I am a passionate backend developer at Nabawan, whose founder is the co‑founder of <a href='https://17.live/en-US'>17LIVE</a>.</p>
-          <p>At work, I use Go/PostgreSQL/Docker/Kubernetes/Helm/GCP on a daily basis.</p>
+          <p>At work, I use Go, PostgreSQL, Docker, Kubernetes, and GCP on a daily basis.</p>
           <p>After work, I am currently learning <a href='https://github.com/rust-lang/rust'>Rust</a> and aim to be an active open source contributor.</p>
         </div>
       </div>
@@ -164,7 +164,7 @@ const Resume = () => {
               <tr>
                 <th>Backend</th>
                 <th>DevOps</th>
-                <th>Others (Basic)</th>
+                <th>Others</th>
               </tr>
             </thead>
             <tbody>
@@ -172,7 +172,7 @@ const Resume = () => {
                 <tr>Go/Gin/Sqlx/Multithreading</tr>
                 <tr>Python/Flask/Pytorch/Keras</tr>
                 <tr>PostgreSQL/MongoDB/Redis</tr>
-                <tr>RabbitMQ/PubSub</tr>
+                <tr>RabbitMQ/PubSub/Routing</tr>
               </td>
               <td>
                 <tr>GCP (Cloud Provider)</tr>
