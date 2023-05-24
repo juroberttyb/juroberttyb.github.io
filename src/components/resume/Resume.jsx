@@ -66,7 +66,8 @@ const Resume = () => {
             <li>Write unit and integration tests to raise the test coverage of API package from 0% to 91%</li>
             <li>Refactor 97% of backend code to follow API/Service/Gateway/Store/Model best-practice architecture</li>
             <li>Integrate Google Cloud Logging to raise the logging coverage of backend code from 61% to 96%</li>
-            <li>Integrate Google Cloud Pub/Sub into Purchase API with Go channels and context</li>
+            <li>Decouple existing services and introduce loosely-coupled architecture to our backend, accelerate response by 13%, and reduce code size by 32%</li>
+            {/* <li>Integrate Google Cloud Pub/Sub into Purchase API with Go channels and context</li> */}
           </ul>
         </div>
 
@@ -185,7 +186,7 @@ const Resume = () => {
                 <tr>Javascript</tr>
                 {/* <tr>Typescript</tr> */}
                 <tr>React.js</tr>
-                <tr>C++</tr>
+                {/* <tr>C++</tr> */}
               </td>
             </tbody>
           </table>
