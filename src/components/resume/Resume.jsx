@@ -34,7 +34,7 @@ const Resume = () => {
         <hr></hr>
         <div className='inner_block'>
           <p>I am a passionate backend developer at Nabawan, whose founder is the co‑founder of <a href='https://17.live/en-US'>17LIVE</a>.</p>
-          <p>At work, I use Go, PostgreSQL, Docker, Kubernetes, and GCP on a daily basis.</p>
+          <p>At work, I use Go, PostgreSQL, Linux, Docker, Kubernetes, and GCP on a daily basis.</p>
           <p>After work, I am currently learning <a href='https://github.com/rust-lang/rust'>Rust</a> and aim to be an active open source contributor.</p>
         </div>
       </div>
@@ -66,7 +66,7 @@ const Resume = () => {
             <li>Write unit and integration tests to raise the test coverage of API package from 0% to 91%</li>
             <li>Refactor 97% of backend code to follow API/Service/Gateway/Store/Model best-practice architecture</li>
             <li>Integrate Google Cloud Logging to raise the logging coverage of backend code from 61% to 96%</li>
-            <li>Decouple existing services and introduce loosely-coupled architecture to our backend, accelerate response by 13%, and reduce code size by 32%</li>
+            <li>Decouple existing services and introduce <a href='https://docs.google.com/presentation/d/1YxMI3G1ARqG0_g36hCPTtmPKSIjGQLKw-IR2sv4tkeY/edit?usp=share_link'>loosely-coupled architecture</a> to our backend, accelerate response by 13%, and reduce code size by 32%</li>
             {/* <li>Integrate Google Cloud Pub/Sub into Purchase API with Go channels and context</li> */}
           </ul>
         </div>
