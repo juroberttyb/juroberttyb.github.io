@@ -120,23 +120,6 @@ const Resume = () => {
         </div>
       </div>
 
-      <div id='awards' className='block'>
-        <div className='highlight block_category'>Awards</div>
-        <hr></hr>
-        <div className='inner_block'>
-          <div className='block_item'>
-            <div>
-              <div className='highlight'><a href='https://arxiv.org/pdf/2112.03690.pdf'>Paper</a> published at <a href='https://practical-dl.github.io/2022/index'>AAAI Workshop</a></div>
-              <p className='highlight_inner'>Paper published during the master's period, cited by 5</p>
-            </div>
-            <div>
-              <div className='duration'>Mar 2022</div>
-              <div className='location'>Vancouver, Canada</div> 
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div id='projects' className='block'>
         <div className='highlight block_category'>Projects</div>
         <hr></hr>
@@ -150,6 +133,23 @@ const Resume = () => {
             <div>
               {/* <div className='duration'>Nov 2022 - Present</div> */}
               {/* <div className='location'>Taipei, Taiwan</div> */}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id='awards' className='block'>
+        <div className='highlight block_category'>Awards</div>
+        <hr></hr>
+        <div className='inner_block'>
+          <div className='block_item'>
+            <div>
+              <div className='highlight'><a href='https://arxiv.org/pdf/2112.03690.pdf'>Paper</a> published at <a href='https://practical-dl.github.io/2022/index'>AAAI Workshop</a></div>
+              <p className='highlight_inner'>Paper published during the master's period, cited by 5</p>
+            </div>
+            <div>
+              <div className='duration'>Mar 2022</div>
+              <div className='location'>Vancouver, Canada</div> 
             </div>
           </div>
         </div>
