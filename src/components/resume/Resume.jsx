@@ -126,8 +126,8 @@ const Resume = () => {
         <div className='inner_block'>
           <div className='block_item'>
             <div>
-              <div className='highlight'><a href='https://arxiv.org/pdf/2112.03690.pdf'>Paper</a> accepted at <a href='https://practical-dl.github.io/2022/index'>AAAI‑22 Workshop</a></div>
-              <p className='highlight_inner'>The paper proposed a method for tensor compression, cited by 5.</p>
+              <div className='highlight'><a href='https://arxiv.org/pdf/2112.03690.pdf'>Paper</a> published at <a href='https://practical-dl.github.io/2022/index'>AAAI Workshop</a></div>
+              <p className='highlight_inner'>Paper published during the master's period, cited by 5</p>
             </div>
             <div>
               <div className='duration'>Mar 2022</div>
