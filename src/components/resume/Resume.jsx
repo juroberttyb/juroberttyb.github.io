@@ -95,15 +95,18 @@ const Resume = () => {
 
         <div className='inner_block'>
             <div className='block_item'>
-            <div>
-              <div className='highlight bold'></div><div className='company bold'></div><div className='after_highlight'>Continue master's in computer science</div>
-              {/* <p className='highlight_inner'></p> */}
+              <div>
+                <div className='highlight bold'></div><div className='company bold'></div><div className='after_highlight'>Continue master's in computer science</div>
+                {/* <p className='highlight_inner'>Python/Pytorch/Distributed-System</p> */}
+              </div>
+              <div>
+                <div className='duration'>Aug 2020 - Mar 2021</div>
+                {/* <div className='location'>Hsinchu, Taiwan</div> */}
+              </div>
             </div>
-            <div>
-              <div className='duration'>Aug 2020 - Mar 2021</div>
-              {/* <div className='location'>Hsinchu, Taiwan</div> */}
-            </div>
-          </div>
+            <ul>
+              <li><a href='https://arxiv.org/pdf/2112.03690.pdf'>Master's thesis</a> accepted at <a href='https://practical-dl.github.io/2022/index'>AAAI Workshop</a>, cited by 5</li>
+            </ul>
         </div>
 
         <div className='inner_block'>
@@ -138,7 +141,7 @@ const Resume = () => {
         </div>
       </div>
 
-      <div id='awards' className='block'>
+      {/* <div id='awards' className='block'>
         <div className='highlight block_category'>Awards</div>
         <hr></hr>
         <div className='inner_block'>
@@ -153,7 +156,7 @@ const Resume = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div id='skills' className='block'>
         <div className='highlight block_category'>Skills</div>

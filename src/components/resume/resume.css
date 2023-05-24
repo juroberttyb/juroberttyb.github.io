@@ -46,7 +46,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 0.78rem;
+    font-size: 0.781rem;
     list-style-type: none;
     width: 80%;
 }
@@ -59,12 +59,12 @@
 
 #resume #basic_info p {
     margin-top: 0.6%;
-    font-size: 0.78rem;
+    font-size: 0.781rem;
 }
 
 #education {
     display: flex;
-    font-size: 0.78rem;
+    font-size: 0.781rem;
     margin-top: 1%;
     margin-left: 1%;
 }
@@ -106,13 +106,13 @@
 }
 
 .block p {
-    font-size: 0.78rem;
+    font-size: 0.781rem;
 }
 
 .block ul {
     margin-top: 1%;
     margin-left: 2.5%;
-    font-size: 0.78rem;
+    font-size: 0.781rem;
 }
 
 .block ul li {
@@ -135,7 +135,7 @@
 
 .duration {
     margin-top: 1%;
-    font-size: 0.78rem;
+    font-size: 0.781rem;
     text-align: end;
 }
 
