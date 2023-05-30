@@ -61,12 +61,12 @@ const Resume = () => {
               <a href='https://apps.apple.com/tw/app/%E8%AD%B7%E7%90%86%E7%AB%99/id1523414575'> NStation</a>,
               and <a href='https://apps.apple.com/us/app/%E8%97%A5%E5%B8%AB%E5%9C%88/id1661519539'> Phar</a>
             </li>
-            <li>Parallelize 92% of notification API with Go routines to speed up logic processing by 1.62 times</li>
-            <li>Develop and integrate Redis caching into services to speed up http response by 8.96 times</li>
-            <li>Write unit and integration tests to raise the test coverage of API package from 0% to 91%</li>
+            <li>Parallelize 92% of the notification API with Go routines and speed up logic processing by 1.62 times</li>
+            <li>Develop and integrate Redis caching into existing services and speed up http responses by 8.96 times</li>
+            <li>Write unit and integration tests to raise the test coverage of the API package from 0% to 91%</li>
             <li>Refactor 97% of backend code to follow API/Service/Gateway/Store/Model best-practice architecture</li>
             <li>Integrate Google Cloud Logging to raise the logging coverage of backend code from 61% to 96%</li>
-            <li>Decouple existing services and introduce <a href='https://docs.google.com/presentation/d/1YxMI3G1ARqG0_g36hCPTtmPKSIjGQLKw-IR2sv4tkeY/edit?usp=share_link'>loosely-coupled architecture</a> to our backend, accelerate response by 13%, and reduce code size by 32%</li>
+            <li>Decouple existing services with RabbitMQ and introduce a <a href='https://docs.google.com/presentation/d/1YxMI3G1ARqG0_g36hCPTtmPKSIjGQLKw-IR2sv4tkeY/edit?usp=share_link'>loosely coupled architecture</a> to our backend to accelerate response by 13% and reduce code size by 32%</li>
             {/* <li>Integrate Google Cloud Pub/Sub into Purchase API with Go channels and context</li> */}
           </ul>
         </div>
