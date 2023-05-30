@@ -27,15 +27,13 @@ const Resume = () => {
         </div>
       </div>
 
-
-
-      <div id='autobiography' className='block'>
-        <div className='highlight block_category'>Autobiography</div>
+      <div id='summary' className='block'>
+        <div className='highlight block_category'>Summary</div>
         <hr></hr>
         <div className='inner_block'>
-          <p>I am a passionate backend developer at Nabawan, whose founder is the co‑founder of <a href='https://17.live/en-US'>17LIVE</a>.</p>
-          <p>At work, I use Go, PostgreSQL, Linux, Docker, Kubernetes, and GCP on a daily basis.</p>
-          <p>After work, I am currently learning <a href='https://github.com/rust-lang/rust'>Rust</a> and aim to be an active open source contributor.</p>
+          <p>I am a passionate backend developer at Nabawan, whose founder is the CTO of <a href='https://17.live/en-US'>17LIVE</a>.</p>
+          <p>At work, I use Go, SQL, Linux, Docker, Kubernetes, and GCP on a daily basis.</p>
+          {/* <p>After work, I am learning <a href='https://github.com/rust-lang/rust'>Rust</a> and aim to be an active open source contributor.</p> */}
         </div>
       </div>
 
@@ -46,11 +44,11 @@ const Resume = () => {
           <div className='block_item'>
             <div>
               <div className='highlight bold'><a href='https://apps.apple.com/tw/app/apen/id1434492280'>Nabawan</a></div>, <div className='company bold'>Backend Developer</div>,  <div className='after_highlight'>App Backend and DevOps</div>
-              <p className='highlight_inner'>Go/Gin/SQL/Docker/Kubernetes/Helm/GCP/Redis/RabbitMQ/CICD/Git</p>
+              {/* <p className='highlight_inner'>Go/Gin/SQL/Docker/Kubernetes/Helm/GCP/Redis/RabbitMQ/CICD/Git</p> */}
             </div>
             <div>
               <div className='duration'>May 2022 - Present</div>
-              <div className='location'>Taipei, Taiwan</div>
+              {/* <div className='location'>Taipei, Taiwan</div> */}
             </div>
           </div>
           <ul>
@@ -75,11 +73,11 @@ const Resume = () => {
           <div className='block_item'>
             <div>
               <div className='highlight bold'><a href='http://www.gallopwave.com/en/'>Gallopwave</a></div>, <div className='company bold'>Machine Learning Engineer</div>,  <div className='after_highlight'>ML and DevOps</div>
-              <p className='highlight_inner'>Python/C++/Pytorch/Distributed-System/Linux/Docker/CICD/Git</p>
+              {/* <p className='highlight_inner'>Python/C++/Pytorch/Distributed-System/Linux/Docker/CICD/Git</p> */}
             </div>
             <div>
               <div className='duration'>Aug 2021 - Apr 2022</div>
-              <div className='location'>Taipei, Taiwan</div>
+              {/* <div className='location'>Taipei, Taiwan</div> */}
             </div>
           </div>
           <ul>
@@ -113,52 +111,17 @@ const Resume = () => {
             <div className='block_item'>
             <div>
               <div className='highlight bold'><a href='http://www.rogersai.com/home_eng.html'>Rogersai</a></div>, <div className='company bold'>Machine Learning Intern</div>,  <div className='after_highlight'>ML and Backend</div>
-              <p className='highlight_inner'>Python/Pytorch/Linux/Docker/CICD/Git</p>
+              {/* <p className='highlight_inner'>Python/Pytorch/Linux/Docker/CICD/Git</p> */}
             </div>
             <div>
               <div className='duration'>Jul 2020 - Aug 2020</div>
-              <div className='location'>Taipei, Taiwan</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id='projects' className='block'>
-        <div className='highlight block_category'>Projects</div>
-        <hr></hr>
-        <div className='inner_block'>
-        <div className='block_item'>
-            <div>
-              <div className='highlight'><a href='https://web.robertchu.xyz'>Personal Website</a></div>
-              <p className='highlight_inner'>An <a href='https://github.com/juroberttyb/page'>online chat room</a> built with React.js/Express.js/MongoDB/GCP.</p>
-              {/* <p className='highlight_inner'>A website built with React.js for introducing myself and online chatting.</p> */}
-            </div>
-            <div>
-              {/* <div className='duration'>Nov 2022 - Present</div> */}
               {/* <div className='location'>Taipei, Taiwan</div> */}
             </div>
           </div>
         </div>
       </div>
 
-      {/* <div id='awards' className='block'>
-        <div className='highlight block_category'>Awards</div>
-        <hr></hr>
-        <div className='inner_block'>
-          <div className='block_item'>
-            <div>
-              <div className='highlight'><a href='https://arxiv.org/pdf/2112.03690.pdf'>Paper</a> published at <a href='https://practical-dl.github.io/2022/index'>AAAI Workshop</a></div>
-              <p className='highlight_inner'>Paper published during the master's period, cited by 5</p>
-            </div>
-            <div>
-              <div className='duration'>Mar 2022</div>
-              <div className='location'>Vancouver, Canada</div> 
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-      <div id='skills' className='block'>
+<div id='skills' className='block'>
         <div className='highlight block_category'>Skills</div>
         <hr></hr>
         <div className='inner_block'>
@@ -173,7 +136,7 @@ const Resume = () => {
             <tbody>
               <td>
                 <tr>Go/Gin/Sqlx/Multithreading</tr>
-                <tr>Python/Flask/Pytorch/Keras</tr>
+                <tr>Python/Pytorch/Keras</tr>
                 <tr>PostgreSQL/MongoDB/Redis</tr>
                 <tr>RabbitMQ/PubSub/Routing</tr>
               </td>
@@ -195,6 +158,43 @@ const Resume = () => {
           </table>
         </div>
       </div>
+
+      <div id='projects' className='block'>
+        <div className='highlight block_category'>Projects</div>
+        <hr></hr>
+        <div className='inner_block'>
+        <div className='block_item'>
+            <div>
+              <div className='project_highlight'>
+                <a href='https://web.robertchu.xyz'>Personal Website: </a>An <a href='https://github.com/juroberttyb/page'>online chat room</a> built with React.js/Express.js/MongoDB/GCP
+              </div>
+              {/* <p className='highlight_inner'>An <a href='https://github.com/juroberttyb/page'>online chat room</a> built with React.js/Express.js/MongoDB/GCP.</p> */}
+              {/* <p className='highlight_inner'>A website built with React.js for introducing myself and online chatting.</p> */}
+            </div>
+            {/* <div> */}
+              {/* <div className='duration'>Nov 2022 - Present</div> */}
+              {/* <div className='location'>Taipei, Taiwan</div> */}
+            {/* </div> */}
+          </div>
+        </div>
+      </div>
+
+      {/* <div id='awards' className='block'>
+        <div className='highlight block_category'>Awards</div>
+        <hr></hr>
+        <div className='inner_block'>
+          <div className='block_item'>
+            <div>
+              <div className='highlight'><a href='https://arxiv.org/pdf/2112.03690.pdf'>Paper</a> published at <a href='https://practical-dl.github.io/2022/index'>AAAI Workshop</a></div>
+              <p className='highlight_inner'>Paper published during the master's period, cited by 5</p>
+            </div>
+            <div>
+              <div className='duration'>Mar 2022</div>
+              <div className='location'>Vancouver, Canada</div> 
+            </div>
+          </div>
+        </div>
+      </div> */}
 
       <p className='blank'>
         Experience, Google senior software engineer, Lead team of 6 engineers to mine Ethereum on company bold servers, Lead software engineer, 10 years experience, full-stack developer, Facebook, Meta, Amazon, Instagram, Microsoft senior backend developer, Tesla, Apple, IBM, OpenAI, LinkedIn principal engineer, reddit, Twitter, Binance, 
