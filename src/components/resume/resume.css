@@ -1,14 +1,13 @@
 #name {
-    font-size: 1.33rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
 }
 
 #resume {
-    /* zoom: 1.05; */
-    position: fixed;
-    top: 0;
-    bottom: 0;
+    /* position: fixed; */
+    /* top: 0; */
+    /* bottom: 0; */
     background-color: rgb(255, 255, 255);
     color: rgba(0, 0, 0, 0.95);
     overflow: auto;
@@ -30,7 +29,7 @@
     color: blue;
 }
 
-#autobiography .inner_block p {
+#summary .inner_block p {
     margin-bottom: 0.5%;
 }
 
@@ -46,7 +45,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 0.781rem;
+    font-size: 0.85rem;
     list-style-type: none;
     width: 80%;
 }
@@ -59,12 +58,12 @@
 
 #resume #basic_info p {
     margin-top: 0.6%;
-    font-size: 0.781rem;
+    font-size: 0.85rem;
 }
 
 #education {
     display: flex;
-    font-size: 0.781rem;
+    font-size: 0.85rem;
     margin-top: 1%;
     margin-left: 1%;
 }
@@ -106,25 +105,26 @@
 }
 
 .block p {
-    font-size: 0.781rem;
+    font-size: 0.85rem;
 }
 
 .block ul {
+    /* width: 95%; */
     margin-top: 1%;
     margin-left: 2.5%;
-    font-size: 0.781rem;
+    font-size: 0.85rem;
 }
 
 .block ul li {
-    margin-top: 0.25%;
-    line-height: 125%;
+    /* margin-top: 0.5%; */
+    line-height: 135%;
 }
 
 .inner_block {
-    margin-bottom: 2%;
+    margin-bottom: 1.5%;
 }
 
-#autobiography .inner_block {
+#summary .inner_block {
     margin-left: 1%;
 }
 
@@ -134,19 +134,24 @@
 }
 
 .duration {
-    margin-top: 1%;
-    font-size: 0.781rem;
+    margin-top: 0.5%;
+    font-size: 0.85rem;
     text-align: end;
 }
 
 .location {
-    margin-top: 1.5%;
-    font-size: 0.65rem;
+    margin-top: 2.5%;
+    font-size: 0.72rem;
     text-align: end;
 }
 
 .highlight {
     display: inline-block;
+}
+
+.project_highlight {
+    display: inline-block;
+    font-size: 0.85rem;
 }
 
 /* .block_category {
@@ -157,7 +162,8 @@
 }
 
 #experience .inner_block .block_item .highlight_inner {
-    margin-top: 0.5%;
+    margin-top: 0.65%;
+    font-size: 0.72rem;
 }
 
 .bold {
@@ -174,6 +180,6 @@
 }
 
 .blank {
-    font-size: 0.02rem;
+    font-size: 0.1rem;
     color: white;
 }
