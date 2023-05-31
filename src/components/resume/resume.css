@@ -125,8 +125,16 @@
     margin-bottom: 1%;
 }
 
+#summary .inner_block {
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    line-height: 120%;
+}
+
 .project_highlight {
-    /* margin-left: 1%; */
+    width: 100%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
     line-height: 120%;
 }
 

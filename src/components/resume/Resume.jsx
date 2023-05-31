@@ -168,7 +168,7 @@ const Resume = () => {
         <div className='block_item'>
             <div>
               <div className='project_highlight'>
-                <a href='https://web.robertchu.xyz'>Personal Website: </a>An <a href='https://github.com/juroberttyb/page'>online chat room</a> built with React.js/Express.js/MongoDB/GCP
+                <a href='https://web.robertchu.xyz'>Personal Website: </a>A <a href='https://github.com/juroberttyb/page'>chat room</a> built with React.js/Express.js/MongoDB/GCP
               </div>
               {/* <p className='highlight_inner'>An <a href='https://github.com/juroberttyb/page'>online chat room</a> built with React.js/Express.js/MongoDB/GCP.</p> */}
               {/* <p className='highlight_inner'>A website built with React.js for introducing myself and online chatting.</p> */}
