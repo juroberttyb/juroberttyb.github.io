@@ -13,10 +13,10 @@ const Resume = () => {
     <div id='resume'>
       <div id='name'>Robert Chu</div>
       <div id='contact'>
-        <p><img className="prefix_img" src={phone} alt="" />(+886)972435608</p>
-        <p><img className="prefix_img" src={mail} alt="" />juroberttyb@gmail.com</p>
-        <p><img className="prefix_img" src={github} alt="" /><a href='https://github.com/juroberttyb'>juroberttyb</a></p>
-        <p><img className="prefix_img" src={linkedin} alt="" /><a href='https://www.linkedin.com/in/robert-chu-5b66081a9/'> Robert Chu</a></p>
+        <img className="prefix_img" src={phone} alt="" /><p>(+886)972435608</p>
+        <img className="prefix_img" src={mail} alt="" /><p>juroberttyb@gmail.com</p>
+        <img className="prefix_img" src={github} alt="" /><p><a href='https://github.com/juroberttyb'>juroberttyb</a></p>
+        <img className="prefix_img" src={linkedin} alt="" /><p><a href='https://www.linkedin.com/in/robert-chu-5b66081a9/'>Robert Chu</a></p>
         {/* <p><img className="prefix_img" src={web} alt="" /><a href='https://web.robertchu.xyz'>Website</a></p> */}
       </div>
       <div id='education'>
@@ -31,8 +31,10 @@ const Resume = () => {
         <div className='highlight block_category'>Summary</div>
         <hr></hr>
         <div className='inner_block'>
-          <p>I am a passionate backend developer at Nabawan, whose founder is the CTO of <a href='https://17.live/en-US'>17LIVE</a>.</p>
-          <p>At work, I use Go, SQL, Linux, Docker, Kubernetes, and GCP on a daily basis.</p>
+          <p>
+            I am a passionate backend developer at Penpeer, whose founder is the co-founder and former CTO of <a href='https://17.live/en-US'>17LIVE</a>.
+            <br/>At work, I use Go, SQL, Linux, Docker, Kubernetes, and GCP on a daily basis.
+          </p>
           {/* <p>After work, I am learning <a href='https://github.com/rust-lang/rust'>Rust</a> and aim to be an active open source contributor.</p> */}
         </div>
       </div>
@@ -43,7 +45,7 @@ const Resume = () => {
         <div className='inner_block'>
           <div className='block_item'>
             <div>
-              <div className='highlight bold'><a href='https://apps.apple.com/tw/app/apen/id1434492280'>Nabawan</a></div>, <div className='company bold'>Backend Developer</div>,  <div className='after_highlight'>App Backend and DevOps</div>
+              <div className='highlight bold'><a href='http://35.194.180.167/'>Penpeer</a></div>, <div className='company bold'>Backend Developer</div>,  <div className='after_highlight'>App Backend and DevOps</div>
               {/* <p className='highlight_inner'>Go/Gin/SQL/Docker/Kubernetes/Helm/GCP/Redis/RabbitMQ/CICD/Git</p> */}
             </div>
             <div>
@@ -53,11 +55,11 @@ const Resume = () => {
           </div>
           <ul>
             <li>Develop and maintain backend services for
-              <a href='https://apps.apple.com/tw/app/mediatalk-dont-be-shy/id1599874400'> MediTalk</a>,
-              <a href='https://apps.apple.com/tw/app/clos-burgundy-dictionary/id1568106896'> Clos</a>,
               <a href='https://apps.apple.com/tw/app/apen/id1434492280'> Apen</a>,
+              <a href='https://apps.apple.com/us/app/%E8%97%A5%E5%B8%AB%E5%9C%88/id1661519539'> Phar</a>,
               <a href='https://apps.apple.com/tw/app/%E8%AD%B7%E7%90%86%E7%AB%99/id1523414575'> NStation</a>,
-              and <a href='https://apps.apple.com/us/app/%E8%97%A5%E5%B8%AB%E5%9C%88/id1661519539'> Phar</a>
+              <a href='https://apps.apple.com/tw/app/clos-burgundy-dictionary/id1568106896'> Clos</a>,
+              and <a href='https://apps.apple.com/tw/app/mediatalk-dont-be-shy/id1599874400'> MediTalk</a>
             </li>
             <li>Parallelize 92% of the notification API with Go routines and speed up logic processing by 1.62 times</li>
             <li>Develop and integrate Redis caching into existing services and speed up http responses by 8.96 times</li>
@@ -121,7 +123,7 @@ const Resume = () => {
         </div>
       </div>
 
-<div id='skills' className='block'>
+      <div id='skills' className='block'>
         <div className='highlight block_category'>Skills</div>
         <hr></hr>
         <div className='inner_block'>
