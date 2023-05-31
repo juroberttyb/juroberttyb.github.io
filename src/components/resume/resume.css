@@ -15,8 +15,8 @@
 
 #resume hr {
     background: transparent;
-    border-top: solid 1px #aaa;
-    margin-bottom: 1.5%;
+    border-top: solid 1.5px #aaa;
+    margin-bottom: 1%;
 }
 
 #resume a {
@@ -27,10 +27,6 @@
 #resume a:visited { 
     text-decoration: none;
     color: blue;
-}
-
-#summary .inner_block p {
-    margin-bottom: 0.5%;
 }
 
 #resume_header {
@@ -47,13 +43,16 @@
     justify-content: space-between;
     font-size: 0.85rem;
     list-style-type: none;
-    width: 80%;
+    width: 85%;
+}
+
+#contact p {
+    /* padding-right: 0.5px; */
 }
 
 .prefix_img {
-    display: inline-block;
-    width: 12px;
-    aspect-ratio: 1;
+    width: 15px;
+    margin-left: 1%;
 }
 
 #resume #basic_info p {
@@ -63,18 +62,21 @@
 
 #education {
     display: flex;
-    font-size: 0.85rem;
-    margin-top: 1%;
-    margin-left: 1%;
+    font-size: 0.7rem;
+    margin-left: 0.5%;
+    margin-top: 0.5%;
+    /* margin-left: 1%; */
 }
 
 #education div {
     margin-top: 1.75%;
+    line-height: 115%;
 }
 
 #cap {
-    min-width: 5%;
-    max-width: 5%;
+    min-width: 4%;
+    max-width: 4%;
+    margin-top: 0.75%;
     aspect-ratio: 0.76;
     margin-right: 2%;
 }
@@ -100,8 +102,7 @@
 }
 
 .block {
-    margin: 1%;
-    margin-top: 2%;
+    margin-top: 1.5%;
 }
 
 .block p {
@@ -109,9 +110,9 @@
 }
 
 .block ul {
-    /* width: 95%; */
+    width: 90%;
     margin-top: 1%;
-    margin-left: 2.5%;
+    margin-left: 3.5%;
     font-size: 0.85rem;
 }
 
@@ -121,11 +122,12 @@
 }
 
 .inner_block {
-    margin-bottom: 1.5%;
+    margin-bottom: 1%;
 }
 
 #summary .inner_block {
     margin-left: 1%;
+    line-height: 120%;
 }
 
 .block_item {
@@ -134,14 +136,14 @@
 }
 
 .duration {
-    margin-top: 0.5%;
+    margin-top: 0.75%;
     font-size: 0.85rem;
     text-align: end;
 }
 
 .location {
     margin-top: 2.5%;
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     text-align: end;
 }
 
@@ -162,8 +164,8 @@
 }
 
 #experience .inner_block .block_item .highlight_inner {
-    margin-top: 0.65%;
-    font-size: 0.72rem;
+    margin-top: 0.5%;
+    font-size: 0.7rem;
 }
 
 .bold {
