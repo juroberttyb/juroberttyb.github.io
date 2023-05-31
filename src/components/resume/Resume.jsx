@@ -45,7 +45,7 @@ const Resume = () => {
         <div className='inner_block'>
           <div className='block_item'>
             <div>
-              <div className='highlight bold'><a href='http://35.194.180.167/'>Penpeer</a></div>, <div className='company bold'>Backend Developer</div>,  <div className='after_highlight'>App Backend and DevOps</div>
+              <div className='highlight bold'><a href='http://35.194.180.167/'>Penpeer</a></div>, <div className='company bold'>Backend Developer</div>,  <div className='after_highlight'>Backend and DevOps</div>
               {/* <p className='highlight_inner'>Go/Gin/SQL/Docker/Kubernetes/Helm/GCP/Redis/RabbitMQ/CICD/Git</p> */}
             </div>
             <div>
