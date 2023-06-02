@@ -137,23 +137,26 @@ const Resume = () => {
             </thead>
             <tbody>
               <td>
-                <tr>Go/Gin/Sqlx/Multithreading</tr>
-                <tr>Python/Pytorch/Keras</tr>
+                <tr>Go/Python</tr>
+                <tr>Microservices</tr>
+                <tr>Multithreading</tr>
                 <tr>PostgreSQL/MongoDB/Redis</tr>
-                <tr>RabbitMQ/PubSub/Routing</tr>
-              </td>
-              <td>
-                <tr>GCP (Cloud Provider)</tr>
-                <tr>Docker/Kubernetes/Helm</tr>
-                <tr>Linux/Shell</tr>
-                <tr>Git/Github Action</tr>
+                <tr>RabbitMQ/PubSub</tr>
                 <tr>Storage/Logging/Cache</tr>
               </td>
               <td>
-                <tr>HTML/CSS</tr>
-                <tr>Javascript</tr>
-                {/* <tr>Typescript</tr> */}
+                <tr>GCP (Google Cloud)</tr>
+                <tr>Kubernetes/Helm</tr>
+                <tr>Docker</tr>
+                <tr>Linux/Shell</tr>
+                <tr>Github Action</tr>
+              </td>
+              <td>
+                <tr>HTML/CSS/Javascript</tr>
                 <tr>React.js</tr>
+                <tr>Sklearn/Pytorch/Keras</tr>
+                <tr>Numpy/OpenCV</tr>
+                {/* <tr>Typescript</tr> */}
                 {/* <tr>C++</tr> */}
               </td>
             </tbody>
