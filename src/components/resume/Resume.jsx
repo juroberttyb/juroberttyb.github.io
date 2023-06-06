@@ -32,7 +32,7 @@ const Resume = () => {
         <hr></hr>
         <div className='inner_block'>
           <p>
-            I am a passionate backend developer at Penpeer, whose founder is the co-founder and CTO of <a href='https://17.live/en-US'>17LIVE</a>.
+            I am a passionate backend developer at Penpeer, whose founder is the co-founder and former CTO of <a href='https://17.live/en-US'>17LIVE</a>.
             <br/>At work, I use Go, SQL, Linux, Docker, Kubernetes, and GCP on a daily basis.
             <br/>After work, I am learning <a href='https://github.com/rust-lang/rust'>Rust</a> and aim to be an active open source contributor.
           </p>
