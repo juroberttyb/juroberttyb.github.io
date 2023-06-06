@@ -5,22 +5,20 @@
 }
 
 #resume {
-    font-family: Arial, Helvetica, sans-serif;
-    /* position: fixed; */
-    /* top: 0; */
-    /* bottom: 0; */
     background-color: rgb(255, 255, 255);
     color: rgba(0, 0, 0, 0.95);
     overflow: auto;
     font-size: 0.7rem;
     line-height: 1.2;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #resume hr {
     background: transparent;
     border-top: solid 1px;
     margin-top: 0.5%;
-    margin-bottom: 0.9%;
+    margin-bottom: 1%;
 }
 
 #resume a {
@@ -50,7 +48,6 @@
 }
 
 #contact p {
-    /* padding-right: 0.5px; */
 }
 
 .prefix_img {
@@ -110,7 +107,6 @@
 }
 
 .block p {
-    
 }
 
 .block ul {
@@ -127,21 +123,18 @@
     margin-bottom: 1%;
 }
 
-#summary .inner_block {
+#summary .inner_block, .project_highlight {
     margin-left: 2%;
     margin-right: 2%;
 }
 
 .project_highlight {
     width: 100%;
-    margin-left: 2%;
-    margin-right: 2%;
 }
 
 .block_item {
     display: flex;
     justify-content: space-between;
-    
 }
 
 .duration {

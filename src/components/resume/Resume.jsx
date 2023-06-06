@@ -88,6 +88,7 @@ const Resume = () => {
             <li>Develop tools for testing object detection models and raise the test coverage from 37% to 85%</li>
             <li>Develop and maintain data generators for 93% of training pipelines</li>
             <li>Develop and maintain ONNX generation pipelines for 81% of production platforms</li>
+            <li>Develop and integrate weather transformation for data augmentation using Cycle GAN</li>
             <li>Automate 77% of infrastructure build‑outs for development environments</li>
             <li>Troubleshooting network, linux, and docker issues for development and production environments</li>
           </ul>
