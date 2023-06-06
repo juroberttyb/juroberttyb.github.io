@@ -114,7 +114,7 @@ const Resume = () => {
         <div className='inner_block'>
           <div className='block_item'>
             <div>
-              <div className='highlight bold'>Software Engineer</div>, <div className='company bold'><a href='https://www.mediatek.com/'>Mediatek</a></div>, <div className='after_highlight'>3A algorithm Team</div>
+              <div className='highlight bold'>Software Engineer</div>, <div className='company bold'><a href='https://www.mediatek.com/'>Mediatek</a></div>, <div className='after_highlight'>3A Algorithm Team</div>
               {/* <p className='highlight_inner'>Python/Pytorch/Linux/Docker/CICD/Git</p> */}
             </div>
             <div>
