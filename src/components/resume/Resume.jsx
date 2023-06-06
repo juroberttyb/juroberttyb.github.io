@@ -32,7 +32,7 @@ const Resume = () => {
         <hr></hr>
         <div className='inner_block'>
           <p>
-            I am a passionate backend developer at Penpeer, whose founder is the co-founder and former CTO of <a href='https://17.live/en-US'>17LIVE</a>.
+            I am a passionate backend developer at Penpeer, whose founder is the co-founder and CTO of <a href='https://17.live/en-US'>17LIVE</a>.
             <br/>At work, I use Go, SQL, Linux, Docker, Kubernetes, and GCP on a daily basis.
             <br/>After work, I am learning <a href='https://github.com/rust-lang/rust'>Rust</a> and aim to be an active open source contributor.
           </p>
@@ -54,20 +54,21 @@ const Resume = () => {
             </div>
           </div>
           <ul>
-            <li>Develop and maintain backend services for
+            <li>Design and develop CRUD operations, microservices, and other backend services for
               <a href='https://apps.apple.com/tw/app/apen/id1434492280'> Apen</a>,
               <a href='https://apps.apple.com/us/app/%E8%97%A5%E5%B8%AB%E5%9C%88/id1661519539'> Phar</a>,
               <a href='https://apps.apple.com/tw/app/%E8%AD%B7%E7%90%86%E7%AB%99/id1523414575'> NStation</a>,
               <a href='https://apps.apple.com/tw/app/clos-burgundy-dictionary/id1568106896'> Clos</a>,
               and <a href='https://apps.apple.com/tw/app/mediatalk-dont-be-shy/id1599874400'> MediTalk</a>
             </li>
-            <li>Parallelize 92% of the notification API with Go routines and speed up logic processing by 1.62 times</li>
-            <li>Develop and integrate Redis caching into existing services and speed up http responses by 8.96 times</li>
+            <li>Parallelize 92% of the notification API with multithreading using Go routines and speed up data processing time by 1.62 times</li>
+            <li>Design and develop redis caching into existing backend services and speed up http responses by 8.96 times</li>
             <li>Write unit and integration tests to raise the test coverage of the API package from 0% to 91%</li>
             <li>Refactor 97% of backend code to follow API/Service/Gateway/Store/Model best-practice architecture</li>
             <li>Integrate Google Cloud Logging to raise the logging coverage of backend code from 61% to 96%</li>
-            <li>Decouple existing services with RabbitMQ and introduce a <a href='https://docs.google.com/presentation/d/1YxMI3G1ARqG0_g36hCPTtmPKSIjGQLKw-IR2sv4tkeY/edit?usp=share_link'>loosely coupled architecture</a> to our backend to accelerate response by 13% and reduce code size by 32%</li>
             <li>Integrate Google Cloud Pub/Sub into Purchase API with Go channels and context</li>
+            <li>Provision and maintain microservices, storage, DNS, and CICD processes for the backend</li>
+            <li>Decouple existing services with RabbitMQ and introduce a <a href='https://docs.google.com/presentation/d/1YxMI3G1ARqG0_g36hCPTtmPKSIjGQLKw-IR2sv4tkeY/edit?usp=share_link'>loosely coupled architecture</a> to our backend to accelerate response by 13% and reduce code size by 32%</li>
           </ul>
         </div>
 
