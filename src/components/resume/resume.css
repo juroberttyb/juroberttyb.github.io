@@ -123,12 +123,12 @@
     margin-bottom: 1%;
 }
 
-#summary .inner_block, .project_highlight {
+#summary .inner_block, .project_highlight, .award_highlight {
     margin-left: 3%;
     margin-right: 3%;
 }
 
-.project_highlight {
+.project_highlight, .award_highlight {
     width: 100%;
 }
 
@@ -142,7 +142,7 @@
 }
 
 .location {
-    margin-top: 2.5%;
+    margin-top: -0.5%;
     text-align: end;
 }
 
