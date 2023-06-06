@@ -34,8 +34,8 @@ const Resume = () => {
           <p>
             I am a passionate backend developer at Penpeer, whose founder is the co-founder and former CTO of <a href='https://17.live/en-US'>17LIVE</a>.
             <br/>At work, I use Go, SQL, Linux, Docker, Kubernetes, and GCP on a daily basis.
+            <br/>After work, I am learning <a href='https://github.com/rust-lang/rust'>Rust</a> and aim to be an active open source contributor.
           </p>
-          {/* <p>After work, I am learning <a href='https://github.com/rust-lang/rust'>Rust</a> and aim to be an active open source contributor.</p> */}
         </div>
       </div>
 
@@ -45,7 +45,7 @@ const Resume = () => {
         <div className='inner_block'>
           <div className='block_item'>
             <div>
-              <div className='highlight bold'><a href='http://35.194.180.167/'>Penpeer</a></div>, <div className='company bold'>Backend Developer</div>,  <div className='after_highlight'>Backend and DevOps</div>
+              <div className='highlight bold'>Backend Developer</div>, <div className='company bold'><a href='http://35.194.180.167/'>Penpeer</a></div>,  <div className='after_highlight'>Backend and DevOps</div>
               {/* <p className='highlight_inner'>Go/Gin/SQL/Docker/Kubernetes/Helm/GCP/Redis/RabbitMQ/CICD/Git</p> */}
             </div>
             <div>
@@ -67,14 +67,14 @@ const Resume = () => {
             <li>Refactor 97% of backend code to follow API/Service/Gateway/Store/Model best-practice architecture</li>
             <li>Integrate Google Cloud Logging to raise the logging coverage of backend code from 61% to 96%</li>
             <li>Decouple existing services with RabbitMQ and introduce a <a href='https://docs.google.com/presentation/d/1YxMI3G1ARqG0_g36hCPTtmPKSIjGQLKw-IR2sv4tkeY/edit?usp=share_link'>loosely coupled architecture</a> to our backend to accelerate response by 13% and reduce code size by 32%</li>
-            {/* <li>Integrate Google Cloud Pub/Sub into Purchase API with Go channels and context</li> */}
+            <li>Integrate Google Cloud Pub/Sub into Purchase API with Go channels and context</li>
           </ul>
         </div>
 
         <div className='inner_block'>
           <div className='block_item'>
             <div>
-              <div className='highlight bold'><a href='http://www.gallopwave.com/en/'>Gallopwave</a></div>, <div className='company bold'>Machine Learning Engineer</div>,  <div className='after_highlight'>ML and DevOps</div>
+              <div className='highlight bold'>Machine Learning Engineer</div>, <div className='company bold'><a href='http://www.gallopwave.com/en/'>Gallopwave</a></div>,  <div className='after_highlight'>ML and DevOps</div>
               {/* <p className='highlight_inner'>Python/C++/Pytorch/Distributed-System/Linux/Docker/CICD/Git</p> */}
             </div>
             <div>
@@ -110,15 +110,39 @@ const Resume = () => {
         </div>
 
         <div className='inner_block'>
-            <div className='block_item'>
+          <div className='block_item'>
             <div>
-              <div className='highlight bold'><a href='http://www.rogersai.com/home_eng.html'>Rogersai</a></div>, <div className='company bold'>Machine Learning Intern</div><div className='after_highlight'></div>
+              <div className='highlight bold'>Machine Learning Intern</div>, <div className='company bold'><a href='http://www.rogersai.com/home_eng.html'>Rogersai</a></div>, <div className='after_highlight'>ML and Backend</div>
               {/* <p className='highlight_inner'>Python/Pytorch/Linux/Docker/CICD/Git</p> */}
             </div>
             <div>
               <div className='duration'>Jul 2020 - Aug 2020</div>
               {/* <div className='location'>Taipei, Taiwan</div> */}
             </div>
+          </div>
+          <ul>
+              <li>Design and develop facial recognition features</li>
+              <li>Accelerate the occlusion detection module by 379% with the model compression method</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id='projects' className='block'>
+        <div className='highlight block_category'>Projects</div>
+        <hr></hr>
+        <div className='inner_block'>
+        <div className='block_item'>
+            <div>
+              <div className='project_highlight'>
+                <a href='https://web.robertchu.xyz'>Personal Website: </a>A <a href='https://github.com/juroberttyb/page'>chat room</a> built with React.js/Express.js/MongoDB/GCP
+              </div>
+              {/* <p className='highlight_inner'>An <a href='https://github.com/juroberttyb/page'>online chat room</a> built with React.js/Express.js/MongoDB/GCP.</p> */}
+              {/* <p className='highlight_inner'>A website built with React.js for introducing myself and online chatting.</p> */}
+            </div>
+            {/* <div> */}
+              {/* <div className='duration'>Nov 2022 - Present</div> */}
+              {/* <div className='location'>Taipei, Taiwan</div> */}
+            {/* </div> */}
           </div>
         </div>
       </div>
@@ -145,7 +169,7 @@ const Resume = () => {
                 <tr>Storage/Logging/Cache</tr>
               </td>
               <td>
-                <tr>GCP (Google Cloud)</tr>
+                <tr>GCP (Google Cloud Platform)</tr>
                 <tr>Kubernetes/Helm</tr>
                 <tr>Docker</tr>
                 <tr>Linux/Shell</tr>
@@ -161,26 +185,6 @@ const Resume = () => {
               </td>
             </tbody>
           </table>
-        </div>
-      </div>
-
-      <div id='projects' className='block'>
-        <div className='highlight block_category'>Projects</div>
-        <hr></hr>
-        <div className='inner_block'>
-        <div className='block_item'>
-            <div>
-              <div className='project_highlight'>
-                <a href='https://web.robertchu.xyz'>Personal Website: </a>A <a href='https://github.com/juroberttyb/page'>chat room</a> built with React.js/Express.js/MongoDB/GCP
-              </div>
-              {/* <p className='highlight_inner'>An <a href='https://github.com/juroberttyb/page'>online chat room</a> built with React.js/Express.js/MongoDB/GCP.</p> */}
-              {/* <p className='highlight_inner'>A website built with React.js for introducing myself and online chatting.</p> */}
-            </div>
-            {/* <div> */}
-              {/* <div className='duration'>Nov 2022 - Present</div> */}
-              {/* <div className='location'>Taipei, Taiwan</div> */}
-            {/* </div> */}
-          </div>
         </div>
       </div>
 

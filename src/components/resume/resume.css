@@ -1,22 +1,26 @@
 #name {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
 }
 
 #resume {
+    font-family: Arial, Helvetica, sans-serif;
     /* position: fixed; */
     /* top: 0; */
     /* bottom: 0; */
     background-color: rgb(255, 255, 255);
     color: rgba(0, 0, 0, 0.95);
     overflow: auto;
+    font-size: 0.7rem;
+    line-height: 1.2;
 }
 
 #resume hr {
     background: transparent;
-    border-top: solid 1.5px #aaa;
-    margin-bottom: 1%;
+    border-top: solid 1px;
+    margin-top: 0.5%;
+    margin-bottom: 0.9%;
 }
 
 #resume a {
@@ -41,7 +45,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 0.85rem;
     list-style-type: none;
     width: 85%;
 }
@@ -57,43 +60,44 @@
 
 #resume #basic_info p {
     margin-top: 0.6%;
-    font-size: 0.85rem;
 }
 
 #education {
     display: flex;
-    font-size: 0.7rem;
     margin-left: 0.5%;
-    margin-top: 0.5%;
-    /* margin-left: 1%; */
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 #education div {
     margin-top: 1.75%;
-    line-height: 115%;
 }
 
 #cap {
-    min-width: 4%;
-    max-width: 4%;
+    min-width: 3%;
+    max-width: 3%;
     margin-top: 0.75%;
-    aspect-ratio: 0.76;
+    /* aspect-ratio: 0.76; */
+    margin-left: 1%;
     margin-right: 2%;
 }
 
 #skills table {
+    font-weight: normal;
     border: 0.5px solid;
     border-color: rgba(0, 0, 0, 0.2);
     border-collapse: collapse;
 }
 
 #skills table td, #skills table th {
+    font-weight: normal;
     border: 0.5px solid;
     border-color: rgba(0, 0, 0, 0.2);
     border-collapse: collapse;
     background-color: rgba(0, 0, 0, 0.1);
     width: 20%;
     padding: 8px;
+    vertical-align: top;
 }
 
 #skills table th {
@@ -102,23 +106,21 @@
 }
 
 .block {
-    margin-top: 1.5%;
+    margin-top: 2%;
 }
 
 .block p {
-    font-size: 0.85rem;
+    
 }
 
 .block ul {
     width: 90%;
-    margin-top: 0.5%;
-    margin-left: 3.5%;
-    font-size: 0.85rem;
+    margin-top: 0.75%;
+    margin-left: 3%;
 }
 
 .block ul li {
-    /* margin-top: 0.5%; */
-    line-height: 135%;
+    margin-top: 0.5%;
 }
 
 .inner_block {
@@ -126,32 +128,28 @@
 }
 
 #summary .inner_block {
-    margin-left: 1.5%;
-    margin-right: 1.5%;
-    line-height: 120%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .project_highlight {
     width: 100%;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
-    line-height: 120%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .block_item {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .duration {
-    margin-top: 0.75%;
-    font-size: 0.85rem;
     text-align: end;
 }
 
 .location {
     margin-top: 2.5%;
-    font-size: 0.7rem;
     text-align: end;
 }
 
@@ -161,19 +159,16 @@
 
 .project_highlight {
     display: inline-block;
-    font-size: 0.85rem;
 }
 
-/* .block_category {
-} */
+.block_category {
+    font-weight: bold;
+}
 
 .highlight_inner {
-    margin-top: 1%;
 }
 
 #experience .inner_block .block_item .highlight_inner {
-    margin-top: 0.5%;
-    font-size: 0.7rem;
 }
 
 .bold {
