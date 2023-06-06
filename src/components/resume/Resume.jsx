@@ -32,7 +32,7 @@ const Resume = () => {
         <hr></hr>
         <div className='inner_block'>
           <p>
-            I am a passionate backend developer at Penpeer, whose founder is the co-founder and CTO of <a href='https://17.live/en-US'>17LIVE</a>.
+            I am a passionate backend developer at Penpeer, whose founder is the co-founder and former CTO of <a href='https://17.live/en-US'>17LIVE</a>.
             <br/>At work, I use Go, SQL, Linux, Docker, Kubernetes, and GCP on a daily basis.
             <br/>After work, I am learning <a href='https://github.com/rust-lang/rust'>Rust</a> and aim to be an active open source contributor.
           </p>
@@ -45,7 +45,7 @@ const Resume = () => {
         <div className='inner_block'>
           <div className='block_item'>
             <div>
-              <div className='highlight bold'>Backend Developer</div>, <div className='company bold'><a href='http://35.194.180.167/'>Penpeer</a></div>,  <div className='after_highlight'>Backend and DevOps</div>
+              <div className='highlight bold'>Backend Developer</div>, <div className='company bold'><a href='http://35.194.180.167/'>Penpeer</a></div>,  <div className='after_highlight'>Backend Team</div>
               {/* <p className='highlight_inner'>Go/Gin/SQL/Docker/Kubernetes/Helm/GCP/Redis/RabbitMQ/CICD/Git</p> */}
             </div>
             <div>
@@ -75,7 +75,7 @@ const Resume = () => {
         <div className='inner_block'>
           <div className='block_item'>
             <div>
-              <div className='highlight bold'>Machine Learning Engineer</div>, <div className='company bold'><a href='http://www.gallopwave.com/en/'>Gallopwave</a></div>,  <div className='after_highlight'>ML and DevOps</div>
+              <div className='highlight bold'>Machine Learning Engineer</div>, <div className='company bold'><a href='http://www.gallopwave.com/en/'>Gallopwave</a></div>,  <div className='after_highlight'>MLOps Team</div>
               {/* <p className='highlight_inner'>Python/C++/Pytorch/Distributed-System/Linux/Docker/CICD/Git</p> */}
             </div>
             <div>
@@ -95,37 +95,72 @@ const Resume = () => {
           </ul>
         </div>
 
-        <div className='inner_block'>
+        {/* <div className='inner_block'>
             <div className='block_item'>
               <div>
                 <div className='highlight bold'></div><div className='company bold'></div><div className='after_highlight'>Continue master's in computer science</div>
-                {/* <p className='highlight_inner'>Python/Pytorch/Distributed-System</p> */}
+                <p className='highlight_inner'>Python/Pytorch/Distributed-System</p>
               </div>
               <div>
                 <div className='duration'>Aug 2020 - Mar 2021</div>
-                {/* <div className='location'>Hsinchu, Taiwan</div> */}
+                <div className='location'>Hsinchu, Taiwan</div>
               </div>
             </div>
             <ul>
               <li><a href='https://arxiv.org/pdf/2112.03690.pdf'>Master's thesis</a> accepted at <a href='https://practical-dl.github.io/2022/index'>AAAI Workshop</a>, cited by 5</li>
             </ul>
-        </div>
+        </div> */}
 
         <div className='inner_block'>
           <div className='block_item'>
             <div>
-              <div className='highlight bold'>Machine Learning Intern</div>, <div className='company bold'><a href='http://www.rogersai.com/home_eng.html'>Rogersai</a></div>, <div className='after_highlight'>ML and Backend</div>
+              <div className='highlight bold'>Software Engineer</div>, <div className='company bold'><a href='https://www.mediatek.com/'>Mediatek</a></div>, <div className='after_highlight'>3A algorithm Team</div>
               {/* <p className='highlight_inner'>Python/Pytorch/Linux/Docker/CICD/Git</p> */}
             </div>
             <div>
-              <div className='duration'>Jul 2020 - Aug 2020</div>
+              <div className='duration'>May 2021 - Jun 2021</div>
               {/* <div className='location'>Taipei, Taiwan</div> */}
+            </div>
+          </div>
+          <ul>
+              <li>Designed and developed advanced algorithms (3A - Autoexposure, Autofocus, and Autowhite balance) to enhance the performance of mobile phone cameras</li>
+          </ul>
+        </div>
+
+        {/* <div className='inner_block'>
+          <div className='block_item'>
+            <div>
+              <div className='highlight bold'>Machine Learning Intern</div>, <div className='company bold'><a href='http://www.rogersai.com/home_eng.html'>Rogersai</a></div>, <div className='after_highlight'>ML and Backend</div>
+              <p className='highlight_inner'>Python/Pytorch/Linux/Docker/CICD/Git</p>
+            </div>
+            <div>
+              <div className='duration'>Jul 2020 - Aug 2020</div>
+              <div className='location'>Taipei, Taiwan</div>
             </div>
           </div>
           <ul>
               <li>Design and develop facial recognition features</li>
               <li>Accelerate the occlusion detection module by 379% with the model compression method</li>
           </ul>
+        </div> */}
+      </div>
+
+      <div id='awards' className='block'>
+        <div className='highlight block_category'>Awards</div>
+        <hr></hr>
+        <div className='inner_block'>
+          <div className='block_item'>
+            <div>
+              <div className='award_highlight'>
+                <a href='https://practical-dl.github.io/2022/index'>Paper Accepted</a>: <a href='https://arxiv.org/pdf/2112.03690.pdf'>Master's Thesis</a> published at <a href='https://aaai.org/conference/aaai/aaai-22/ws22workshops/'>AAAI Workshop</a>, cited by 5
+              </div>
+              {/* <p className='highlight_inner'>Paper published during the master's period, cited by 5</p> */}
+            </div>
+            <div>
+              {/* <div className='duration'>Mar 2022</div> */}
+              <div className='location'>Vancouver, Canada</div> 
+            </div>
+          </div>
         </div>
       </div>
 
@@ -189,23 +224,6 @@ const Resume = () => {
           </table>
         </div>
       </div>
-
-      {/* <div id='awards' className='block'>
-        <div className='highlight block_category'>Awards</div>
-        <hr></hr>
-        <div className='inner_block'>
-          <div className='block_item'>
-            <div>
-              <div className='highlight'><a href='https://arxiv.org/pdf/2112.03690.pdf'>Paper</a> published at <a href='https://practical-dl.github.io/2022/index'>AAAI Workshop</a></div>
-              <p className='highlight_inner'>Paper published during the master's period, cited by 5</p>
-            </div>
-            <div>
-              <div className='duration'>Mar 2022</div>
-              <div className='location'>Vancouver, Canada</div> 
-            </div>
-          </div>
-        </div>
-      </div> */}
 
       <p className='blank'>
         Experience, Google senior software engineer, Lead team of 6 engineers to mine Ethereum on company bold servers, Lead software engineer, 10 years experience, full-stack developer, Facebook, Meta, Amazon, Instagram, Microsoft senior backend developer, Tesla, Apple, IBM, OpenAI, LinkedIn principal engineer, reddit, Twitter, Binance, 
