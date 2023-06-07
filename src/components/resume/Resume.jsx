@@ -29,7 +29,7 @@ const Resume = () => {
 
       <div id='summary' className='block'>
         <div className='highlight block_category'>Summary</div>
-        <hr></hr>
+        <div class="horizontal-line"></div>
         <div className='inner_block'>
           <p>
             I am a passionate backend developer at Penpeer, whose founder is the co-founder and former CTO of <a href='https://17.live/en-US'>17LIVE</a>.
@@ -41,7 +41,7 @@ const Resume = () => {
 
       <div id='experience' className='block'>
         <div className='highlight block_category'>Experience</div>
-        <hr></hr>
+        <div class="horizontal-line"></div>
         <div className='inner_block'>
           <div className='block_item'>
             <div>
@@ -147,7 +147,7 @@ const Resume = () => {
 
       <div id='awards' className='block'>
         <div className='highlight block_category'>Awards</div>
-        <hr></hr>
+        <div class="horizontal-line"></div>
         <div className='inner_block'>
           <div className='block_item'>
             <div>
@@ -166,7 +166,7 @@ const Resume = () => {
 
       <div id='projects' className='block'>
         <div className='highlight block_category'>Projects</div>
-        <hr></hr>
+        <div class="horizontal-line"></div>
         <div className='inner_block'>
         <div className='block_item'>
             <div>
@@ -186,7 +186,7 @@ const Resume = () => {
 
       <div id='skills' className='block'>
         <div className='highlight block_category'>Skills</div>
-        <hr></hr>
+        <div class="horizontal-line"></div>
         <div className='inner_block'>
           <table>
             <thead>

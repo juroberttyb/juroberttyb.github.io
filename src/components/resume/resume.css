@@ -6,7 +6,7 @@
 
 #resume {
     background-color: rgb(255, 255, 255);
-    color: rgba(0, 0, 0, 1);
+    color: black;
     overflow: auto;
     font-size: 0.7rem;
     line-height: 1.2;
@@ -14,9 +14,8 @@
     margin-right: 5%;
 }
 
-#resume hr {
-    background: transparent;
-    border-top: solid 1px;
+.horizontal-line {
+    border-top: 1px solid;
     margin-top: 0.5%;
     margin-bottom: 1%;
 }
@@ -103,7 +102,7 @@
 }
 
 .block {
-    margin-top: 2%;
+    margin-top: 1.5%;
 }
 
 .block p {
@@ -142,7 +141,7 @@
 }
 
 .location {
-    margin-top: -0.5%;
+    margin-top: -0.75%;
     text-align: end;
 }
 
