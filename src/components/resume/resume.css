@@ -5,11 +5,12 @@
 }
 
 #resume {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(255, 255, 255);
     color: black;
     overflow: auto;
-    font-size: 0.7rem;
-    line-height: 1.2;
+    font-size: 0.75rem;
+    line-height: 1.45;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -115,7 +116,7 @@
 }
 
 .block ul li {
-    margin-top: 0.5%;
+    margin-top: 1%;
 }
 
 .inner_block {

@@ -32,9 +32,10 @@ const Resume = () => {
         <div class="horizontal-line"></div>
         <div className='inner_block'>
           <p>
-            I am a passionate backend developer at Penpeer, whose founder is the co-founder and former CTO of <a href='https://17.live/en-US'>17LIVE</a>.
-            <br/>At work, I use Go, SQL, Linux, Docker, Kubernetes, and GCP on a daily basis.
-            <br/>After work, I am learning <a href='https://github.com/rust-lang/rust'>Rust</a> and aim to be an active open source contributor.
+            Hi, I'm Robert, a passionate back-end developer with expertise in REST design and experience in DevOps and cloud technologies using Docker, Kubernetes, and GCP.<br/>
+            In my free time, I am diligently learning <a href='https://github.com/rust-lang/rust'>Rust</a> and aim to become an active open source contributor.
+            {/* At work, I use Go, SQL, Linux, Docker, Kubernetes, and GCP on a daily basis. */}
+            {/* at Penpeer, whose founder is the co-founder of <a href='https://17.live/en-US'>17LIVE</a> */}
           </p>
         </div>
       </div>
@@ -75,7 +76,7 @@ const Resume = () => {
         <div className='inner_block'>
           <div className='block_item'>
             <div>
-              <div className='highlight bold'>Machine Learning Engineer</div>, <div className='company bold'><a href='http://www.gallopwave.com/en/'>Gallopwave</a></div>,  <div className='after_highlight'>MLOps Team</div>
+              <div className='highlight bold'>Machine Learning Engineer</div>, <div className='company bold'><a href='http://www.gallopwave.com/en/'>Gallopwave</a></div>,  <div className='after_highlight'>Deep Learning Team</div>
               {/* <p className='highlight_inner'>Python/C++/Pytorch/Distributed-System/Linux/Docker/CICD/Git</p> */}
             </div>
             <div>
@@ -111,21 +112,21 @@ const Resume = () => {
             </ul>
         </div> */}
 
-        <div className='inner_block'>
+        {/* <div className='inner_block'>
           <div className='block_item'>
             <div>
               <div className='highlight bold'>Software Engineer</div>, <div className='company bold'><a href='https://www.mediatek.com/'>Mediatek</a></div>, <div className='after_highlight'>3A algorithm Team</div>
-              {/* <p className='highlight_inner'>Python/Pytorch/Linux/Docker/CICD/Git</p> */}
+              <p className='highlight_inner'>Python/Pytorch/Linux/Docker/CICD/Git</p>
             </div>
             <div>
               <div className='duration'>May 2021 - Jun 2021</div>
-              {/* <div className='location'>Taipei, Taiwan</div> */}
+              <div className='location'>Taipei, Taiwan</div>
             </div>
           </div>
           <ul>
               <li>Designed and developed advanced algorithms (3A - Autoexposure, Autofocus, and Autowhite balance) to enhance the performance of mobile phone cameras</li>
           </ul>
-        </div>
+        </div> */}
 
         {/* <div className='inner_block'>
           <div className='block_item'>
