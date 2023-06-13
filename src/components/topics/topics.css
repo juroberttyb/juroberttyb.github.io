@@ -9,9 +9,9 @@
     height: 4.5vw;
     margin-bottom: 15%;
 
-    border-style: solid;
-    border-width: thick;
-    border-color: rgba(255,255,255,0.5); ;
+    /* border-style: solid; */
+    /* border-width: thick; */
+    /* border-color: rgba(255,255,255,0.5); ; */
 }
 
 .topic_photo:hover {
