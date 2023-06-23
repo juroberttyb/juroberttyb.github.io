@@ -200,7 +200,7 @@ const Resume = () => {
             <tbody>
               <td>
                 <tr>Go/Python</tr>
-                <tr>Microservices</tr>
+                <tr>REST/GRPC/Microservices</tr>
                 <tr>Multithreading</tr>
                 <tr>PostgreSQL/MongoDB/Redis</tr>
                 <tr>RabbitMQ/PubSub</tr>
