@@ -214,9 +214,9 @@ const Resume = () => {
               <td>
                 <tr>Rust</tr>
                 <tr>HTML / CSS / Javascript</tr>
-                <tr>Numpy / Sklearn / Pytorch</tr>
+                <tr>Numpy / Scipy / OpenCV</tr>
+                <tr>Sklearn / Pytorch / Keras</tr>
                 {/* <tr>React.js</tr> */}
-                {/* <tr>OpenCV / Keras</tr> */}
               </td>
             </tbody>
           </table>
