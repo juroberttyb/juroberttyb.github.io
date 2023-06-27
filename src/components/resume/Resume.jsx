@@ -13,7 +13,7 @@ const Resume = () => {
     <div id='resume'>
       <div id='name'>Robert Chu</div>
       <div id='contact'>
-        <img className="prefix_img" src={phone} alt="" /><p>(+886)972435608</p>
+        <img className="prefix_img" src={phone} alt="" /><p>(+886) 972435608</p>
         <img className="prefix_img" src={mail} alt="" /><p>juroberttyb@gmail.com</p>
         <img className="prefix_img" src={github} alt="" /><p><a href='https://github.com/juroberttyb'>juroberttyb</a></p>
         <img className="prefix_img" src={linkedin} alt="" /><p><a href='https://www.linkedin.com/in/robert-chu-5b66081a9/'>Robert Chu</a></p>
