@@ -32,7 +32,7 @@ const Resume = () => {
         <div class="horizontal-line"></div>
         <div className='inner_block'>
           <p>
-            Hi, I'm Robert, a passionate back-end developer with expertise in REST design and experience in DevOps and cloud technologies using Docker, Kubernetes, and GCP.<br/>
+            Hi, I'm Robert, a passionate back-end developer with expertise in REST design and experience in DevOps using Docker, Kubernetes, and GCP (Google Cloud Platform).<br/>
             In my free time, I am diligently learning <a href='https://github.com/rust-lang/rust'>Rust</a> and aim to become an active open source contributor.
             {/* At work, I use Go, SQL, Linux, Docker, Kubernetes, and GCP on a daily basis. */}
             {/* at Penpeer, whose founder is the co-founder of <a href='https://17.live/en-US'>17LIVE</a> */}
@@ -199,27 +199,24 @@ const Resume = () => {
             </thead>
             <tbody>
               <td>
-                <tr>Go/Python</tr>
-                <tr>REST/GRPC/Microservices</tr>
-                <tr>Multithreading</tr>
-                <tr>PostgreSQL/MongoDB/Redis</tr>
-                <tr>RabbitMQ/PubSub</tr>
-                <tr>Storage/Logging/Cache</tr>
+                <tr>Go / Python</tr>
+                <tr>REST / GRPC / Microservices</tr>
+                <tr>PostgreSQL / MongoDB / Redis</tr>
+                <tr>RabbitMQ / PubSub / Routing</tr>
+                <tr>Storage / Logging / Cache</tr>
               </td>
               <td>
                 <tr>GCP (Google Cloud Platform)</tr>
-                <tr>Kubernetes/Helm</tr>
-                <tr>Docker</tr>
-                <tr>Linux/Shell</tr>
-                <tr>Github Action</tr>
+                <tr>Docker / Kubernetes / Helm</tr>
+                <tr>CICD / Github Action</tr>
+                <tr>Linux / Shell</tr>
               </td>
               <td>
-                <tr>HTML/CSS/Javascript</tr>
-                <tr>React.js</tr>
-                <tr>Sklearn/Pytorch/Keras</tr>
-                <tr>Numpy/OpenCV</tr>
-                {/* <tr>Typescript</tr> */}
-                {/* <tr>C++</tr> */}
+                <tr>Rust</tr>
+                <tr>HTML / CSS / Javascript</tr>
+                <tr>Numpy / Sklearn / Pytorch</tr>
+                {/* <tr>React.js</tr> */}
+                {/* <tr>OpenCV / Keras</tr> */}
               </td>
             </tbody>
           </table>
