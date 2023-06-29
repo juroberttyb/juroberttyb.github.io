@@ -68,8 +68,10 @@ const Resume = () => {
             <li>Refactor 97% of backend code to follow API/Service/Gateway/Store/Model best-practice architecture</li>
             <li>Integrate Google Cloud Logging to raise the logging coverage of backend code from 61% to 96%</li>
             <li>Integrate Google Cloud Pub/Sub into Purchase API with Go channels and context</li>
-            <li>Provision and maintain microservices, storage, DNS, and CICD processes for the backend</li>
-            <li>Decouple existing services with RabbitMQ and introduce a <a href='https://docs.google.com/presentation/d/1YxMI3G1ARqG0_g36hCPTtmPKSIjGQLKw-IR2sv4tkeY/edit?usp=share_link'>loosely coupled architecture</a> to our backend to accelerate response by 13% and reduce code size by 32%</li>
+            <li>Reduce 74% of GCP network and storage billing costs by introducing Cloud CDN to our backend services</li>
+            <li>Implement CICD pipelines for backend services to automate testing and deployment processes</li>
+            <li>Provision and maintain microservices, storage, SSL certificates, and DNS records on the GCP Cloud</li>
+            <li>Decouple existing services with RabbitMQ and GRPC by introducing a <a href='https://docs.google.com/presentation/d/1YxMI3G1ARqG0_g36hCPTtmPKSIjGQLKw-IR2sv4tkeY/edit?usp=share_link'>loosely coupled architecture</a> to our backend to accelerate response by 13% and reduce code size by 32%</li>
           </ul>
         </div>
 
@@ -208,13 +210,14 @@ const Resume = () => {
               <td>
                 <tr>GCP (Google Cloud Platform)</tr>
                 <tr>Docker / Kubernetes / Helm</tr>
+                <tr>CDN (Content Delivery Network)</tr>
                 <tr>CICD / Github Action</tr>
                 <tr>Linux / Shell</tr>
               </td>
               <td>
                 <tr>Rust</tr>
                 <tr>HTML / CSS / Javascript</tr>
-                <tr>Numpy / Scipy / OpenCV</tr>
+                <tr>Numpy / OpenCV</tr>
                 <tr>Sklearn / Pytorch / Keras</tr>
                 {/* <tr>React.js</tr> */}
               </td>
