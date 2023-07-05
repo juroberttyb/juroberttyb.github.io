@@ -32,7 +32,7 @@ const Resume = () => {
         <div class="horizontal-line"></div>
         <div className='inner_block'>
           <p>
-            Hi, I'm Robert, a passionate back-end developer with expertise in REST design and experience in DevOps using Docker, Kubernetes, and GCP (Google Cloud Platform).<br/>
+            Hi, I'm Robert, a passionate back-end developer with expertise in REST design and experience in DevOps using Linux, Docker, Kubernetes, and GCP (Google Cloud Platform).<br/>
             In my free time, I am diligently learning <a href='https://github.com/rust-lang/rust'>Rust</a> and aim to become an active open source contributor.
             {/* At work, I use Go, SQL, Linux, Docker, Kubernetes, and GCP on a daily basis. */}
             {/* at Penpeer, whose founder is the co-founder of <a href='https://17.live/en-US'>17LIVE</a> */}
@@ -155,7 +155,7 @@ const Resume = () => {
           <div className='block_item'>
             <div>
               <div className='award_highlight'>
-                <a href='https://practical-dl.github.io/2022/index'>Paper Accepted</a>: <a href='https://arxiv.org/pdf/2112.03690.pdf'>Master's Thesis</a> published at <a href='https://aaai.org/conference/aaai/aaai-22/ws22workshops/'>AAAI Workshop</a>, cited by 5
+                <a href='https://practical-dl.github.io/2022/index'>Paper Accepted</a>: <a href='https://arxiv.org/pdf/2112.03690.pdf'>Master's Thesis</a> published at <a href='https://aaai.org/conference/aaai/aaai-22/ws22workshops/'>AAAI Workshop</a>, cited by 6
               </div>
               {/* <p className='highlight_inner'>Paper published during the master's period, cited by 5</p> */}
             </div>
