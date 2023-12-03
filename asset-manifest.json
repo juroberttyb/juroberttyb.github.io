@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "./static/css/main.d2b01ef0.css",
-    "main.js": "./static/js/main.fde82fe1.js",
+    "main.css": "./static/css/main.e11dbe96.css",
+    "main.js": "./static/js/main.42bc7dd0.js",
     "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
     "static/media/back.png": "./static/media/back.dcdebf7ff53192d3e2e4.png",
     "static/media/seaOtter.jpg": "./static/media/seaOtter.b5cbaffcdc2aafcc97ee.jpg",
     "static/media/phone.jpg": "./static/media/phone.682e929fc082935c8171.jpg",
     "static/media/linkedin.jpg": "./static/media/linkedin.9903de3419c5051261f9.jpg",
     "index.html": "./index.html",
-    "main.d2b01ef0.css.map": "./static/css/main.d2b01ef0.css.map",
-    "main.fde82fe1.js.map": "./static/js/main.fde82fe1.js.map",
+    "main.e11dbe96.css.map": "./static/css/main.e11dbe96.css.map",
+    "main.42bc7dd0.js.map": "./static/js/main.42bc7dd0.js.map",
     "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2b01ef0.css",
-    "static/js/main.fde82fe1.js"
+    "static/css/main.e11dbe96.css",
+    "static/js/main.42bc7dd0.js"
   ]
 }
