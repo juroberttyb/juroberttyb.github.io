@@ -1,0 +1,35 @@
+.topic {
+    margin-top: 3.75%;
+}
+
+.topic_photo {
+    display: block;
+    border-radius: 100%;
+    width: 4.5vw;
+    height: 4.5vw;
+    margin-bottom: 15%;
+
+    /* border-style: solid; */
+    /* border-width: thick; */
+    /* border-color: rgba(255,255,255,0.5); ; */
+}
+
+.topic_photo:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    /* CSS styles for screens smaller than 768px */
+
+    .topic {
+        margin-top: 20%;
+        margin-right: 2%;
+    }
+
+    .topic_photo {
+        width: 6vw;
+        height: 6vw;
+        margin-bottom: 25%;
+        border-width: thin;
+    }
+}

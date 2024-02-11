@@ -1,0 +1,51 @@
+
+.header {
+  position: fixed;
+  width: 100%;
+  left: 1%;
+  top: 3%;
+}
+
+.header ul {
+  margin-left: 1%;
+  margin-top: 0.25%;
+}
+
+.header ul li {
+  display: inline;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  margin-right: 2%;
+}
+
+#resume_button {
+  position: absolute;
+  top: 0;
+  right: 2%;
+}
+
+#resume_button button {
+  position: relative;
+  margin-top: -5%;
+  top: 20%;
+}
+
+@media screen and (max-width: 768px) {
+  /* CSS styles for screens smaller than 768px */
+
+  .header ul {
+    margin-left: 4%;
+  }
+
+  .header ul li {
+    font-size: 0.8rem;
+    margin-right: 3%;
+  }
+
+  #resume_button button {
+    right: 15%;
+    font-size: 0.6rem;
+    margin: 0;
+    padding: 1%;
+  }
+}

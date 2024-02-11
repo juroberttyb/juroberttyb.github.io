@@ -1,0 +1,239 @@
+#name {
+    /* font-size: 0.9rem; */
+    font-weight: bold;
+    text-align: center;
+    /* margin-bottom: 0.5%; */
+    font-size: 14pt;
+}
+
+#resume.a {
+    text-decoration: none; /* Removes the underline typically applied to links */
+    font-weight: normal;    /* Sets the font weight to normal (non-bold) */
+}
+
+#resume {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    overflow: auto;
+    font-size: 11pt;
+    line-height: 1.45;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.horizontal-line {
+    border-top: 1px solid;
+    margin-bottom: 1%;
+}
+
+.internal_description {
+    margin-top: 0.5%;
+    padding-left: 30px;
+    padding-right: 50px;
+}
+
+.project_highlight_lower {
+    margin-top: 0.5%;
+}
+
+#resume a {
+    text-decoration: none;
+    color: blue;
+}
+  
+#resume a:visited { 
+    text-decoration: none;
+    color: blue;
+}
+
+#resume_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact {
+}
+
+#contact_info {
+    text-align: center;
+}
+
+.contact_item {
+    margin-right: 2.5%;
+}
+
+#contact p {
+}
+
+.prefix_img {
+    width: 15px;
+    margin-left: 7%;
+}
+
+/* #showupper {
+    margin-top: 0%;
+} */
+
+#resume #basic_info p {
+    margin-top: 0.6%;
+}
+
+#education {
+    display: flex;
+    margin-left: 0.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#ms {
+    margin-top: 1.5%;
+}
+
+.block .inner_block.higher {
+    margin-top: -0.5%;
+}
+
+#education div {
+    margin-top: 1.75%;
+}
+
+#cap {
+    min-width: 3%;
+    max-width: 3%;
+    margin-top: 0.75%;
+    margin-left: 1%;
+    margin-right: 2%;
+}
+
+#skills table {
+    font-weight: normal;
+    border: 0.5px solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-collapse: collapse;
+}
+
+#skills table td, #skills table th {
+    font-weight: normal;
+    border: 0.5px solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-collapse: collapse;
+    background-color: rgb(0, 0, 0, 0.1);
+    width: 20%;
+    padding: 8px;
+    vertical-align: top;
+}
+
+#skills table th {
+    background-color: rgba(0, 0, 0, 0);
+    text-align: left;
+}
+
+#skills .inner_block {
+    margin-left: 0%;
+}
+
+.block {
+    margin-top: 1%;
+}
+
+#visa {
+    margin-top: 2.5%;
+    margin-bottom: -1%;
+}
+
+.block p {
+}
+
+.block ul {
+    /* width: 97%; */
+    /* margin-top: 0.75%; */
+    margin-left: 3%;
+}
+
+.block ul li {
+    /* margin-top: 0.5%; */
+}
+
+.inner_block {
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+
+#summary {
+    /* margin-top: 0.5%; */
+    font-weight: bold;
+}
+
+#intro {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+#summary .inner_block, .project_highlight, .award_highlight {
+}
+
+.project_highlight, .award_highlight {
+    width: 100%;
+}
+
+.more_left {
+    margin-top: 1.25%;
+    margin-left: 3.25%;
+}
+
+#moveup {
+    /* margin-top: 0%; */
+}
+
+.block_item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.duration {
+    text-align: end;
+}
+
+.location {
+    text-align: end;
+    margin-top: -1%;
+    font-size: 10pt;
+}
+
+.highlight {
+    display: inline-block;
+}
+
+.project_highlight {
+    display: inline-block;
+}
+
+.block_category {
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+.highlight_inner {
+    /* margin-top: -0.5%; */
+    font-size: 10pt;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.company {
+    display: inline-block;
+}
+
+.after_highlight {
+    display: inline-block;
+}
+
+.blank {
+    position: absolute;
+    font-size: 1px;
+    color: white;
+    z-index: -1;
+}

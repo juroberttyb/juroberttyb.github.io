@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "7eef88ac-0fef-49ba-9380-7ebdf59a02ca",
+		"name": "page",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19456855"
+	},
+	"item": [
+		{
+			"name": "message",
+			"item": [
+				{
+					"name": "message all",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{jwtToken}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/message?count=5",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"message"
+							],
+							"query": [
+								{
+									"key": "count",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "message",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{userJwtToken}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/message/{{message_id}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"message",
+								"{{message_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post message",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{jwtToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"from\": \"a\",\n    \"message\": \"4\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/message",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"message"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
