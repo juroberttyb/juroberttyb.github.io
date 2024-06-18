@@ -7,16 +7,16 @@ on:
     branches: ["main"]
 
 jobs:
-  # test: 
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: pulling git repo
-  #       uses: actions/checkout@v2
-  #     - name: test
-  #       run: |
-  #         echo "test"
+  test: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: pulling git repo
+        uses: actions/checkout@v2
+      - name: test
+        run: |
+          echo "test"
   deploy: 
-    # needs: [test]
+    needs: [test]
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     steps:
