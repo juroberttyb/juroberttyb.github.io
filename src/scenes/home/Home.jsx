@@ -11,7 +11,7 @@ const Home = () => {
             <div id="ohana-description">
                 <div id="ohana-title">Ohana</div>
                 <div id="ohana-slogan">讓您的美金活存利率與世界接軌</div>
-                <div class="ohana-text">
+                <div className="ohana-text">
                     <p>Ohana的開發團隊相信，每個人都該擁有屬於自己的銀行，而我們已成功打造出</p>
                     <br/>
                     <p>1 - 與世界接軌的美元活存利率</p>

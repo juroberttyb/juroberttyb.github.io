@@ -14,11 +14,11 @@ const Resume = () => {
     <div id='resume'>
         <div id='name'>歡迎使用下方資訊與我聯絡！</div>
         <div id='contact_info'>
-          <span class='contact_item'><img src={phone} width={10} alt="" /> (+886) 972435608</span> 
-          <span class='contact_item'><img src={locate} width={10} alt="" /> Taipei, Taiwan</span>
-          <span class='contact_item'><img src={mail} width={10} alt="" />&thinsp; juroberttyb@gmail.com</span>
-          <span class='contact_item'><img src={github} width={10} alt="" /> <a href='https://github.com/juroberttyb'>Github</a></span>
-          <span class='contact_item'><img src={linkedin} width={10} alt="" /> <a href='https://www.linkedin.com/in/robert-ju-5b66081a9/'>LinkedIn</a></span>
+          <span className='contact_item'><img src={phone} width={10} alt="" /> (+886) 972435608</span> 
+          <span className='contact_item'><img src={locate} width={10} alt="" /> Taipei, Taiwan</span>
+          <span className='contact_item'><img src={mail} width={10} alt="" />&thinsp; juroberttyb@gmail.com</span>
+          <span className='contact_item'><img src={github} width={10} alt="" /> <a href='https://github.com/juroberttyb'>Github</a></span>
+          <span className='contact_item'><img src={linkedin} width={10} alt="" /> <a href='https://www.linkedin.com/in/robert-ju-5b66081a9/'>LinkedIn</a></span>
         </div>
 
       {/* <div id='summary' className='block'>
