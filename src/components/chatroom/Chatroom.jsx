@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import seaOtter from '../../assets/images/seaOtter.jpg'
 import { Lock } from '../../components'
+import { Download } from '../../components'
 import _ from "lodash"
 import './chatroom.css'
 

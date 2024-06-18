@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom' // Navigate
 import { useState } from 'react'
-import { Header, Resume} from './components'
-import { Chat } from './scenes' // Home
+import { Header, Resume, Footer } from './components'
+import { Home, Chat } from './scenes'
 import { initializeApp } from 'firebase/app'
 import './App.css'
 
@@ -26,18 +26,18 @@ function App() {
 
     return (
         <div>
-            {
+            {/* {
                 showResume === "Developer Info" &&
                 <Routes location="/*">
                     <Route path='/*' element={<Header buttonValue={showResume} setButtonValue={setShowResume} />} />
                 </Routes>
-            }
+            } */}
 
             {
                 showResume === "Developer Info" &&
                 <Routes>
-                    <Route path='/' element={<Chat />} />
-                    {/* <Route path='/chat' element={<Home />} /> */}
+                    <Route path='/' element={<Home />} />
+                    {/* <Route path='/chat' element={<Chat />} /> */}
                     {/* <Route path='/policy' element={<Policy />} /> */}
                 </Routes>
             }
@@ -48,6 +48,8 @@ function App() {
                     <Route path='/*' element={<Resume />} />
                 </Routes>
             }
+
+            <Footer />
         </div>
     );
 }

@@ -3,13 +3,21 @@
     position: fixed;
     width: 100%;
     text-align: center;
-    bottom: 2%;
-  }
-  
-.footer ul li {
-    display: inline-block;
-    margin: 1.25%;
-    font-weight: bolder;
-    font-size: 1.15rem;
+    bottom: 4px;
 }
   
+.footer ul {
+  margin-bottom: 2px;
+}
+
+.footer ul li {
+    display: inline-block;
+    /* margin: 1.25%; */
+    margin-right: 32px;
+    /* font-weight: bolder; */
+    font-size: 9pt;
+}
+
+#copyright {
+  font-size: 8pt;
+}

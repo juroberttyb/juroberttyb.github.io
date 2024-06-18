@@ -22,10 +22,10 @@ const Header = ({buttonValue, setButtonValue}) => {
     return (
         <header className="header">
             <ul>
-                <li><Link to="/">Home</Link></li>
+                <li><Link to="/">回到首頁</Link></li>
                 {/* <li><Link to="/policy">Policy</Link></li> */}
                 {/* <li><Link to="/chat">Contact</Link></li> */}
-                <li><Link to="/dev"><span onClick={resumeOn}>Developer</span></Link></li>
+                <li><Link to="/dev"><span onClick={resumeOn}>聯絡我們</span></Link></li>
                 {/* <li><a href="mailto: juroberttyb@gmail.com">Email</a></li> */}
                 {/* <li><a href="https://twitter.com/zhuboxuan2">Twitter</a></li> */}
                 {/* <li><a href="https://www.linkedin.com/in/robert-chu-5b66081a9/">LinkedIn</a></li> */}

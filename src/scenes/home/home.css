@@ -1,10 +1,32 @@
 .page {
     display: flex;
-    margin-left: 5%;
-    margin-right: 5%;
-    justify-content: center;
+    /* align-items: center; */
+    margin-left: 20%;
+    /* margin-right: 5%; */
+    /* justify-content: center; */
     margin-top: 7%;
     /* overflow: auto; */
+}
+
+#ohana-description {
+    margin-top: 3%;
+}
+
+#ohana-title {
+    font-size: 36pt;
+    font-weight: bold;
+}
+
+#ohana-slogan {
+    font-weight: bold;
+}
+
+.ohana-text {
+    margin-top: 5%;
+}
+
+#ohana-download {
+    margin-top: 5%;
 }
 
 .content h1 {
